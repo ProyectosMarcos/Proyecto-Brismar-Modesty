@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* Style Reset*/
+:root {
+  --fuente-title: "Dancing Script", cursive;
+  --fuente-secondary: "Lora", serif;
+  --fuente-detalles: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ::::::::::::::::::::::::: Estilos Pagina Inicio ::::::::::::::::::::::::: */
+/* @media querie para movil */
+@media (min-width: 320px) and (max-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 77px 50px 1fr 50px;
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+  .header {
+    background-color: rgb(242, 236, 230);
+    grid-area: header;
+  }
+  .nav {
+    background-color: rgb(141, 151, 153);
+    grid-area: nav;
+  }
+  .main {
+    background-color: rgb(237, 139, 139);
+    grid-area: main;
+  }
+  .footer {
+    background-color: rgb(27, 219, 149);
+    grid-area: footer;
+  }
+}
+/* FIN @media querie para movil */
+/* @media querie para tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    width: 1024px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 77px 50px 1fr 77px;
+    grid-template-areas: "header header" "nav    nav" "main   main" "footer footer";
+  }
+  .header {
+    background-color: rgb(255, 209, 209);
+    grid-area: header;
+    padding: 2rem;
+    background-image: url(/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+  }
+  .header__title {
+    text-align: center;
+    font-family: var(--fuente-title);
+    font-size: 4rem;
+  }
+  .navbar__menu {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    padding: 1rem;
+    list-style: none;
+  }
+  .menu__desplazable {
+    position: fixed;
+    top: 1;
+    background-color: #FDFBFB;
+    width: 100%;
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+  }
+  .navbar__item a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+  }
+  .navbar__menu li {
+    cursor: pointer;
+  }
+  /* Estilos del submenú */
+  .navbar__item_submenu {
+    list-style-type: none;
+    background-color: #FDFBFB;
+    padding: 1rem;
+    width: 15rem;
+    position: absolute;
+    text-align: center;
+    display: none;
+  }
+  .navbar__item:hover .navbar__item_submenu {
+    display: block;
+  }
+  .navbar__item:hover {
+    background-color: #F6D4D2;
+    transition: 0.1s ease-in-out;
+  }
+  .submenu__item:hover {
+    background-color: #F6D4D2;
+  }
+  /* Estilos del submenú */
+  /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+  /* GRID AREAS */
+  .nav {
+    background-color: rgb(253, 251, 251);
+    grid-area: nav;
+  }
+  .main {
+    background-color: #f9ecec;
+    grid-area: main;
+  }
+  /* FIN GRID AREAS */
+  /*Caja - Imagenes*/
+  .container__section {
+    width: 971px;
+    margin: auto;
+    margin-top: 10rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .caja__img {
+    width: 30rem;
+    height: 33rem;
+    border: solid rgb(226, 205, 246);
+    border-style: double;
+  }
+  /* Fin Caja - Imagenes*/
+  /*  DETALLES  */
+  .container__detalles {
+    width: 900px;
+    height: 20rem;
+    margin: auto;
+    margin-top: 7rem;
+    font-size: 1.8rem;
+  }
+  .detalles__article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    font-family: var(--fuente-detalles);
+    color: rgb(0, 0, 0);
+  }
+  .detalles__caja-uno {
+    width: 20rem;
+    text-align: center;
+  }
+  .detalles__caja-dos,
+  .detalles__caja-tres {
+    text-align: center;
+  }
+  .detalles__caja-uno,
+  .detalles__caja-dos,
+  .detalles__caja-tres {
+    border-right: solid;
+    border-style: groove;
+    border-color: #F6D4D2;
+    background-image: url(/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  /* FRASE */
+  .frase {
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: var(--fuente-secondary);
+    margin-top: 4rem;
+    width: auto;
+  }
+  /* FRASE */
+  /* FIN DETALLES  */
+  /* FOOTER */
+  .footer {
+    background-color: #eea3ac;
+    grid-area: footer;
+    font-size: 2.3rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  .navegacion {
+    background-color: rgb(0, 136, 255);
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    cursor: pointer;
+    height: 23rem;
+  }
+  .navbar__footer {
+    list-style-type: none;
+  }
+  .navbar__footer-item {
+    cursor: pointer;
+  }
+  .navbar__footer-item a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar__footer-item:hover {
+    background-color: #ffa5a0;
+  }
+  /* ICONOS */
+  .medios__pago {
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+  }
+  .visa_icon {
+    width: 3rem;
+    margin-top: 4.5px;
+  }
+  /* CONTACTO */
+  .contacto {
+    width: 20rem;
+    text-align: center;
+  }
+  .contacto_numero {
+    border: solid red;
+  }
+  .img {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+  }
+  .img p {
+    margin-left: 1rem;
+  }
+  /* REDES SOCIALES */
+  .redes__sociales {
+    text-align: center;
+  }
+  /* FIN FOOTER  */
+  /* ::::::::::::::::::::::::: Final Estilos Pagina Inicio ::::::::::::::::::::::::: */
+  /* ::::::::::::::::::::::::: Estilos Pagina Contacto ::::::::::::::::::::::::: */
+  .container__horarios {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .caja_contacto {
+    width: auto;
+    height: max-content;
+  }
+  .detalles_numeros,
+  .correo,
+  .ubicacion {
+    font-size: 2.5rem;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  /* medida iconos*/
+  .icons {
+    width: 2.5rem;
+  }
+  /* medida iconos*/
+  .numero {
+    font-size: 2rem;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .formulario label {
+    font-size: 2.4rem;
+  }
+  .formulario input {
+    width: 50rem;
+    height: 4rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-style: dashed;
+    border-color: pink;
+  }
+  .mensaje {
+    background-color: rgb(244, 214, 214);
+    margin-top: 4rem;
+    width: 50rem;
+    color: black;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+  }
+  .button__submit {
+    background-color: #EFCBCF;
+    width: 10rem;
+    height: 3rem;
+    transition: 0.2s ease;
+    font-size: 1.6rem;
+  }
+  .button__submit:active {
+    transform: scale(0.9);
+  }
+  .button__submit:hover {
+    background-color: #f77382;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
