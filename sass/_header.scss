@@ -1,7 +1,7 @@
 @use 'font_family';
 @use 'colores';
   .header {
-      background-color: rgb(255, 209, 209);
+      background-color:colores.$color_header;
       grid-area: header;
       padding: 2rem;
       background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
@@ -24,7 +24,7 @@
   .menu__desplazable {
       position: fixed;
       top: 1;
-      background-color: #FDFBFB;
+      background-color: colores.$color_menu_desplazable;
       width: 100%;
       z-index: 1000;
       /* Asegura que esté por encima de otros elementos */
@@ -43,7 +43,7 @@
   /* Estilos del submenú */
   .navbar__item_submenu {
       list-style-type: none;
-      background-color: #FDFBFB;
+      background-color: colores.$color_navbar_submenu;
       padding: 1rem;
       width: 15rem;
       position: absolute;
@@ -58,13 +58,13 @@
 
 
   .navbar__item:hover {
-      background-color: #F6D4D2;
+      background-color: colores.$color_navbar_item_hover;
 
       transition: 0.1s ease-in-out;
   }
 
 
   .submenu__item:hover {
-      background-color: #F6D4D2;
+      background-color: colores.$color_submenu__item;
   }
 
