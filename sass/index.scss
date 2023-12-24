@@ -43,7 +43,7 @@ body {
 /* ::::::::::::::::::::::::: Resoluciones ::::::::::::::::::::::::: */
 
 /* @media querie para movil */
-@media (min-width: 320px) and (max-width: 640px) {
+@media (min-width: 20em) and (max-width: 40em) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -80,7 +80,7 @@ body {
 /* FIN @media querie para movil */
 
 /* @media querie para tablet */
-@media (min-width: 641px) and (max-width: 1024px) {
+@media (min-width: 40.0625em) and (max-width: 64em) {
     .container {
         width: 1024px;
         display: grid;
