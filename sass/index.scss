@@ -6,8 +6,8 @@
 @use 'iconos';
 @use 'contacto';
 @use 'politica_cambios';
-@use '_font_family';
-
+@use 'font_family';
+@use 'colores';
 
 
 
@@ -110,7 +110,7 @@ body {
        
     
         .footer {
-            background-color: rgb(60, 56, 56);
+            background-color:colores.$color_footer;
             grid-area: footer;
         }
 

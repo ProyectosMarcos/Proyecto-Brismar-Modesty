@@ -405,7 +405,7 @@ body {
     grid-area: main;
   }
   .footer {
-    background-color: rgb(60, 56, 56);
+    background-color: #f9b2df;
     grid-area: footer;
   }
 }
