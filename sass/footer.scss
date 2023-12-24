@@ -1,0 +1,79 @@
+ @media (min-width: 641px) and (max-width: 1024px) {
+ /* FOOTER */
+ .footer {
+     background-color: #eea3ac;
+     grid-area: footer;
+     font-size: 2.3rem;
+     color: white;
+     text-align: center;
+     padding: 2rem;
+ }
+
+ .navegacion {
+     background-color: rgb(0, 136, 255);
+     font-size: 1.8rem;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+     cursor: pointer;
+     height: 23rem;
+ }
+
+ .navbar__footer {
+     list-style-type: none;
+ }
+
+ .navbar__footer-item {
+     cursor: pointer;
+ }
+
+ .navbar__footer-item a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .navbar__footer-item:hover {
+     background-color: #ffa5a0;
+ }
+
+ /* ICONOS */
+ .medios__pago {
+     align-items: center;
+     text-align: center;
+     gap: 2rem;
+     padding: 1rem;
+     width: auto;
+     height: auto;
+ }
+
+ .visa_icon {
+     width: 3rem;
+     margin-top: 4.5px;
+ }
+
+ /* CONTACTO */
+ .contacto {
+     width: 20rem;
+     text-align: center;
+ }
+
+ .contacto_numero {
+     border: solid red;
+ }
+
+ .img {
+     display: flex;
+     align-items: center;
+     margin: auto 0;
+ }
+
+ .img p {
+     margin-left: 1rem;
+ }
+
+ /* REDES SOCIALES */
+ .redes__sociales {
+     text-align: center;
+ }
+}

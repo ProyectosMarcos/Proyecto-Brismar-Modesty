@@ -1,0 +1,49 @@
+/*  DETALLES  */
+.container__detalles {
+  width: 900px;
+  height: 20rem;
+  margin: auto;
+  margin-top: 7rem;
+  font-size: 1.8rem;
+}
+
+.detalles__article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+  font-family: var(--fuente-detalles);
+  color: rgb(0, 0, 0);
+}
+
+.detalles__caja-uno {
+  width: 20rem;
+  text-align: center;
+}
+
+.detalles__caja-dos,
+.detalles__caja-tres {
+  text-align: center;
+}
+
+.detalles__caja-uno,
+.detalles__caja-dos,
+.detalles__caja-tres {
+  border-right: solid;
+  border-style: groove;
+  border-color: #F6D4D2;
+  background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+}
+
+/* FRASE */
+.frase {
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: var(--fuente-secondary);
+  margin-top: 4rem;
+  width: auto;
+}
+
+/* FRASE */
+/* FIN DETALLES  */
+
+/*# sourceMappingURL=detalles.css.map */

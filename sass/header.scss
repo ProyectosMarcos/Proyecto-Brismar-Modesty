@@ -1,0 +1,69 @@
+
+  .header {
+      background-color: rgb(255, 209, 209);
+      grid-area: header;
+      padding: 2rem;
+      background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+  }
+
+  .header__title {
+      text-align: center;
+      font-family: var(--fuente-title);
+      font-size: 4rem;
+  }
+
+  .navbar__menu {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 2rem;
+      padding: 1rem;
+      list-style: none;
+  }
+
+  .menu__desplazable {
+      position: fixed;
+      top: 1;
+      background-color: #FDFBFB;
+      width: 100%;
+      z-index: 1000;
+      /* Asegura que esté por encima de otros elementos */
+  }
+
+  .navbar__item a {
+      list-style-type: none;
+      text-decoration: none;
+      color: black;
+  }
+
+  .navbar__menu li {
+      cursor: pointer;
+  }
+
+  /* Estilos del submenú */
+  .navbar__item_submenu {
+      list-style-type: none;
+      background-color: #FDFBFB;
+      padding: 1rem;
+      width: 15rem;
+      position: absolute;
+      text-align: center;
+      display: none;
+  }
+
+
+  .navbar__item:hover .navbar__item_submenu {
+      display: block;
+  }
+
+
+  .navbar__item:hover {
+      background-color: #F6D4D2;
+
+      transition: 0.1s ease-in-out;
+  }
+
+
+  .submenu__item:hover {
+      background-color: #F6D4D2;
+  }
+
