@@ -1,11 +1,19 @@
 
+@use 'header';
+@use 'footer';
+@use 'detalles';
+@use 'caja_imagenes';
+@use 'iconos';
+@use 'contacto';
+@use 'politica_cambios';
+@use '_font_family';
+
+
+
+
+
 /* RESET STYLES */
 
-:root {
-    --fuente-title: 'Dancing Script', cursive;
-    --fuente-secondary: 'Lora', serif;
-    --fuente-detalles: 'Raleway', sans-serif;
-}
 
 * {
     margin: 0;
@@ -113,13 +121,8 @@ body {
 
 /* ::::::::::::::::::::::::: @IMPORT ::::::::::::::::::::::::: */
 /** @IMPORT **/
-@import url(/css/header.css);
-@import url(/css/footer.css);
 
-@import url(/css/caja_imagenes.css);
-@import url(/css/detalles.css);
-@import url(/css/iconos.css);
-@import url(/css/contacto.css);
+
 
 
 

@@ -1,4 +1,5 @@
-
+@use 'font_family';
+@use 'colores';
   .header {
       background-color: rgb(255, 209, 209);
       grid-area: header;
@@ -8,7 +9,7 @@
 
   .header__title {
       text-align: center;
-      font-family: var(--fuente-title);
+      font-family: font_family.$fuente-title;
       font-size: 4rem;
   }
 
