@@ -324,12 +324,11 @@
   display: flex;
   text-align: center;
   align-items: center;
-  border: solid groove;
-  border-style: groove;
   font-size: 1.8rem;
   padding: 1rem;
   height: 33rem;
   margin-top: 7.4rem;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* RESET STYLES */
