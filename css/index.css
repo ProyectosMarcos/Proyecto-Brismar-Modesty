@@ -331,6 +331,25 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.container_descripcion {
+  margin-top: 4rem;
+  height: auto;
+}
+.container_descripcion .contenido {
+  display: flex;
+  gap: 2rem;
+}
+.container_descripcion .contenido .contenido_descripcion {
+  font-size: 1.7rem;
+  margin-top: 13rem;
+  font-family: "DM Sans", sans-serif;
+}
+.container_descripcion .img_autora {
+  width: 44rem;
+  height: auto;
+  border-radius: 50%;
+}
+
 /* RESET STYLES */
 * {
   margin: 0;
@@ -396,11 +415,11 @@ body {
     grid-area: header;
   }
   .nav {
-    background-color: #FDFBFB;
+    background-color: #fdfbfb;
     grid-area: nav;
   }
   .main {
-    background-color: #F6D4D2;
+    background-color: #f6d4d2;
     grid-area: main;
   }
   .footer {

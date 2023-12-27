@@ -1,0 +1,19 @@
+@use 'font_family';
+.container_descripcion {
+  margin-top: 4rem;
+  height: auto;
+  .contenido {
+    display: flex;
+    gap: 2rem;
+    .contenido_descripcion {
+      font-size: 1.7rem;
+      margin-top: 13rem;
+      font-family: font_family.$fuente-family_cambios;
+    }
+  }
+  .img_autora {
+    width: 44rem;
+    height: auto;
+    border-radius: 50%;
+  }
+}
