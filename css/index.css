@@ -350,6 +350,57 @@
   border-radius: 50%;
 }
 
+.container_autora_resumen {
+  margin: 0 auto;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(/autora_brismar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto_reflexion {
+  background-color: rgba(49, 49, 49, 0.612);
+  width: 100rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 2.1rem;
+  font-family: "Lora", serif;
+  color: rgb(255, 255, 255);
+}
+
+.parrafo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.mark-resaltado {
+  background-color: rgb(253, 229, 181);
+}
+
+.container__price {
+  margin-top: 1.2rem;
+  text-align: center;
+  border: solid rgb(249, 146, 163);
+  background-color: #FDFBFB;
+  color: black;
+}
+.container__price h3 {
+  font-size: 1.7rem;
+  font-family: "DM Sans", sans-serif;
+}
+.container__price p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* RESET STYLES */
 * {
   margin: 0;
