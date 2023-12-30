@@ -251,15 +251,6 @@
   text-align: center;
 }
 
-.icono_falda {
-  display: flex;
-  justify-content: center;
-}
-
-.icono_falda_item {
-  width: 3.6rem;
-}
-
 /* ::::::::::::::::::::::::: Estilos Pagina Contacto ::::::::::::::::::::::::: */
 .container__horarios {
   font-size: 4rem;
