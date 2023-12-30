@@ -1,0 +1,23 @@
+/*Caja - Imagenes*/
+.container__section {
+    width: 971px;
+    margin: auto;
+    margin-top: 10rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.caja__img {
+    width: 30rem;
+    height: 33rem;
+    border: solid rgb(221, 198, 243);
+    border-style: double;
+    outline-style: groove;
+    outline-offset: .2rem;
+    outline-color:rgba(255, 234, 245, 0.863);
+    box-shadow: 1rem 1rem 1rem .1rem;
+}
+/* Fin Caja - Imagenes*/
