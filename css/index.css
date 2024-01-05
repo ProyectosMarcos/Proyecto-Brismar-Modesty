@@ -210,6 +210,10 @@
   box-shadow: 1rem 1rem 1rem 0.1rem;
 }
 
+.container__article a {
+  color: rgb(255, 136, 237);
+}
+
 /* Fin Caja - Imagenes*/
 /* ICONOS */
 .medios__pago {
@@ -358,38 +362,6 @@
   width: 44rem;
   height: auto;
   border-radius: 50%;
-}
-
-.container_autora_resumen {
-  margin: 0 auto;
-  height: 70rem;
-  display: flex;
-  flex-direction: column;
-  background-image: url(/autora_brismar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.texto_reflexion {
-  background-color: rgba(49, 49, 49, 0.612);
-  width: 100rem;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.subtitle {
-  font-size: 2.1rem;
-  font-family: "Lora", serif;
-  color: rgb(255, 255, 255);
-}
-
-.parrafo {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-.mark-resaltado {
-  background-color: rgb(253, 229, 181);
 }
 
 .container__price {
