@@ -1,79 +1,81 @@
- /* ::::::::::::::::::::::::: Estilos Pagina Contacto ::::::::::::::::::::::::: */
+@media (min-width: 40.0625em) and (max-width: 64em) {
+  /* ::::::::::::::::::::::::: Estilos Pagina Contacto ::::::::::::::::::::::::: */
 
- .container__horarios {
-     font-size: 4rem;
-     text-align: center;
- }
+  .container__horarios {
+    font-size: 4rem;
+    text-align: center;
+  }
 
- .caja_contacto {
-     width: auto;
-     height: max-content;
- }
+  .caja_contacto {
+    width: auto;
+    height: max-content;
+  }
 
- .detalles_numeros,
- .correo,
- .ubicacion {
-     font-size: 2.5rem;
-     gap: .4rem;
-     padding: .5rem;
-     display: flex;
-     justify-content: center;
- }
+  .detalles_numeros,
+  .correo,
+  .ubicacion {
+    font-size: 2.5rem;
+    gap: 0.4rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
 
- /* medida iconos*/
- .icons {
-     width: 2.5rem;
- }
+  /* medida iconos*/
+  .icons {
+    width: 2.5rem;
+  }
 
- /* medida iconos*/
- .numero {
-     font-size: 2rem;
- }
+  /* medida iconos*/
+  .numero {
+    font-size: 2rem;
+  }
 
- .formulario {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 2rem;
-     margin-top: 2rem;
- }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
 
- .formulario label {
-     font-size: 2.4rem;
- }
+  .formulario label {
+    font-size: 2.4rem;
+  }
 
- .formulario input {
-     width: 50rem;
-     height: 4rem;
-     border-radius: 2rem;
-     font-size: 1.6rem;
-     padding: 1rem;
-     border-style: dashed;
-     border-color: pink;
- }
+  .formulario input {
+    width: 50rem;
+    height: 4rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-style: dashed;
+    border-color: pink;
+  }
 
- .mensaje {
-     background-color: rgb(244, 214, 214);
-     margin-top: 4rem;
-     width: 50rem;
-     color: black;
-     padding: 1rem;
-     font-size: 1.6rem;
-     border-radius: 2rem;
- }
+  .mensaje {
+    background-color: rgb(244, 214, 214);
+    margin-top: 4rem;
+    width: 50rem;
+    color: black;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+  }
 
- .button__submit {
-     background-color: #EFCBCF;
-     width: 10rem;
-     height: 3rem;
-     transition: .2s ease;
-     font-size: 1.6rem;
- }
+  .button__submit {
+    background-color: #efcbcf;
+    width: 10rem;
+    height: 3rem;
+    transition: 0.2s ease;
+    font-size: 1.6rem;
+  }
 
- .button__submit:active {
-     transform: scale(0.9);
- }
+  .button__submit:active {
+    transform: scale(0.9);
+  }
 
- .button__submit:hover {
-     background-color: #f77382;
- }
+  .button__submit:hover {
+    background-color: #f77382;
+  }
+}
