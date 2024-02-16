@@ -82,7 +82,7 @@ body {
   .header {
     background-color: rgb(255, 209, 209);
     grid-area: header;
-    padding: 2rem;
+    padding: 1rem;
     background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
   .header__title {
@@ -93,7 +93,7 @@ body {
   .navbar__menu {
     display: flex;
     justify-content: space-evenly;
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 1rem;
     list-style: none;
   }
