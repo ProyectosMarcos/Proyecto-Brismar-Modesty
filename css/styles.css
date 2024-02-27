@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /* RESET STYLES */
 html {
-  font-size: 62.5%;
+  font-size: 16px;
   box-sizing: border-box;
   height: 100%;
 }
@@ -19,484 +18,232 @@ body {
   min-width: 100%;
 }
 
-/* FUENTES */
-/* ::::::::::::::::::::::::: GRID POSITIONS ::::::::::::::::::::::::: */
-/* ::::::::::::::::::::::::: Resoluciones ::::::::::::::::::::::::: */
-/* @media querie para movil */
-@media (min-width: 20em) and (max-width: 40em) {
-  .container {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Config Resoluciones mobile - tablets*/
+@media (max-width: 48em) {
+  .container-areas {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 77px 50px 1fr 50px;
-    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-rows: 77px 1fr 70px;
+    grid-template-areas: "header" "main" "footer";
+    background-color: rgb(254, 207, 189);
   }
   .header {
-    background-color: rgb(242, 236, 230);
+    background-color: aqua;
     grid-area: header;
-  }
-  .nav {
-    background-color: rgb(141, 151, 153);
-    grid-area: nav;
-  }
-  .main {
-    background-color: rgb(237, 139, 139);
-    grid-area: main;
-  }
-  .footer {
-    background-color: rgb(27, 219, 149);
-    grid-area: footer;
-  }
-}
-/* FIN @media querie para movil */
-/* @media querie para tablet */
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  .container {
-    width: 1024px;
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    grid-template-rows: 77px 50px 1fr 77px;
-    grid-template-areas: "header header" "nav    nav" "main   main" "footer footer";
-  }
-  .header {
-    background-color: rgb(242, 236, 230);
-    grid-area: header;
-  }
-  .nav {
-    background-color: #fdfbfb;
-    grid-area: nav;
-  }
-  .main {
-    background-color: #f6d4d2;
-    grid-area: main;
-  }
-  .footer {
-    background-color: #f9b2df;
-    grid-area: footer;
-  }
-}
-/* ::::::::::::::::::::::::: Resoluciones ::::::::::::::::::::::::: */
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  .header {
-    background-color: rgb(255, 209, 209);
-    grid-area: header;
-    padding: 1rem;
     background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
-  .header__title {
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 4rem;
+  .main {
+    background-color: #f6d4d2;
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  /******************************************/
+  /* Config Menu */
+  .btn__menu {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    z-index: 999;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0.25;
+  }
+  .btn__burguer {
+    position: fixed;
+    width: 3rem;
+    height: 0.6rem;
+    z-index: 998;
+    background-color: rgb(242, 116, 229);
+    right: 1rem;
+    top: 3.4rem;
+    border-radius: 0.3rem;
+    transform: rotate(0deg) translate(0, -1.2rem);
+    transition: transform 500ms ease, background-color 500ms ease;
+  }
+  .btn__burguer::before,
+  .btn__burguer::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.6rem;
+    background-color: rgb(242, 116, 229);
+    border-radius: 0.3rem;
+    transition: transform 500ms ease;
+  }
+  .btn__burguer::before {
+    transform: rotate(0deg) translate(0, -0.9rem);
+  }
+  .btn__burguer::after {
+    transform: rotate(0deg) translate(0, 0.3rem);
+  }
+  .btn__menu:checked + .btn__burguer {
+    background-color: transparent;
+  }
+  .btn__menu:checked + .btn__burguer::before {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  .btn__menu:checked + .btn__burguer::after {
+    transform: rotate(-45deg) translate(0.4rem, -0.5rem);
   }
   .navbar__menu {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2.2rem;
-    padding: 1rem;
-    list-style: none;
-  }
-  .menu__desplazable {
     position: fixed;
-    top: 1;
-    background-color: #fdfbfb;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 192, 253);
+    align-items: center;
+    transform: translate(-100%, 0);
+    transition: transform 500ms ease-in-out;
+  }
+  .btn__menu:checked ~ .navbar__menu {
+    transform: translate(0, 0);
+  }
+  .container__navbar-menu {
     width: 100%;
-    z-index: 1000;
-    /* Asegura que esté por encima de otros elementos */
-  }
-  .navbar__item {
+    height: 100vh;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  .navbar__item a {
-    list-style-type: none;
+  .navbar__link {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5rem;
     text-decoration: none;
-    color: black;
+    color: #fff;
+    border-bottom: thin solid rgb(242, 99, 154);
   }
-  .navbar__menu li {
-    cursor: pointer;
+  .navbar__link:first-child {
+    border-top: thin solid #d05;
   }
-  /* Estilos del submenú */
-  .navbar__item_submenu {
-    list-style-type: none;
-    background-color: #fdfbfb;
-    padding: 1rem;
-    top: 3.2rem;
-    width: 15rem;
-    position: absolute;
+  .navbar__link:hover {
+    background-color: rgba(251, 87, 248, 0.901);
+  }
+  /* Fin Config Menu */
+  .logo__title > h1 {
     text-align: center;
-    display: none;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
   }
-  .navbar__item:hover .navbar__item_submenu {
-    display: block;
-  }
-  .navbar__item:hover {
-    background-color: #f6d4d2;
-    transition: 0.1s ease-in-out;
-  }
-  .submenu__item:hover {
-    background-color: #f6d4d2;
-  }
-  .icono_svg {
-    width: 2rem;
-  }
-}
-.z-index {
-  z-index: 1rem;
-}
-
-.contenedor {
-  width: 100%;
-  overflow: hidden;
-}
-
-.slider-contenedor {
-  width: 100%;
-  height: 34rem;
-  display: flex;
-}
-
-.contenido-slider {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.contenido-slider > img {
-  width: 100%;
-  height: 34rem;
-  object-fit: cover;
-}
-
-.contenido-slider > div {
-  width: 40%;
-  border: solid;
-}
-
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  /* FOOTER */
-  .footer {
-    background-color: #eea3ac;
-    grid-area: footer;
-    font-size: 2.3rem;
-    color: white;
+  /*Frase*/
+  .frase {
+    margin-bottom: 4.1rem;
+    font-size: 1.3rem;
     text-align: center;
-    padding: 2rem;
+    color: #000;
+    font-family: "Lora", serif;
   }
-  .navegacion {
-    background-color: rgb(0, 136, 255);
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
-    cursor: pointer;
-    height: 23rem;
+  /*Fin- Frase*/
+  /*Grid-images*/
+  .grid-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
   }
-  .navbar__footer {
-    list-style-type: none;
-  }
-  .navbar__footer-item {
-    cursor: pointer;
-  }
-  .navbar__footer-item a {
-    text-decoration: none;
-    color: black;
-  }
-  .navbar__footer-item:hover {
-    background-color: #ffa5a0;
-  }
-  /* ICONOS */
-  .medios__pago {
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    padding: 1rem;
-    width: auto;
-    height: auto;
-  }
-  .visa_icon {
-    width: 3rem;
-    margin-top: 4.5px;
-  }
-  /* CONTACTO */
-  .contacto {
-    width: 20rem;
-    text-align: center;
-  }
-  .contacto_numero {
-    border: solid red;
-  }
-  .img {
-    display: flex;
-    align-items: center;
-    margin: auto 0;
-  }
-  .img p {
-    margin-left: 1rem;
-  }
-  /* REDES SOCIALES */
-  .redes__sociales {
-    text-align: center;
-  }
-}
-.carousel {
-  border: thick solid red;
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  overflow-x: hidden;
-}
-
-.carousel-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 100%);
-  overflow: scroll hidden;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-  scroll-snap-align: center;
-}
-
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  /*  DETALLES  */
-  .container__detalles {
-    width: 900px;
-    height: 20rem;
+  .container__images {
+    width: 17rem;
     margin: auto;
-    margin-top: 7rem;
-    font-size: 1.8rem;
   }
+  .grid-images img {
+    color: rgba(88, 83, 83, 0.9843137255);
+    box-shadow: 1rem 1rem 3rem;
+  }
+  .imagen__mujer img {
+    width: 100%;
+  }
+  /*Fin Grid-images*/
+  /**Detalles**/
   .detalles__article {
     display: flex;
-    justify-content: space-between;
-    margin-top: 3.5rem;
-    font-family: "Raleway", sans-serif;
-    color: rgb(0, 0, 0);
-  }
-  .detalles__caja-uno {
-    width: 20rem;
-    text-align: center;
-  }
-  .detalles__caja-dos,
-  .detalles__caja-tres {
-    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   .detalles__caja-uno,
   .detalles__caja-dos,
   .detalles__caja-tres {
-    border-right: solid;
-    border-style: groove;
-    border-color: #f6d4d2;
-    background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
-  }
-  /* FRASE */
-  .frase {
-    font-size: 2.2rem;
     text-align: center;
-    font-family: "Lora", serif;
-    margin-top: 4rem;
-    width: auto;
   }
-  /* FRASE */
-}
-/*Caja - Imagenes*/
-.container__section {
-  width: 971px;
-  margin: auto;
-  margin-top: 10rem;
-  gap: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.caja__img {
-  width: 30rem;
-  height: 33rem;
-  border: solid rgb(221, 198, 243);
-  border-style: double;
-  outline-style: groove;
-  outline-offset: 0.2rem;
-  outline-color: rgba(255, 234, 245, 0.863);
-  box-shadow: 1rem 1rem 1rem 0.1rem;
-}
-
-.container__article a {
-  color: rgb(255, 136, 237);
-}
-
-/* Fin Caja - Imagenes*/
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  /* ICONOS */
-  .medios__pago {
-    align-items: center;
+  /**Fin Detalles**/
+  /* Flip Card */
+  .flip-card-1 {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: flat;
+    transform-style: preserve-3d;
+  }
+  .flip-card-1:hover {
+    transform: rotateY(180deg);
+  }
+  .flip-card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+  .flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    backface-visibility: hidden;
+  }
+  .flip-front {
+    transform: rotateY(0deg);
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+  /*FIN - Flip Card */
+  .navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
     text-align: center;
-    gap: 2rem;
-    padding: 1rem;
-    width: auto;
-    height: auto;
+    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+  }
+  .navegacion ul {
+    list-style: none;
+  }
+  .navegacion a {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
   }
   .visa_icon {
-    width: 3rem;
-    margin-top: 4.5px;
+    width: 2rem;
   }
-  /* CONTACTO */
-  .contacto {
-    width: 20rem;
-    text-align: center;
-  }
-  .contacto_numero {
-    border: solid red;
-  }
-  .img {
+  .footer {
     display: flex;
     align-items: center;
-    margin: auto 0;
-  }
-  .img p {
-    margin-left: 1rem;
-  }
-  /* REDES SOCIALES */
-  .redes__sociales {
-    text-align: center;
-  }
-}
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  /* ::::::::::::::::::::::::: Estilos Pagina Contacto ::::::::::::::::::::::::: */
-  .container__horarios {
-    font-size: 4rem;
-    text-align: center;
-  }
-  .caja_contacto {
-    width: auto;
-    height: max-content;
-  }
-  .detalles_numeros,
-  .correo,
-  .ubicacion {
-    font-size: 2.5rem;
-    gap: 0.4rem;
-    padding: 0.5rem;
-    display: flex;
     justify-content: center;
+    font-size: 1.2rem;
+    background-color: #f9b2df;
   }
-  /* medida iconos*/
-  .icons {
-    width: 2.5rem;
-  }
-  /* medida iconos*/
-  .numero {
-    font-size: 2rem;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  .formulario label {
-    font-size: 2.4rem;
-  }
-  .formulario input {
-    width: 50rem;
-    height: 4rem;
-    border-radius: 2rem;
-    font-size: 1.6rem;
-    padding: 1rem;
-    border-style: dashed;
-    border-color: pink;
-  }
-  .mensaje {
-    background-color: rgb(244, 214, 214);
-    margin-top: 4rem;
-    width: 50rem;
-    color: black;
-    padding: 1rem;
-    font-size: 1.6rem;
-    border-radius: 2rem;
-  }
-  .button__submit {
-    background-color: #efcbcf;
-    width: 10rem;
-    height: 3rem;
-    transition: 0.2s ease;
-    font-size: 1.6rem;
-  }
-  .button__submit:active {
-    transform: scale(0.9);
-  }
-  .button__submit:hover {
-    background-color: #f77382;
-  }
-}
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  .container_politica_cambios {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    font-size: 1.8rem;
-    padding: 1rem;
-    height: 33rem;
-    margin-top: 7.4rem;
-    font-family: "DM Sans", sans-serif;
-  }
-}
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  .container_descripcion {
-    margin-top: 4rem;
-    height: auto;
-  }
-  .container_descripcion .contenido {
-    display: flex;
-    gap: 2rem;
-  }
-  .container_descripcion .contenido .contenido_descripcion {
-    font-size: 1.7rem;
-    margin-top: 13rem;
-    font-family: "DM Sans", sans-serif;
-  }
-  .container_descripcion .img_autora {
-    width: 44rem;
-    height: auto;
-    border-radius: 50%;
-  }
-}
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  .container__price {
-    margin-top: 1.2rem;
-    text-align: center;
-    border: solid rgb(249, 146, 163);
-    background-color: #fdfbfb;
-    color: black;
-  }
-  .container__price h3 {
-    font-size: 1.7rem;
-    font-family: "DM Sans", sans-serif;
-  }
-  .container__price p {
-    font-size: 2rem;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-@media (min-width: 40.0625em) and (max-width: 64em) {
-  .h2_productos {
-    font-size: 4rem;
-    margin-top: 2rem;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-  }
+  /*Fin Config Resoluciones mobile - tablets*/
+  /******************************************/
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,16 +1,251 @@
 @use 'normalize';
-@use 'resoluciones';
-@use 'header';
-@use 'home';
-@use 'footer';
-@use 'carousel';
-@use 'detalles';
-@use 'caja_imagenes';
-@use 'iconos';
-@use 'contacto';
-@use 'politica_cambios';
-@use 'font_family';
 @use 'colores';
-@use 'sobre_nosotros';
-@use 'container_price';
-@use 'productos';
+@use 'font_family';
+/*Config Resoluciones mobile - tablets*/
+@media (max-width: 48em) {
+  .container-areas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 77px 1fr 70px;
+    grid-template-areas:
+      'header'
+      'main'
+      'footer';
+    background-color: rgb(254, 207, 189);
+  }
+
+  .header {
+    background-color: aqua;
+    grid-area: header;
+    background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+  }
+  .main {
+    background-color: #f6d4d2;
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+  /******************************************/
+  /* Config Menu */
+  .btn__menu {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    z-index: 999;
+    right: 1rem;
+    top: 1rem;
+    opacity: 0.25;
+  }
+  .btn__burguer {
+    position: fixed;
+    width: 3rem;
+    height: 0.6rem;
+    z-index: 998;
+    background-color: rgb(242, 116, 229);
+    right: 1rem;
+    top: 3.4rem;
+    border-radius: 0.3rem;
+    transform: rotate(0deg) translate(0, -1.2rem);
+    transition: transform 500ms ease, background-color 500ms ease;
+  }
+  .btn__burguer::before,
+  .btn__burguer::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.6rem;
+    background-color: rgb(242, 116, 229);
+    border-radius: 0.3rem;
+    transition: transform 500ms ease;
+  }
+  .btn__burguer::before {
+    transform: rotate(0deg) translate(0, -0.9rem);
+  }
+  .btn__burguer::after {
+    transform: rotate(0deg) translate(0, 0.3rem);
+  }
+  .btn__menu:checked + .btn__burguer {
+    background-color: transparent;
+  }
+  .btn__menu:checked + .btn__burguer::before {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  .btn__menu:checked + .btn__burguer::after {
+    transform: rotate(-45deg) translate(0.4rem, -0.5rem);
+  }
+  .navbar__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 192, 253);
+    align-items: center;
+    transform: translate(-100%, 0);
+    transition: transform 500ms ease-in-out;
+  }
+  .btn__menu:checked ~ .navbar__menu {
+    transform: translate(0, 0);
+  }
+  .container__navbar-menu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .navbar__link {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: thin solid rgb(242, 99, 154);
+  }
+  .navbar__link:first-child {
+    border-top: thin solid #d05;
+  }
+  .navbar__link:hover {
+    background-color: rgba(251, 87, 248, 0.901);
+  }
+  /* Fin Config Menu */
+
+  //logo
+  .logo__title > h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-family: font_family.$fuente-title;
+  }
+  //fin logo
+
+  /*Frase*/
+  .frase {
+    margin-bottom: 4.1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #000;
+    font-family: font_family.$fuente-secondary;
+  }
+  /*Fin- Frase*/
+
+  /*Grid-images*/
+  .grid-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .container__images {
+    width: 17rem;
+    margin: auto;
+  }
+  .grid-images img {
+    color: #585353fb;
+    box-shadow: 1rem 1rem 3rem;
+  }
+
+  .imagen__mujer img {
+    width: 100%;
+  }
+  /*Fin Grid-images*/
+
+  /**Detalles**/
+  .detalles__article {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  .detalles__caja-uno,
+  .detalles__caja-dos,
+  .detalles__caja-tres {
+    text-align: center;
+  }
+  /**Fin Detalles**/
+
+  /* Flip Card */
+
+  .flip-card-1 {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 600px;
+    height: 400px;
+
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: flat;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-1:hover {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+
+  .flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    backface-visibility: hidden;
+  }
+
+  .flip-front {
+    transform: rotateY(0deg);
+  }
+
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+
+  /*FIN - Flip Card */
+  // Navegacion //
+
+  .navegacion {
+    display: flex;
+
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    text-align: center;
+    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+  }
+  .navegacion ul {
+    list-style: none;
+  }
+  .navegacion a {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+  }
+  .visa_icon {
+    width: 2rem;
+  }
+  //Fin Navegacion //
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #f9b2df;
+  }
+  /*Fin Config Resoluciones mobile - tablets*/
+  /******************************************/
+}
