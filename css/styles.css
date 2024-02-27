@@ -28,9 +28,8 @@ img {
   .container-areas {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 77px 1fr 70px;
-    grid-template-areas: "header" "main" "footer";
-    background-color: rgb(254, 207, 189);
+    grid-template-rows: 77px 50px 1fr 70px;
+    grid-template-areas: "header" "navbar" "main" "footer";
   }
   .header {
     background-color: aqua;
@@ -52,7 +51,7 @@ img {
     height: 3rem;
     z-index: 999;
     right: 1rem;
-    top: 1rem;
+    top: 4.9rem;
     opacity: 0.25;
   }
   .btn__burguer {
@@ -62,7 +61,7 @@ img {
     z-index: 998;
     background-color: rgb(242, 116, 229);
     right: 1rem;
-    top: 3.4rem;
+    top: 7.3rem;
     border-radius: 0.3rem;
     transform: rotate(0deg) translate(0, -1.2rem);
     transition: transform 500ms ease, background-color 500ms ease;
@@ -139,6 +138,7 @@ img {
   }
   /*Frase*/
   .frase {
+    margin-top: 2.3rem;
     margin-bottom: 4.1rem;
     font-size: 1.3rem;
     text-align: center;
@@ -219,6 +219,7 @@ img {
   /*FIN - Flip Card */
   .navegacion {
     display: flex;
+    padding: 2rem;
     justify-content: space-evenly;
     font-size: 1.3rem;
     text-align: center;
@@ -235,6 +236,9 @@ img {
   .visa_icon {
     width: 2rem;
   }
+  .contacto__info {
+    display: flex;
+  }
   .footer {
     display: flex;
     align-items: center;
@@ -244,6 +248,152 @@ img {
   }
   /*Fin Config Resoluciones mobile - tablets*/
   /******************************************/
+}
+/*Config Resoluciones escritorio*/
+@media (min-width: 48.0625em) {
+  .container-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 77px 59px 1fr 70px;
+    grid-template-areas: "header header" "navbar navbar" "main main" "footer footer";
+  }
+  /*** Config Header ***/
+  .header {
+    grid-area: header;
+    display: flex;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family: "Dancing Script", cursive;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+  }
+  .btn__menu {
+    display: none;
+  }
+  .navbar {
+    position: relative;
+  }
+  .navbar__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3.6rem;
+    font-size: 1.6rem;
+    width: 97vw;
+    margin-left: auto;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  .menu__desplazable {
+    position: fixed;
+    top: 4.9rem;
+    left: 1rem;
+  }
+  .navbar__link {
+    text-decoration: none;
+    color: #000;
+  }
+  .logo__title {
+    font-weight: bold;
+  }
+  .navbar__link:hover {
+    background-color: #f6d4d2;
+  }
+  /*** Fin Config Header ***/
+  /****************************************************************************/
+  .main {
+    background-color: rgb(255, 209, 209);
+    grid-area: main;
+  }
+  /*Frase*/
+  .frase {
+    margin-top: 2.3rem;
+    margin-bottom: 4.1rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #000;
+    font-family: "Lora", serif;
+  }
+  /*Fin- Frase*/
+  /*Grid-images*/
+  .grid-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .container__images {
+    width: 20rem;
+    margin: auto;
+  }
+  .grid-images img {
+    color: rgba(88, 83, 83, 0.9843137255);
+    box-shadow: 1rem 1rem 3rem;
+  }
+  .imagen__mujer img {
+    width: 100%;
+  }
+  /*Fin Grid-images*/
+  /**Detalles**/
+  .detalles__article {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  .detalles__caja-uno,
+  .detalles__caja-dos,
+  .detalles__caja-tres {
+    text-align: center;
+  }
+  /**Fin Detalles**/
+  /* Flip Card */
+  .flip-card-1 {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: flat;
+    transform-style: preserve-3d;
+  }
+  .flip-card-1:hover {
+    transform: rotateY(180deg);
+  }
+  .flip-card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+  .flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    backface-visibility: hidden;
+  }
+  .flip-front {
+    transform: rotateY(0deg);
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+  .footer {
+    grid-area: footer;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
