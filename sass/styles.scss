@@ -1036,6 +1036,95 @@
     font-size: 1.4rem;
   }
 }
+
+/************************    Fin  Estilos - Pagina Sobre Nosotros                     ********************/
+
+/************************      Estilos - Pagina Vestidos                    ********************/
+
+/*Config Resolucion Movil*/
+@media (max-width: 767px) {
+  .container__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .container__article {
+    width: 16rem;
+    box-shadow: 1rem 1rem 1rem #f5c4e9;
+    cursor: pointer;
+  }
+  .container__article img {
+    outline-style: double;
+  }
+  .container__price {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+  }
+  .container__article a {
+    text-decoration: none;
+  }
+}
+
+/*Config Resolucion Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+  .contenido img {
+    border-radius: 50%;
+  }
+  .contenido {
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .contenido p {
+    font-size: 1.4rem;
+  }
+
+  .container__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .container__article {
+    width: 16rem;
+    box-shadow: 1rem 1rem 1rem #f5c4e9;
+    cursor: pointer;
+  }
+  .container__article img {
+    outline-style: double;
+  }
+  .container__price {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+  }
+  .container__article a {
+    text-decoration: none;
+  }
+}
+
+/*Config Resolucion Desktop*/
+@media (min-width: 991px) {
+  .contenido img {
+    border-radius: 50%;
+  }
+  .contenido {
+    display: flex;
+    align-items: center;
+    width: 49rem;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .contenido p {
+    font-size: 1.4rem;
+  }
+}
 /** *********************************** Breackpoints Resoluciones ************************************************************/
 /*Movil*/
 .resolucion {
