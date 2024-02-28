@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* RESET STYLES */
 html {
   font-size: 16px;
@@ -108,6 +109,7 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: thin solid black;
   }
   .navbar__link {
     text-align: center;
@@ -115,13 +117,23 @@ img {
     padding: 1.5rem;
     text-decoration: none;
     color: #fff;
-    border-bottom: thin solid rgb(242, 99, 154);
   }
-  .navbar__link:first-child {
-    border-top: thin solid #d05;
+  .submenu {
+    display: flex;
+    border: thin solid red;
+    flex-direction: column;
+    align-items: center;
+    border: thin solid rgb(3, 3, 3);
+    width: 8rem;
+    position: absolute;
+    right: 11rem;
+    bottom: 15rem;
+    background-color: #d05;
+    display: none;
   }
-  .navbar__link:hover {
-    background-color: rgba(251, 87, 248, 0.901);
+  .navbar__link:hover + .submenu,
+  .submenu:hover {
+    display: block;
   }
   /* Fin Config Menu */
   .logo__title > h1 {
@@ -316,6 +328,19 @@ img {
   .navbar__link:hover {
     background-color: #f6d4d2;
   }
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: absolute;
+    right: 35rem;
+    top: 2.7rem;
+  }
+  .navbar__link:hover + .submenu,
+  .submenu:hover {
+    display: flex; /* Mostrar el submenú cuando se pasa el cursor sobre el enlace o el submenú */
+  }
   /*** Fin Config Header ***/
   /****************************************************************************/
   .main {
@@ -325,7 +350,7 @@ img {
   /*******     **************/
   /*Frase*/
   .frase {
-    margin-top: 2.3rem;
+    margin-top: 7rem;
     margin-bottom: 4.1rem;
     font-size: 1.3rem;
     text-align: center;
