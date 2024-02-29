@@ -337,7 +337,7 @@ img {
     width: 97vw;
     margin-left: auto;
     text-align: center;
-    background-color: #1d1b1b;
+    background-color: #fff;
   }
   .menu__desplazable {
     position: fixed;
@@ -1390,7 +1390,7 @@ img {
     text-decoration: none;
   }
 }
-/** *********************************** Breackpoints Resoluciones ************************************************************/
+/** *********************************** Breakpoints Resoluciones ************************************************************/
 /*Movil*/
 .resolucion {
   width: 99%;
@@ -1421,6 +1421,6 @@ img {
     display: none;
   }
 }
-/** Breackpoints Resoluciones **/
+/** Breakpoints Resoluciones **/
 
 /*# sourceMappingURL=styles.css.map */
