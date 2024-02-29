@@ -337,7 +337,7 @@ img {
     width: 97vw;
     margin-left: auto;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #1d1b1b;
   }
   .menu__desplazable {
     position: fixed;
@@ -871,6 +871,7 @@ img {
     display: flex;
   }
 }
+/**************** FIN COMPONENTES A ACOMODAR **********************************/
 /*Fin - Config Resolucion Tablet */
 /*Config Resolucion Desktop*/
 @media (min-width: 61.9375em) {
@@ -927,7 +928,7 @@ img {
     font-weight: bold;
   }
   .navbar__link:hover {
-    background-color: #f6d4d2;
+    background-color: rgba(255, 169, 255, 0.9333333333);
   }
   .submenu {
     display: none;
