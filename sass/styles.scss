@@ -84,6 +84,8 @@
     align-items: center;
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
+    border: solid;
+
   }
   .btn__menu:checked ~ .navbar__menu {
     transform: translate(0, 0);
@@ -111,23 +113,32 @@
   //   background-color: rgba(251, 87, 248, 0.901);
   // }
 
-  .submenu {
-    display: flex;
-    border: thin solid red;
-    flex-direction: column;
-    align-items: center;
-    border: thin solid rgb(3, 3, 3);
-    width: 8rem;
-    position: absolute;
-    right: 11rem;
-    bottom: 15rem;
-    background-color: #d05;
-    display: none;
-  }
-
+  
+      .submenu {
+          display: flex;
+          border: thin solid red;
+          flex-direction: column;
+          align-items: center;
+          border: thin solid rgb(3, 3, 3);
+          width: 8rem;
+          position: absolute;
+          right: 2rem;
+          bottom: 17rem;
+          height: 20rem;
+          border: thick solid red;
+          background-color: #d05;
+          display: none;
+        }
+      
+        .submenu a {
+          display: flex;
+        }
   .navbar__link:hover + .submenu,
   .submenu:hover {
     display: block;
+  }
+  @media(min-width: 360px) and (max-width: 500px){
+    
   }
   /* Fin Config Menu */
 
@@ -376,7 +387,7 @@
     width: 8rem;
     flex-direction: column;
     position: absolute;
-    right: 35rem;
+    right: 37rem;
     top: 2.7rem;
   }
 
@@ -553,6 +564,430 @@
 }
 /** Fin Config Footer **/
 
+/**************** COMPONENTES A ACOMODAR **********************************/
+@media(min-width: 768px) and (max-width: 800px){
+    .submenu {
+        display: none;
+        background-color: #fff;
+        width: 8rem;
+        flex-direction: column;
+        position: fixed;
+        right: 28rem;
+      margin-top: 5rem;
+    
+      }
+    
+      .navbar__link:hover+.submenu,
+      .submenu:hover {
+        display: flex;
+      }
+}
+@media(min-width: 801px) and (max-width: 850px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 31rem;
+    margin-top: 5rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+
+@media(min-width: 851px) and (max-width: 899px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 32.6rem;
+    margin-top: 5rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 900px) and (max-width: 950px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 32.6rem;
+margin-top: 5rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 951px) and (max-width: 990px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 34.6rem;
+    margin-top: 5rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1050px) {
+  .submenu {
+      display: none;
+      background-color: #fff;
+      width: 8rem;
+      flex-direction: column;
+      position: fixed;
+      right: 36rem;
+  
+    }
+  
+    .navbar__link:hover+.submenu,
+    .submenu:hover {
+      display: flex;
+    }
+}
+@media(min-width: 1051px) and (max-width: 1100px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 4rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+@media(min-width: 1101px) and (max-width: 1150px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 6rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+@media(min-width: 1151px) and (max-width: 1200px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 6rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+@media(min-width: 1201px) and (max-width: 1250px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 8rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+
+@media(min-width: 1251px) and (max-width: 1300px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 10rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+@media(min-width: 1301px) and (max-width: 1350px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 11.5rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1351px) and (max-width: 1400px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 13.4rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1401px) and (max-width: 1450px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 15.2rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1451px) and (max-width: 1500px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 17rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+@media(min-width: 1501px) and (max-width: 1550px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 19rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1551px) and (max-width: 1600px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 20.6rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1601px) and (max-width: 1650px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 20.6rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1651px) and (max-width: 1700px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 24.6rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1701px) and (max-width: 1750px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 26rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+@media(min-width: 1751px) and (max-width: 1800px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 28rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1801px) and (max-width: 1850px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 30rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+
+@media(min-width: 1851px) and (max-width: 1900px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 31.5rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
+@media(min-width: 1901px) and (max-width: 1920px) {
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 8rem;
+    flex-direction: column;
+    position: fixed;
+    right: 70rem;
+    margin-right: 33.9rem;
+
+  }
+
+  .navbar__link:hover+.submenu,
+  .submenu:hover {
+    display: flex;
+  }
+}
 /*Fin - Config Resolucion Tablet */
 
 /*Config Resolucion Desktop*/
@@ -1068,22 +1503,8 @@
 }
 
 /*Config Resolucion Tablet*/
-@media (min-width: 768px) and (max-width: 990px) {
-  .contenido img {
-    border-radius: 50%;
-  }
-  .contenido {
-    display: flex;
-    align-items: center;
-    width: 40rem;
-    gap: 1rem;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-  }
-  .contenido p {
-    font-size: 1.4rem;
-  }
-
+@media (min-width: 768px) and (max-width:990px) {
+  
   .container__section {
     display: flex;
     flex-wrap: wrap;
@@ -1110,20 +1531,39 @@
 
 /*Config Resolucion Desktop*/
 @media (min-width: 991px) {
-  .contenido img {
-    border-radius: 50%;
-  }
-  .contenido {
-    display: flex;
-    align-items: center;
-    width: 49rem;
-    gap: 1rem;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-  }
-  .contenido p {
-    font-size: 1.4rem;
-  }
+  
+    .container__section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
+      margin-right: auto;
+      margin-left: auto;
+gap: 2rem;
+    
+    }
+  
+    .container__article {
+      width: 18rem;
+      box-shadow: 1rem 1rem 1rem #f5c4e9;
+      cursor: pointer;
+      margin-right: auto;
+      margin-left: auto;
+       
+    }
+  
+    .container__article img {
+      outline-style: double;
+    }
+  
+    .container__price {
+      text-align: center;
+      background-color: #fff;
+      font-size: 1.1rem;
+    }
+  
+    .container__article a {
+      text-decoration: none;
+    }
 }
 /** *********************************** Breackpoints Resoluciones ************************************************************/
 /*Movil*/
