@@ -14,125 +14,339 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
     </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap');
-    </style>
     <title>Brismar Modesty</title>
 </head>
 
-<body class="container">
-    <header class="header">
-        <h1 class="header__title">Brismar Modesty</h1>
-    </header>
-    <nav class="nav">
-        <ul class="navbar__menu menu__desplazable">
-            <li class="navbar__item"><a href="/html/index.html">Inicio</a></li>
-            <li class="navbar__item"><a href="./productos.html">Productos</a><img class="icono_svg"
-                    src="/iconos/chevron-down.svg" alt="">
-                <ul class="navbar__item_submenu">
-                    <li class="submenu__item"><a href="./vestidos.html">Vestidos</a></li>
-                    <li class="submenu__item"><a href="./faldas.html">Faldas</a></li>
-                    <li class="submenu__item"><a href="./remeras.html">Remeras</a></li>
-                    <li class="submenu__item"><a href="./buzos.html">Buzos</a></li>
-                </ul>
-            </li>
-            <li class="navbar__item"><a href="./contacto.html">Contacto</a></li>
-            <li class="navbar__item"><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
-        </ul>
-    </nav>
-    <main class="main">
-        <!---Comenzar a maquetar carrousel-->
-        <section class="container_politica_cambios">
-            <article class="politica_cambios">
-                <h3>Los productos comprados de forma online tienen cambio en un plazo de treinta (30) dias a partir de
-                    la fecha de recepcion
-                    del pedido.</h3>
-                <h4>
-                    Los cambios se realizan unicamente por falla y por el mismo articulo de la compra. Al momento de
-                    recibir el mismo
-                    avisanos via Whatsapp indicando el articulo, color y talle para que quede registrado.
-                </h4>
-                <h4>
-                    Los cambios se realizan unicamente en el local o por envio a cargo del cliente.
-                    La prenda se debe encontrar en las mismas condiciones que fueron recibidas, sin haber sido usado y
-                    con la etiqueta
-                    correspondiente.
-                    No se realizan devoluciones.
-                </h4>
-            </article>
-        </section>
+<body>
+    <div class="resolucion">
+        <div class="desktop">
+            <div class="container-areas">
+                <header class="header">
+                    <article class="logo__title">
+                        <h1>Brismar Modesty</h1>
+                    </article>
+                </header>
+                <nav class="navbar">
+                    <input type="checkbox" class="btn__menu">
+                    <label class="btn__burguer"></label>
+                    <nav class="navbar__menu ">
+                        <div class="container__navbar-menu menu__desplazable">
+                            <a href="/index.html" class="navbar__link">Inicio</a>
+                            <a href="#" class="navbar__link">Productos<box-icon type='solid'
+                                    name='chevron-down'></box-icon></a>
+                            <div class="submenu">
+                                <a href="./vestidos.html" class="navbar__link">Vestidos</a>
+                                <a href="./faldas.html" class="navbar__link">Faldas</a>
+                                <a href="./remeras.html" class="navbar__link">Remeras</a>
+                                <a href="./buzos.html" class="navbar__link">Buzos</a>
+                            </div>
+                            <a href="./contacto.html" class="navbar__link">Contacto</a>
+                            <a href="./sobre_nosotros.html" class="navbar__link">Sobre
+                                Nosotros</a>
+                        </div>
+                    </nav>
+                </nav>
+                <main class="main container">
 
-        <!-- <section class="frase">
-            <article class="frase-caracteristica">
-                <h3>Cultivando modestia🧡</h3>
-                <p><b>1 Timoteo 2:9</b></p>
-                <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
-            </article>
-        </section>
-        <section class="container__detalles">
-            <article class="detalles__article">
-                <div class="detalles__caja-uno">
-                    <box-icon type='solid' name='truck'></box-icon>
-                    <h4>Envíos a todo el país</h4>
-                    <p>Por Correo Argentino</p>
-                </div>
-                <div class="detalles__caja-dos">
-                    <box-icon name='credit-card'></box-icon>
-                    <h4>Compra asegurada</h4>
-                    <p>Con todas las tarjetas.</p>
-                </div>
-                <div class="detalles__caja-tres">
-                    <box-icon type='solid' name='lock-alt'></box-icon>
-                    <h4>Sitio seguro</h4>
-                    <p>Protegemos tus datos.</p>
-                </div>
-            </article>
-        </section> -->
-        <br><br><br><br><br><br><br><br><br><br>
-        <section class="navegacion">
-            <article class="navegacion__list-1">
-                <h3>Navegacion</h3>
-                <ul class="navbar__footer">
-                    <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
-                    <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
-                            de cambio</a></li>
-                    <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como llegar?</a>
-                    </li>
-                </ul>
-            </article>
-            <article class="medios__pago">
-                <div></div>
-                <h3>Medios de pago</h3>
-                <a href=""><img class="visa_icon" src="/iconos/visa.png" alt=""></a>
-                <a href=""><img class="visa_icon" src="/iconos/mastercard.png" alt=""></a>
-                <a href=""><img class="visa_icon" src="/iconos/mercadopago.png" alt=""></a>
-            </article>
-            <article class="contacto">
-                <div class="contacto_info">
-                    <h3>Contacto</h3>
-                </div>
-                <div class="img">
-                    <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img class="visa_icon"
-                            src="/iconos/whatsapp.png" alt=""></a>
-                    <p>+5491127189256</p>
-                </div>
-            </article>
-            <article class="redes__sociales">
-                <h3>Redes Sociales</h3>
-                <a href="https://www.instagram.com/brismarmodesty/"><img class="visa_icon" src="/iconos/instagram.png"
-                        alt=""></a>
-                <p></p>
-                <p></p>
-                <p></p>
-            </article>
-        </section>
-    </main>
-    <footer class="footer">
-        <small class="text-white">Copyright &copy; 2023 Proyecto "Brismar Modesty" hecho por
-            <a href="https://github.com/ProyectosMarcos" target="_blank" style="color: rgb(254, 0, 93);"><img
-                    src="/iconos/github.svg" alt="">ProyectosMarcos</a></small>
-    </footer>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+                    <section class="container_politica_cambios">
+                        <article class="politica_cambios">
+                            <h3>Los productos comprados de forma online tienen cambio en un plazo de treinta (30) dias a
+                                partir de
+                                la fecha de recepcion
+                                del pedido.</h3>
+                            <h4>
+                                Los cambios se realizan unicamente por falla y por el mismo articulo de la compra. Al
+                                momento de
+                                recibir el mismo
+                                avisanos via Whatsapp indicando el articulo, color y talle para que quede registrado.
+                            </h4>
+                            <h4>
+                                Los cambios se realizan unicamente en el local o por envio a cargo del cliente.
+                                La prenda se debe encontrar en las mismas condiciones que fueron recibidas, sin haber
+                                sido usado y
+                                con la etiqueta
+                                correspondiente.
+                                No se realizan devoluciones.
+                            </h4>
+                        </article>
+                    </section>
+                    <!-- <section class="frase">
+                        <article class="frase-caracteristica">
+                            <h3>Cultivando modestia🧡</h3>
+                            <p><b>1 Timoteo 2:9</b></p>
+                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
+                        </article>
+                    </section>
+                   -->
+
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <section class="navegacion">
+                        <article class="navegacion__list-1">
+                            <h3>Navegacion</h3>
+                            <ul class="navbar__footer">
+                                <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
+                                <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
+                                        de cambio</a></li>
+                                <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
+                                        llegar?</a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="medios__pago">
+                            <h3>Medios de pago</h3>
+                            <a href=""><img class="visa_icon" src="/iconos/visa.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/iconos/mastercard.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/iconos/mercadopago.png" alt=""></a>
+                        </article>
+                        <article class="contacto">
+                            <div class="contacto_info">
+                                <h3>Contacto</h3>
+                            </div>
+                            <div class="img">
+                                <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
+                                        class="visa_icon" src="/iconos/whatsapp.png" alt=""></a>
+                                <p>+5491127189256</p>
+                            </div>
+                        </article>
+                        <article class="redes__sociales">
+                            <h3>Redes Sociales</h3>
+                            <a href="https://www.instagram.com/brismarmodesty/"><img class="visa_icon"
+                                    src="/iconos/instagram.png" alt=""></a>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </article>
+                    </section>
+
+                </main>
+                <footer class="footer">
+                    <small class="text-white">Copyright &copy; 2023 Proyecto "Brismar Modesty" hecho por
+                        <a href="https://github.com/ProyectosMarcos" target="_blank"
+                            style="color: rgb(254, 0, 93);"><img src="/iconos/github.svg"
+                                alt="">ProyectosMarcos</a></small>
+                </footer>
+            </div>
+        </div>
+        <div class="tablet"><!--------Fin Desktop - Comienza Tablet------------------->
+            <div class="container-areas">
+                <header class="header">
+                    <article class="logo__title">
+                        <h1>Brismar Modesty</h1>
+                    </article>
+                </header>
+                <nav class="navbar">
+                    <input type="checkbox" class="btn__menu">
+                    <label class="btn__burguer"></label>
+                    <nav class="navbar__menu ">
+                        <div class="container__navbar-menu menu__desplazable">
+                            <a href="/index.html" class="navbar__link">Inicio</a>
+                            <a href="#" class="navbar__link">Productos<box-icon type='solid'
+                                    name='chevron-down'></box-icon></a>
+                            <div class="submenu">
+                                <a href="./vestidos.html" class="navbar__link">Vestidos</a>
+                                <a href="./faldas.html" class="navbar__link">Faldas</a>
+                                <a href="./remeras.html" class="navbar__link">Remeras</a>
+                                <a href="./buzos.html" class="navbar__link">Buzos</a>
+                            </div>
+                            <a href="./contacto.html" class="navbar__link">Contacto</a>
+                            <a href="./sobre_nosotros.html" class="navbar__link">Sobre
+                                Nosotros</a>
+                        </div>
+                    </nav>
+                </nav>
+                <main class="main container">
+
+                    <section class="container_politica_cambios">
+                        <article class="politica_cambios">
+                            <h3>Los productos comprados de forma online tienen cambio en un plazo de treinta (30) dias a
+                                partir de
+                                la fecha de recepcion
+                                del pedido.</h3>
+                            <h4>
+                                Los cambios se realizan unicamente por falla y por el mismo articulo de la compra. Al
+                                momento de
+                                recibir el mismo
+                                avisanos via Whatsapp indicando el articulo, color y talle para que quede registrado.
+                            </h4>
+                            <h4>
+                                Los cambios se realizan unicamente en el local o por envio a cargo del cliente.
+                                La prenda se debe encontrar en las mismas condiciones que fueron recibidas, sin haber
+                                sido usado y
+                                con la etiqueta
+                                correspondiente.
+                                No se realizan devoluciones.
+                            </h4>
+                        </article>
+                    </section>
+                    <!-- <section class="frase">
+                        <article class="frase-caracteristica">
+                            <h3>Cultivando modestia🧡</h3>
+                            <p><b>1 Timoteo 2:9</b></p>
+                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
+                        </article>
+                    </section> -->
+
+
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <section class="navegacion">
+                        <article class="navegacion__list-1">
+                            <h3>Navegacion</h3>
+                            <ul class="navbar__footer">
+                                <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
+                                <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
+                                        de cambio</a></li>
+                                <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
+                                        llegar?</a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="medios__pago">
+                            <h3>Medios de pago</h3>
+                            <a href=""><img class="visa_icon" src="/iconos/visa.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/iconos/mastercard.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/iconos/mercadopago.png" alt=""></a>
+                        </article>
+                        <article class="contacto">
+                            <div class="contacto_info">
+                                <h3>Contacto</h3>
+                            </div>
+                            <div class="img">
+                                <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
+                                        class="visa_icon" src="/iconos/whatsapp.png" alt=""></a>
+                                <p>+5491127189256</p>
+                            </div>
+                        </article>
+                        <article class="redes__sociales">
+                            <h3>Redes Sociales</h3>
+                            <a href="https://www.instagram.com/brismarmodesty/"><img class="visa_icon"
+                                    src="/iconos/instagram.png" alt=""></a>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </article>
+                    </section>
+
+                </main>
+                <footer class="footer">
+                    <small class="text-white">Copyright &copy; 2023 Proyecto "Brismar Modesty" hecho por
+                        <a href="https://github.com/ProyectosMarcos" target="_blank"
+                            style="color: rgb(254, 0, 93);"><img src="/iconos/github.svg"
+                                alt="">ProyectosMarcos</a></small>
+                </footer>
+            </div>
+
+        </div>
+        <div class="movil"><!--------Fin Tablet- Comienza Movil------------------->
+            <div class="container-areas">
+                <header class="header">
+                    <article class="logo__title">
+                        <h1>Brismar Modesty</h1>
+                    </article>
+                </header>
+                <nav class="navbar">
+                    <input type="checkbox" class="btn__menu">
+                    <label class="btn__burguer"></label>
+                    <nav class="navbar__menu ">
+                        <div class="container__navbar-menu menu__desplazable">
+                            <a href="/index.html" class="navbar__link">Inicio</a>
+                            <a href="#" class="navbar__link">Productos<box-icon type='solid'
+                                    name='chevron-down'></box-icon></a>
+                            <div class="submenu">
+                                <a href="./vestidos.html" class="navbar__link">Vestidos</a>
+                                <a href="./faldas.html" class="navbar__link">Faldas</a>
+                                <a href="./remeras.html" class="navbar__link">Remeras</a>
+                                <a href="./buzos.html" class="navbar__link">Buzos</a>
+                            </div>
+                            <a href="./contacto.html" class="navbar__link">Contacto</a>
+                            <a href="./sobre_nosotros.html" class="navbar__link">Sobre
+                                Nosotros</a>
+                        </div>
+                    </nav>
+                </nav>
+                <main class="main container">
+
+                    <section class="container_politica_cambios">
+                        <article class="politica_cambios">
+                            <h3>Los productos comprados de forma online tienen cambio en un plazo de treinta (30) dias a
+                                partir de
+                                la fecha de recepcion
+                                del pedido.</h3>
+                            <h4>
+                                Los cambios se realizan unicamente por falla y por el mismo articulo de la compra. Al
+                                momento de
+                                recibir el mismo
+                                avisanos via Whatsapp indicando el articulo, color y talle para que quede registrado.
+                            </h4>
+                            <h4>
+                                Los cambios se realizan unicamente en el local o por envio a cargo del cliente.
+                                La prenda se debe encontrar en las mismas condiciones que fueron recibidas, sin haber
+                                sido usado y
+                                con la etiqueta
+                                correspondiente.
+                                No se realizan devoluciones.
+                            </h4>
+                        </article>
+                    </section>
+                    <!-- <section class="frase">
+                        <article class="frase-caracteristica">
+                            <h3>Cultivando modestia🧡</h3>
+                            <p><b>1 Timoteo 2:9</b></p>
+                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
+                        </article>
+                    </section> -->
+
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <section class="navegacion">
+                        <article class="navegacion__list-1">
+                            <h3>Navegacion</h3>
+                            <ul class="navbar__footer">
+                                <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
+                                <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
+                                        de cambio</a></li>
+                                <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
+                                        llegar?</a>
+                                </li>
+                            </ul>
+                        </article>
+                        <article class="medios__pago">
+                            <h3>Medios de pago</h3>
+                            <a href=""><img class="visa_icon" src="/iconos/visa.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/iconos/mastercard.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/iconos/mercadopago.png" alt=""></a>
+                        </article>
+                        <article class="contacto">
+                            <div class="contacto_info">
+                                <h3>Contacto</h3>
+                            </div>
+                            <div class="img">
+                                <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
+                                        class="visa_icon" src="/iconos/whatsapp.png" alt=""></a>
+                                <p>+5491127189256</p>
+                            </div>
+                        </article>
+                        <article class="redes__sociales">
+                            <h3>Redes Sociales</h3>
+                            <a href="https://www.instagram.com/brismarmodesty/"><img class="visa_icon"
+                                    src="/iconos/instagram.png" alt=""></a>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </article>
+                    </section>
+
+                </main>
+                <footer class="footer">
+                    <small class="text-white">Copyright &copy; 2023 Proyecto "Brismar Modesty" hecho por
+                        <a href="https://github.com/ProyectosMarcos" target="_blank"
+                            style="color: rgb(254, 0, 93);"><img src="/iconos/github.svg"
+                                alt="">ProyectosMarcos</a></small>
+                </footer>
+            </div>
+
+
+
+
+            <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
