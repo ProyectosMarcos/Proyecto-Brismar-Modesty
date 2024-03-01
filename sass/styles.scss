@@ -1547,6 +1547,47 @@
     text-decoration: none;
   }
 }
+
+/************************    Fin  Estilos - Pagina Vestidos                    ********************/
+
+/************************      Estilos - Pagina Politica de cambio                    ********************/
+
+/*Config Resolucion Movil*/
+@media (max-width: 767px) {
+  .container_politica_cambios {
+    margin-top: 4rem;
+  }
+  .politica_cambios {
+    font-family: font_family.$fuente-family_cambios;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+/*Config Resolucion Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+  .container_politica_cambios {
+    margin-top: 4rem;
+  }
+  .politica_cambios {
+    font-family: font_family.$fuente-family_cambios;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/*Config Resolucion Desktop*/
+@media (min-width: 991px) {
+  .container_politica_cambios {
+    margin-top: 4rem;
+  }
+  .politica_cambios {
+    font-family: font_family.$fuente-family_cambios;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
 /** *********************************** Breakpoints Resoluciones ************************************************************/
 /*Movil*/
 .resolucion {
