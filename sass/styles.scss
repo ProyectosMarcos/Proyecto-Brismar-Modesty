@@ -1222,6 +1222,7 @@
 /************************     Fin Estilos - Pagina Inicio                     ********************/
 
 /************************      Estilos - Pagina Contacto                     ********************/
+
 /*Config Resolucion Movil*/
 @media (max-width: 767px) {
   .contacto > h2 {
@@ -1278,6 +1279,14 @@
     margin: 0 auto;
     margin-bottom: 1rem;
     background-color: colores.$color_boton_submit;
+  }
+  .formulario [type='submit'] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .formulario [type='submit']:active {
+    transform: scale(0.9);
   }
 }
 
@@ -1336,6 +1345,14 @@
     margin: 0 auto;
     margin-bottom: 1rem;
     background-color: colores.$color_boton_submit;
+  }
+  .formulario [type='submit'] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .formulario [type='submit']:active {
+    transform: scale(0.9);
   }
 }
 /************ Fin Config Resolucion Tablet    **********/
@@ -1400,6 +1417,14 @@
   .formulario [type='submit']:hover {
     background-color: #f75669;
     transition: background-color 0.1s ease;
+  }
+  .formulario [type='submit'] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .formulario [type='submit']:active {
+    transform: scale(0.9);
   }
 } /************************    Fin  Estilos - Pagina Contacto                     ********************/
 

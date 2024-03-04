@@ -1152,6 +1152,13 @@ img {
     margin-bottom: 1rem;
     background-color: #f77382;
   }
+  .formulario [type=submit] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .formulario [type=submit]:active {
+    transform: scale(0.9);
+  }
 }
 /*Config Resolucion Tablet*/
 @media (min-width: 47.9375em) and (max-width: 61.875em) {
@@ -1207,6 +1214,13 @@ img {
     margin: 0 auto;
     margin-bottom: 1rem;
     background-color: #f77382;
+  }
+  .formulario [type=submit] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .formulario [type=submit]:active {
+    transform: scale(0.9);
   }
 }
 /************ Fin Config Resolucion Tablet    **********/
@@ -1268,6 +1282,13 @@ img {
   .formulario [type=submit]:hover {
     background-color: #f75669;
     transition: background-color 0.1s ease;
+  }
+  .formulario [type=submit] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .formulario [type=submit]:active {
+    transform: scale(0.9);
   }
 } /************************    Fin  Estilos - Pagina Contacto                     ********************/
 /************************      Estilos - Pagina Sobre Nosotros                     ********************/
