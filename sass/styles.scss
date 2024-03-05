@@ -1499,14 +1499,17 @@
   }
   .container__article {
     width: 13rem;
-    box-shadow: 1rem 1rem 1rem #f5c4e9;
-    margin-right: auto;
-      margin-left: auto;
+    // box-shadow: 1rem 1rem 1rem #f5c4e9;
+    filter: drop-shadow(1rem 1rem .5rem rgb(153, 153, 153));
+     margin-right: auto;
+    margin-left: auto;
     cursor: pointer;
   }
   .container__article img {
-    outline-style: double;
-  }
+   border: thin solid;
+   
+    
+}
   .container__price {
     text-align: center;
     background-color: #fff;
