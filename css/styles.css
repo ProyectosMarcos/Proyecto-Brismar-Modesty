@@ -102,6 +102,10 @@ img {
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
     border: solid;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
   }
   .btn__menu:checked ~ .navbar__menu {
     transform: translate(0, 0);
@@ -1361,6 +1365,7 @@ img {
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
+    -webkit-filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
   }
   .container__article img {
     border: thin solid;
@@ -1377,18 +1382,22 @@ img {
 /*Config Resolucion Tablet*/
 @media (min-width: 768px) and (max-width: 990px) {
   .container__section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem;
   }
   .container__article {
-    width: 16rem;
-    box-shadow: 1rem 1rem 1rem #f5c4e9;
+    width: 18rem;
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    margin-right: auto;
+    margin-left: auto;
     cursor: pointer;
   }
   .container__article img {
-    outline-style: double;
+    border: thin solid;
   }
   .container__price {
     text-align: center;
@@ -1407,16 +1416,18 @@ img {
     grid-template-columns: repeat(3, 1fr);
     margin-right: auto;
     margin-left: auto;
+    padding: 1rem;
+    gap: 1rem;
   }
   .container__article {
-    width: 20rem;
-    box-shadow: 1rem 1rem 1rem #f5c4e9;
-    cursor: pointer;
+    width: 19rem;
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
     margin-right: auto;
     margin-left: auto;
+    cursor: pointer;
   }
   .container__article img {
-    outline-style: double;
+    border: thin solid;
   }
   .container__price {
     text-align: center;
