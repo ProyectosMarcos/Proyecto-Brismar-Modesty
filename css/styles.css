@@ -1357,7 +1357,7 @@ img {
   }
   .container__article {
     width: 13rem;
-    filter: drop-shadow(1rem 1rem 0.5rem rgb(153, 153, 153));
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;

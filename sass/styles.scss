@@ -1499,12 +1499,13 @@
   }
   .container__article {
     width: 13rem;
-    // box-shadow: 1rem 1rem 1rem #f5c4e9;
-    filter: drop-shadow(1rem 1rem .5rem rgb(153, 153, 153));
-     margin-right: auto;
+    //box-shadow: 1rem 1rem 1rem #f5c4e9;
+    filter: drop-shadow(1rem 1rem .5rem rgb(222, 188, 238));
+    margin-right: auto;
     margin-left: auto;
     cursor: pointer;
-  }
+
+}
   .container__article img {
    border: thin solid;
    
