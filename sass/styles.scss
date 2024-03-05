@@ -1490,14 +1490,17 @@
 /*Config Resolucion Movil*/
 @media (max-width: 767px) {
   .container__section {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 1rem;
-    justify-content: center;
+   margin-right: auto;
+   margin-left: auto;
   }
   .container__article {
-    width: 16rem;
+    width: 14rem;
     box-shadow: 1rem 1rem 1rem #f5c4e9;
+    margin-right: auto;
+      margin-left: auto;
     cursor: pointer;
   }
   .container__article img {
@@ -1518,7 +1521,7 @@
   .container__section {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
     justify-content: center;
   }
   .container__article {
@@ -1547,11 +1550,11 @@
     grid-template-columns: repeat(3, 1fr);
     margin-right: auto;
     margin-left: auto;
-    gap: 2rem;
+
   }
 
   .container__article {
-    width: 18rem;
+    width: 20rem;
     box-shadow: 1rem 1rem 1rem #f5c4e9;
     cursor: pointer;
     margin-right: auto;
