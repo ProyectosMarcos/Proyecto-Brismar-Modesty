@@ -242,25 +242,36 @@
                         <h1>Brismar Modesty</h1>
                     </article>
                 </header>
-                <nav class="navbar">
-                    <input type="checkbox" class="btn__menu">
-                    <label class="btn__burguer"></label>
-                    <nav class="navbar__menu ">
-                        <div class="container__navbar-menu menu__desplazable">
+                <input type="checkbox" class="btn__menu">
+                <label class="btn__burguer"></label>
+                <nav class="navbar navbar__menu">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
                             <a href="/index.html" class="navbar__link">Inicio</a>
-                            <a href="#" class="navbar__link">Productos<box-icon type='solid'
-                                    name='chevron-down'></box-icon></a>
-                            <div class="submenu">
-                                <a href="../paginas_principales/vestidos.html" class="navbar__link">Vestidos</a>
-                                <a href="../paginas_principales/faldas.html" class="navbar__link">Faldas</a>
-                                <a href="../paginas_principales/remeras.html" class="navbar__link">Remeras</a>
-                                <a href="../paginas_principales/buzos.html" class="navbar__link">Buzos</a>
-                            </div>
-                            <a href="../paginas_principales/contacto.html" class="navbar__link">Contacto</a>
-                            <a href="../paginas_principales/sobre_nosotros.html" class="navbar__link">Sobre
+                        </li>
+                        <li class="navbar__item">
+                            <input id="btnSubmenuProductos" type="checkbox" class="btn__submenu">
+                            <label for="btnSubmenuProductos" class="submenu__label">Productos<box-icon type='solid'
+                                    name='chevron-down'></box-icon></a></label>
+                            <ul class="submenu__list">
+                                <li class="submenu__item"><a href="./html/paginas_principales/faldas.html"
+                                        class="submenu__link">Faldas</a></li>
+                                <li class="submenu__item"><a href="./html/paginas_principales/vestidos.html"
+                                        class="submenu__link">Vestidos</a></li>
+                                <li class="submenu__item"><a href="./html/paginas_principales/remeras.html"
+                                        class="submenu__link">Remeras</a></li>
+                                <li class="submenu__item"><a href="./html/paginas_principales/buzos.html"
+                                        class="submenu__link">Buzos</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="./html/paginas_principales/contacto.html" class="navbar__link">Contacto</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="./html/paginas_principales/sobre_nosotros.html" class="navbar__link">Sobre
                                 Nosotros</a>
-                        </div>
-                    </nav>
+                        </li>
+                    </ul>
                 </nav>
                 <main class="main container">
 
