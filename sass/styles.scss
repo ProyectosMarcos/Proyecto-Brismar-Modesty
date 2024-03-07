@@ -406,15 +406,13 @@ img {
     height: 3.6rem;
     font-size: 1.6rem;
     width: 97vw;
-    margin-left: auto;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
+    list-style-type: none;
   }
 
   .menu__desplazable {
     position: fixed;
-    top: 4.9rem;
-    left: 1rem;
   }
 
   .navbar__link {
@@ -427,24 +425,31 @@ img {
   }
 
   .navbar__link:hover {
-    background-color: #f6d4d2;
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
   }
 
   .submenu {
     display: none;
     background-color: #fff;
     width: 8rem;
+    top: 2.6rem;
     flex-direction: column;
     position: absolute;
-    right: 37rem;
-    top: 2.7rem;
+    list-style-type: none;
   }
-
+  .submenu__link {
+    text-decoration: none;
+    color: #000;
+  }
   .navbar__link:hover + .submenu,
   .submenu:hover {
     display: flex;
   }
-
+  .submenu :hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
+  }
   /*** Fin Config Header ***/
   /****************************************************************************/
   /***  Config Main ***/
@@ -614,415 +619,7 @@ img {
 }
 
 /** Fin Config Footer **/
-/**************** COMPONENTES A ACOMODAR **********************************/
-@media (min-width: 768px) and (max-width: 800px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 28rem;
-    margin-top: 5rem;
-  }
 
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 801px) and (max-width: 850px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 31rem;
-    margin-top: 5rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 851px) and (max-width: 899px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 32.6rem;
-    margin-top: 5rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 950px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 32.6rem;
-    margin-top: 5rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 951px) and (max-width: 990px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 34.6rem;
-    margin-top: 5rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1050px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 36rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1051px) and (max-width: 1100px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 4rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1101px) and (max-width: 1150px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 6rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1151px) and (max-width: 1200px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 6rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1250px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 8rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1251px) and (max-width: 1300px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 10rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1301px) and (max-width: 1350px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 11.5rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1351px) and (max-width: 1400px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 13.4rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1450px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 15.2rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1451px) and (max-width: 1500px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 17rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1501px) and (max-width: 1550px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 19rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1551px) and (max-width: 1600px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 20.6rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1601px) and (max-width: 1650px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 20.6rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1651px) and (max-width: 1700px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 24.6rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1701px) and (max-width: 1750px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 26rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1751px) and (max-width: 1800px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 28rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1801px) and (max-width: 1850px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 30rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1851px) and (max-width: 1900px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 31.5rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-@media (min-width: 1901px) and (max-width: 1920px) {
-  .submenu {
-    display: none;
-    background-color: #fff;
-    width: 8rem;
-    flex-direction: column;
-    position: fixed;
-    right: 70rem;
-    margin-right: 33.9rem;
-  }
-
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
-    display: flex;
-  }
-}
-
-/**************** FIN COMPONENTES A ACOMODAR **********************************/
 /*Fin - Config Resolucion Tablet */
 /*Config Resolucion Desktop*/
 @media (min-width: 61.9375em) {
@@ -1067,15 +664,13 @@ img {
     height: 3.6rem;
     font-size: 1.6rem;
     width: 97vw;
-    margin-left: auto;
     text-align: center;
     background-color: #ffffff;
+    list-style-type: none;
   }
 
   .menu__desplazable {
     position: fixed;
-    top: 4.9rem;
-    left: 1rem;
   }
 
   .navbar__link {
@@ -1089,21 +684,29 @@ img {
 
   .navbar__link:hover {
     background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
   }
 
   .submenu {
     display: none;
     background-color: #fff;
     width: 8rem;
+    top: 2.6rem;
     flex-direction: column;
     position: absolute;
-    right: 35rem;
-    top: 2.7rem;
+    list-style-type: none;
   }
-
+  .submenu__link {
+    text-decoration: none;
+    color: #000;
+  }
   .navbar__link:hover + .submenu,
   .submenu:hover {
     display: flex;
+  }
+  .submenu :hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
   }
 
   /*** Fin Config Header ***/
