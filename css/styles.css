@@ -140,22 +140,6 @@ img {
     font-size: 1.5rem;
     list-style-type: none;
   }
-  .btn__submenu {
-    display: none;
-  }
-  .submenu__label {
-    color: #ffffff;
-  }
-  .submenu__list {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    display: none;
-    list-style-type: none;
-    text-align: start;
-    background-color: rgb(251, 13, 4);
-  }
   .navbar__link {
     text-align: center;
     font-size: 1.5rem;
@@ -163,9 +147,28 @@ img {
     text-decoration: none;
     color: #ffffff;
   }
+  .btn__submenu {
+    display: none;
+  }
+  .submenu__label {
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .submenu__list {
+    width: 100%;
+    height: 10rem;
+    display: none;
+    list-style-type: none;
+    background-color: rgb(251, 13, 4);
+    padding: 1.7rem;
+  }
   .submenu__list a {
     text-decoration: none;
     color: #ffffff;
+  }
+  .submenu__link {
+    border-bottom: thin solid;
+    width: 100%;
   }
   .btn__submenu:checked + .submenu__label + .submenu__list {
     display: block;
@@ -174,7 +177,6 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    list-style-type: none;
     width: 100vw;
   }
   .submenu__list a {
