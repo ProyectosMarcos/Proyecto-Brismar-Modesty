@@ -2,6 +2,31 @@
 @use 'colores';
 @use 'font_family';
 
+/* RESET STYLES */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /************************          Estilos - Pagina Inicio                     ********************/
 /*Config Resoluciones mobile */
 /***********Grid Areas***************/
@@ -10,12 +35,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 77px 50px 1fr 70px;
-    grid-template-areas:
-      'header'
-      'navbar'
-      'main'
-      'footer';
+    grid-template-areas: 'header' 'navbar' 'main' 'footer';
   }
+
   /*** Fin Config Header - Navbar ***/
   /****************************************************************************/
   .header {
@@ -23,6 +45,7 @@
     grid-area: header;
     background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
+
   /*******         ************/
   /* Config Menu */
   .btn__menu {
@@ -34,6 +57,7 @@
     top: 4.9rem;
     opacity: 0;
   }
+
   .btn__burguer {
     position: fixed;
     width: 3rem;
@@ -46,31 +70,38 @@
     transform: rotate(0deg) translate(0, -1.2rem);
     transition: transform 500ms ease, background-color 500ms ease;
   }
+
   .btn__burguer::before,
   .btn__burguer::after {
     content: '';
     display: block;
     width: 100%;
     height: 0.6rem;
-    background-color: rgb(242, 116, 229);
+    background-color: rgb(255, 0, 230);
     border-radius: 0.3rem;
     transition: transform 500ms ease;
   }
+
   .btn__burguer::before {
     transform: rotate(0deg) translate(0, -0.9rem);
   }
+
   .btn__burguer::after {
     transform: rotate(0deg) translate(0, 0.3rem);
   }
+
   .btn__menu:checked + .btn__burguer {
     background-color: transparent;
   }
+
   .btn__menu:checked + .btn__burguer::before {
     transform: rotate(45deg) translate(0, 0);
   }
+
   .btn__menu:checked + .btn__burguer::after {
     transform: rotate(-45deg) translate(0.4rem, -0.5rem);
   }
+
   .navbar__menu {
     position: fixed;
     top: 0;
@@ -80,7 +111,7 @@
     z-index: 997;
     display: flex;
     justify-content: center;
-    background-color: rgb(253, 192, 253);
+    background-color: rgb(251, 139, 255);
     align-items: center;
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
@@ -89,72 +120,76 @@
     -moz-transform: translate(-100%, 0);
     -ms-transform: translate(-100%, 0);
     -o-transform: translate(-100%, 0);
-}
+  }
+
   .btn__menu:checked ~ .navbar__menu {
     transform: translate(0, 0);
   }
-  .container__navbar-menu {
+
+  .navbar__menu .navbar__item {
+    padding: 2rem;
+    font-size: 1.5rem;
+    list-style-type: none;
+  }
+
+  .btn__submenu {
+    display: none;
+  }
+  .submenu__label {
+    color: #ffffff;
+  }
+  .submenu__list {
     width: 100%;
-    height: 100vh;
+    //  height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: thin solid black;
+    display: none;
+    list-style-type: none;
+    text-align: start;
+    background-color: rgb(251, 13, 4);
   }
+
   .navbar__link {
     text-align: center;
     font-size: 1.5rem;
     padding: 1.5rem;
     text-decoration: none;
-    color: #fff;
-    // border-bottom: thin solid rgb(242, 99, 154);
-  }
-  // .navbar__link:first-child {
-  //   border-top: thin solid #d05;
-  // }
-  // .navbar__link:hover {
-  //   background-color: rgba(251, 87, 248, 0.901);
-  // }
-
-  .submenu {
-    display: flex;
-    border: thin solid red;
-    flex-direction: column;
-    align-items: center;
-    border: thin solid rgb(3, 3, 3);
-    width: 8rem;
-    position: absolute;
-    right: 2rem;
-    bottom: 17rem;
-    height: 20rem;
-    border: thick solid red;
-    background-color: #d05;
-    display: none;
+    color: #ffffff;
   }
 
-  .submenu a {
-    display: flex;
+  .submenu__list a {
+    text-decoration: none;
+    color: #ffffff;
   }
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
+
+  .btn__submenu:checked + .submenu__label + .submenu__list {
     display: block;
   }
-  @media (min-width: 360px) and (max-width: 500px) {
-  }
-  /* Fin Config Menu */
 
-  //logo
+  .navbar__menu .navbar__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100vw;
+  }
+
+  .submenu__list a {
+    text-decoration: none;
+  }
+  /***************************************/
+
+  /* Fin Config Menu */
   .logo__title > h1 {
     text-align: center;
     margin-top: 1.5rem;
     font-size: 2rem;
-    font-family: font_family.$fuente-title;
+    font-family: 'Dancing Script', cursive;
   }
-  //fin logo
 
   /*** Fin Config Header - Navbar ***/
   /****************************************************************************/
-
   /*******************/
   /*** Config Main ***/
   /****************************************************************************/
@@ -162,6 +197,7 @@
     background-color: #f6d4d2;
     grid-area: main;
   }
+
   /********           ********/
   /*Frase*/
   .frase {
@@ -170,10 +206,10 @@
     font-size: 1.3rem;
     text-align: center;
     color: #000;
-    font-family: font_family.$fuente-secondary;
+    font-family: 'Lora', serif;
   }
-  /*Fin- Frase*/
 
+  /*Fin- Frase*/
   .descripcion {
     border: thin solid cadetblue;
     margin-top: 2rem;
@@ -182,7 +218,7 @@
     justify-content: center;
     align-items: center;
     background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
-    font-family: font_family.$fuente-title;
+    font-family: 'Dancing Script', cursive;
     font-size: 1.57rem;
   }
 
@@ -194,20 +230,22 @@
     gap: 1rem;
     margin-top: 1rem;
   }
+
   .container__images {
     width: 17rem;
     margin: auto;
   }
+
   .grid-images img {
-    color: #585353fb;
+    color: rgba(88, 83, 83, 0.9843137255);
     box-shadow: 1rem 1rem 3rem;
   }
 
   .imagen__mujer img {
     width: 100%;
   }
-  /*Fin Grid-images*/
 
+  /*Fin Grid-images*/
   /**Detalles**/
   .detalles__article {
     display: flex;
@@ -215,15 +253,15 @@
     margin-top: 2rem;
     background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
+
   .detalles__caja-uno,
   .detalles__caja-dos,
   .detalles__caja-tres {
     text-align: center;
   }
+
   /**Fin Detalles**/
-
   /* Flip Card */
-
   .flip-card-1 {
     margin-top: 3rem;
     margin-left: auto;
@@ -231,7 +269,6 @@
     margin-bottom: 5rem;
     width: 600px;
     height: 400px;
-
     position: relative;
     cursor: pointer;
     transition: transform 1s ease-in-out;
@@ -268,10 +305,8 @@
   }
 
   /*FIN - Flip Card */
-
   /*** Fin Config Main ***/
   /****************************************************************************/
-
   /***  Config Footer ***/
   /****************************************************************************/
   .footer {
@@ -286,8 +321,9 @@
   }
 
   .navbar__footer a:hover {
-    background-color: colores.$color_navegacion_footer;
+    background-color: #ffa5a0;
   }
+
   .navegacion {
     display: flex;
     gap: 1rem;
@@ -297,29 +333,31 @@
     text-align: center;
     background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
+
   .navegacion h3 {
     font-size: 1.3rem;
   }
+
   .navegacion ul {
     list-style: none;
   }
+
   .navegacion a {
     list-style: none;
     text-decoration: none;
     color: #000;
   }
+
   .visa_icon {
     width: 2rem;
   }
+
   .contacto__info {
     display: flex;
   }
-  //Fin Navegacion //
 
   /*** Fin Config Footer ***/
-
   /*Fin Config Resoluciones mobile*/
-
   /************************************************************************************************/
 }
 
@@ -329,36 +367,36 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 77px 59px 1fr 70px;
-    grid-template-areas:
-      'header header'
-      'navbar navbar'
-      'main main'
-      'footer footer';
+    grid-template-areas: 'header header' 'navbar navbar' 'main main' 'footer footer';
   }
+
   /*** Config Header ***/
   .header {
     grid-area: header;
     display: flex;
     padding: 1rem;
     font-size: 1.7rem;
-    font-family: font_family.$fuente-title;
+    font-family: 'Dancing Script', cursive;
     justify-content: center;
     align-items: center;
     background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
+
   /******* ***********/
   .btn__menu {
     display: none;
   }
-  //Config Navbar//
+
   .navbar {
     position: relative;
   }
+
   .navbar__menu {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .container__navbar-menu {
     display: flex;
     justify-content: space-evenly;
@@ -370,21 +408,26 @@
     text-align: center;
     background-color: #fff;
   }
+
   .menu__desplazable {
     position: fixed;
     top: 4.9rem;
     left: 1rem;
   }
+
   .navbar__link {
     text-decoration: none;
     color: #000;
   }
+
   .logo__title {
     font-weight: bold;
   }
+
   .navbar__link:hover {
     background-color: #f6d4d2;
   }
+
   .submenu {
     display: none;
     background-color: #fff;
@@ -407,6 +450,7 @@
     background-color: #f6d4d2;
     grid-area: main;
   }
+
   /*******     **************/
   /*Frase*/
   .frase {
@@ -415,10 +459,10 @@
     font-size: 1.3rem;
     text-align: center;
     color: #000;
-    font-family: font_family.$fuente-secondary;
+    font-family: 'Lora', serif;
   }
-  /*Fin- Frase*/
 
+  /*Fin- Frase*/
   .imagen__mujer {
     margin-left: auto;
     margin-right: auto;
@@ -434,7 +478,7 @@
     justify-content: center;
     align-items: center;
     background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
-    font-family: font_family.$fuente-title;
+    font-family: 'Dancing Script', cursive;
     font-size: 1.57rem;
   }
 
@@ -453,7 +497,7 @@
   }
 
   .grid-images img {
-    color: #585353fb;
+    color: rgba(88, 83, 83, 0.9843137255);
     box-shadow: 1rem 1rem 3rem;
   }
 
@@ -462,7 +506,6 @@
   }
 
   /*Fin Grid-images*/
-
   /**Detalles**/
   .detalles__article {
     display: flex;
@@ -478,9 +521,7 @@
   }
 
   /**Fin Detalles**/
-
   /* Flip Card */
-
   .flip-card-1 {
     margin-top: 3rem;
     margin-left: auto;
@@ -488,7 +529,6 @@
     margin-bottom: 5rem;
     width: 600px;
     height: 400px;
-
     position: relative;
     cursor: pointer;
     transition: transform 1s ease-in-out;
@@ -523,11 +563,11 @@
   .flip-back {
     transform: rotateY(180deg);
   }
+
   /*** Fin Config Main ***/
   /****************************************************************************/
   /***  Config Footer ***/
   /****************************************************************************/
-
   .footer {
     grid-area: footer;
     display: flex;
@@ -539,8 +579,6 @@
     color: #fff;
   }
 
-  // Navegacion //
-
   .navegacion {
     display: flex;
     padding: 2rem;
@@ -549,9 +587,11 @@
     text-align: center;
     background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
+
   .navbar__footer a:hover {
-    background-color: colores.$color_navegacion_footer;
+    background-color: #ffa5a0;
   }
+
   .navegacion ul {
     list-style: none;
   }
@@ -561,16 +601,17 @@
     text-decoration: none;
     color: #000;
   }
+
   .visa_icon {
     width: 2rem;
   }
+
   .contacto__info {
     display: flex;
   }
-  //Fin Navegacion //
 }
-/** Fin Config Footer **/
 
+/** Fin Config Footer **/
 /**************** COMPONENTES A ACOMODAR **********************************/
 @media (min-width: 768px) and (max-width: 800px) {
   .submenu {
@@ -588,6 +629,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 801px) and (max-width: 850px) {
   .submenu {
     display: none;
@@ -671,6 +713,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1051px) and (max-width: 1100px) {
   .submenu {
     display: none;
@@ -687,6 +730,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1101px) and (max-width: 1150px) {
   .submenu {
     display: none;
@@ -703,6 +747,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1151px) and (max-width: 1200px) {
   .submenu {
     display: none;
@@ -719,6 +764,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1201px) and (max-width: 1250px) {
   .submenu {
     display: none;
@@ -752,6 +798,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1301px) and (max-width: 1350px) {
   .submenu {
     display: none;
@@ -819,6 +866,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1501px) and (max-width: 1550px) {
   .submenu {
     display: none;
@@ -903,6 +951,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1751px) and (max-width: 1800px) {
   .submenu {
     display: none;
@@ -953,6 +1002,7 @@
     display: flex;
   }
 }
+
 @media (min-width: 1901px) and (max-width: 1920px) {
   .submenu {
     display: none;
@@ -969,45 +1019,45 @@
     display: flex;
   }
 }
+
 /**************** FIN COMPONENTES A ACOMODAR **********************************/
 /*Fin - Config Resolucion Tablet */
-
 /*Config Resolucion Desktop*/
 @media (min-width: 61.9375em) {
   .container-areas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 77px 59px 1fr 70px;
-    grid-template-areas:
-      'header header'
-      'navbar navbar'
-      'main main'
-      'footer footer';
+    grid-template-areas: 'header header' 'navbar navbar' 'main main' 'footer footer';
   }
+
   /*** Config Header ***/
   .header {
     grid-area: header;
     display: flex;
     padding: 1rem;
     font-size: 1.7rem;
-    font-family: font_family.$fuente-title;
+    font-family: 'Dancing Script', cursive;
     justify-content: center;
     align-items: center;
     background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
+
   /******* ***********/
   .btn__menu {
     display: none;
   }
-  //Config Navbar//
+
   .navbar {
     position: relative;
   }
+
   .navbar__menu {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .container__navbar-menu {
     display: flex;
     justify-content: space-evenly;
@@ -1019,21 +1069,26 @@
     text-align: center;
     background-color: #ffffff;
   }
+
   .menu__desplazable {
     position: fixed;
     top: 4.9rem;
     left: 1rem;
   }
+
   .navbar__link {
     text-decoration: none;
     color: #000;
   }
+
   .logo__title {
     font-weight: bold;
   }
+
   .navbar__link:hover {
-    background-color: #ffa9ffee;
+    background-color: rgba(255, 169, 255, 0.9333333333);
   }
+
   .submenu {
     display: none;
     background-color: #fff;
@@ -1056,6 +1111,7 @@
     background-color: #f6d4d2;
     grid-area: main;
   }
+
   /*******     **************/
   /*Frase*/
   .frase {
@@ -1064,10 +1120,10 @@
     font-size: 1.3rem;
     text-align: center;
     color: #000;
-    font-family: font_family.$fuente-secondary;
+    font-family: 'Lora', serif;
   }
-  /*Fin- Frase*/
 
+  /*Fin- Frase*/
   .imagen__mujer {
     margin-left: auto;
     margin-right: auto;
@@ -1083,7 +1139,7 @@
     justify-content: center;
     align-items: center;
     background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
-    font-family: font_family.$fuente-title;
+    font-family: 'Dancing Script', cursive;
     font-size: 1.57rem;
   }
 
@@ -1102,7 +1158,7 @@
   }
 
   .grid-images img {
-    color: #585353fb;
+    color: rgba(88, 83, 83, 0.9843137255);
     box-shadow: 1rem 1rem 3rem;
   }
 
@@ -1111,7 +1167,6 @@
   }
 
   /*Fin Grid-images*/
-
   /**Detalles**/
   .detalles__article {
     display: flex;
@@ -1127,9 +1182,7 @@
   }
 
   /**Fin Detalles**/
-
   /* Flip Card */
-
   .flip-card-1 {
     margin-top: 3rem;
     margin-left: auto;
@@ -1137,7 +1190,6 @@
     margin-bottom: 5rem;
     width: 600px;
     height: 400px;
-
     position: relative;
     cursor: pointer;
     transition: transform 1s ease-in-out;
@@ -1172,11 +1224,11 @@
   .flip-back {
     transform: rotateY(180deg);
   }
+
   /*** Fin Config Main ***/
   /****************************************************************************/
   /***  Config Footer ***/
   /****************************************************************************/
-
   .footer {
     grid-area: footer;
     display: flex;
@@ -1186,7 +1238,6 @@
     background-color: #f08bff;
     color: #fff;
   }
-  // Navegacion //
 
   .navegacion {
     display: flex;
@@ -1196,9 +1247,11 @@
     text-align: center;
     background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
+
   .navbar__footer a:hover {
-    background-color: colores.$color_navegacion_footer;
+    background-color: #ffa5a0;
   }
+
   .navegacion ul {
     list-style: none;
   }
@@ -1208,25 +1261,22 @@
     text-decoration: none;
     color: #000;
   }
+
   .visa_icon {
     width: 2rem;
   }
+
   .contacto__info {
     display: flex;
   }
-  //Fin Navegacion //
 }
 
 /***  Config Footer ***/
 /****************************************************************************/
-
 /****************************************************************************/
 /***********                       Grid Areas                   ***************/
-
 /************************     Fin Estilos - Pagina Inicio                     ********************/
-
 /************************      Estilos - Pagina Contacto                     ********************/
-
 /*Config Resolucion Movil*/
 @media (max-width: 767px) {
   .contacto > h2 {
@@ -1239,9 +1289,11 @@
     text-decoration: none;
     color: #000;
   }
+
   .contacto__container {
     margin-top: 1rem;
   }
+
   .wsp,
   .gmail,
   .posicion {
@@ -1250,6 +1302,7 @@
     align-items: center;
     gap: 0.5rem;
   }
+
   /* Config Formulario */
   .formulario {
     display: flex;
@@ -1258,6 +1311,7 @@
     justify-content: center;
     font-size: 1.6rem;
   }
+
   .formulario input {
     margin-top: 1rem;
     width: 20rem;
@@ -1277,13 +1331,15 @@
     border-radius: 0.5rem;
     border-color: pink;
   }
+
   .formulario [type='submit'] {
     width: 6rem;
     padding: 0.5rem;
     margin: 0 auto;
     margin-bottom: 1rem;
-    background-color: colores.$color_boton_submit;
+    background-color: #f77382;
   }
+
   .formulario [type='submit'] {
     transition: 0.2s;
     cursor: pointer;
@@ -1301,13 +1357,16 @@
     font-size: 2.5rem;
     margin-top: 2rem;
   }
+
   .contacto a {
     text-decoration: none;
     color: #000;
   }
+
   .contacto__container {
     margin-top: 1rem;
   }
+
   .wsp,
   .gmail,
   .posicion {
@@ -1316,6 +1375,7 @@
     align-items: center;
     gap: 0.5rem;
   }
+
   /* Config Formulario */
   .formulario {
     display: flex;
@@ -1324,6 +1384,7 @@
     justify-content: center;
     font-size: 1.6rem;
   }
+
   .formulario input {
     margin-top: 1rem;
     width: 20rem;
@@ -1343,13 +1404,15 @@
     border-radius: 0.5rem;
     border-color: pink;
   }
+
   .formulario [type='submit'] {
     width: 6rem;
     padding: 0.5rem;
     margin: 0 auto;
     margin-bottom: 1rem;
-    background-color: colores.$color_boton_submit;
+    background-color: #f77382;
   }
+
   .formulario [type='submit'] {
     transition: 0.2s;
     cursor: pointer;
@@ -1359,8 +1422,8 @@
     transform: scale(0.9);
   }
 }
-/************ Fin Config Resolucion Tablet    **********/
 
+/************ Fin Config Resolucion Tablet    **********/
 /*Config Resolucion Desktop*/
 @media (min-width: 61.9375em) {
   .contacto > h2 {
@@ -1372,9 +1435,11 @@
   .contacto__container {
     margin-top: 1rem;
   }
+
   .contacto__container p {
     font-size: 1.2rem;
   }
+
   .wsp,
   .gmail,
   .posicion {
@@ -1383,6 +1448,7 @@
     align-items: center;
     gap: 0.5rem;
   }
+
   /* Config Formulario */
   .formulario {
     display: flex;
@@ -1390,6 +1456,7 @@
     gap: 1rem;
     justify-content: center;
   }
+
   .formulario input {
     margin-top: 1rem;
     width: 25rem;
@@ -1410,18 +1477,21 @@
     border-radius: 0.5rem;
     border-color: pink;
   }
+
   .formulario [type='submit'] {
     width: 6rem;
     font-size: 1.1rem;
     padding: 0.5rem;
     margin: 0 auto;
     margin-bottom: 1rem;
-    background-color: colores.$color_boton_submit;
+    background-color: #f77382;
   }
+
   .formulario [type='submit']:hover {
     background-color: #f75669;
     transition: background-color 0.1s ease;
   }
+
   .formulario [type='submit'] {
     transition: 0.2s;
     cursor: pointer;
@@ -1430,14 +1500,16 @@
   .formulario [type='submit']:active {
     transform: scale(0.9);
   }
-} /************************    Fin  Estilos - Pagina Contacto                     ********************/
+}
 
+/************************    Fin  Estilos - Pagina Contacto                     ********************/
 /************************      Estilos - Pagina Sobre Nosotros                     ********************/
 /*Config Resolucion Movil*/
 @media (max-width: 767px) {
   .contenido img {
     border-radius: 50%;
   }
+
   .contenido {
     display: flex;
     align-items: center;
@@ -1446,6 +1518,7 @@
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   .contenido p {
     font-size: 1.4rem;
   }
@@ -1456,6 +1529,7 @@
   .contenido img {
     border-radius: 50%;
   }
+
   .contenido {
     display: flex;
     align-items: center;
@@ -1464,6 +1538,7 @@
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   .contenido p {
     font-size: 1.4rem;
   }
@@ -1474,6 +1549,7 @@
   .contenido img {
     border-radius: 50%;
   }
+
   .contenido {
     display: flex;
     align-items: center;
@@ -1482,44 +1558,44 @@
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
   .contenido p {
     font-size: 1.4rem;
   }
 }
 
 /************************    Fin  Estilos - Pagina Sobre Nosotros                     ********************/
-
 /************************      Estilos - Pagina Vestidos                    ********************/
-
 /*Config Resolucion Movil*/
 @media (max-width: 767px) {
   .container__section {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-   margin-right: auto;
-   margin-left: auto;
-   padding: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem;
   }
+
   .container__article {
     width: 13rem;
-    //box-shadow: 1rem 1rem 1rem #f5c4e9;
-    filter: drop-shadow(1rem 1rem .5rem rgb(222, 188, 238));
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
-    -webkit-filter: drop-shadow(1rem 1rem .5rem rgb(222, 188, 238));
-}
+    -webkit-filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+  }
+
   .container__article img {
-   border: thin solid;
-   
-    
-}
+    border: thin solid;
+  }
+
   .container__price {
     text-align: center;
     background-color: #fff;
     font-size: 1.1rem;
   }
+
   .container__article a {
     text-decoration: none;
   }
@@ -1529,37 +1605,34 @@
 @media (min-width: 768px) and (max-width: 990px) {
   .container__section {
     display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      margin-right: auto;
-      margin-left: auto;
-      padding: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem;
   }
-     .container__article {
-       width: 18rem;
-       //box-shadow: 1rem 1rem 1rem #f5c4e9;
-       filter: drop-shadow(1rem 1rem .5rem rgb(222, 188, 238));
-       margin-right: auto;
-       margin-left: auto;
-       cursor: pointer;
-  
-     }
-  
-     .container__article img {
-       border: thin solid;
-  
-  
-     }
-  
-     .container__price {
-       text-align: center;
-       background-color: #fff;
-       font-size: 1.1rem;
-     }
-  
-     .container__article a {
-       text-decoration: none;
-     }
+
+  .container__article {
+    width: 18rem;
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .container__article img {
+    border: thin solid;
+  }
+
+  .container__price {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .container__article a {
+    text-decoration: none;
+  }
 }
 
 /*Config Resolucion Desktop*/
@@ -1572,47 +1645,41 @@
     margin-left: auto;
     padding: 1rem;
     gap: 1rem;
-
   }
 
-     .container__article {
-       width: 19rem;
-       //box-shadow: 1rem 1rem 1rem #f5c4e9;
-       filter: drop-shadow(1rem 1rem .5rem rgb(222, 188, 238));
-       margin-right: auto;
-       margin-left: auto;
-       cursor: pointer;
-  
-     }
-  
-     .container__article img {
-       border: thin solid;
-  
-  
-     }
-  
-     .container__price {
-       text-align: center;
-       background-color: #fff;
-       font-size: 1.1rem;
-     }
-  
-     .container__article a {
-       text-decoration: none;
-     }
+  .container__article {
+    width: 19rem;
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .container__article img {
+    border: thin solid;
+  }
+
+  .container__price {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .container__article a {
+    text-decoration: none;
+  }
 }
 
 /************************    Fin  Estilos - Pagina Vestidos                    ********************/
-
 /************************      Estilos - Pagina Politica de cambio                    ********************/
-
 /*Config Resolucion Movil*/
 @media (max-width: 767px) {
   .container_politica_cambios {
     margin-top: 4rem;
   }
+
   .politica_cambios {
-    font-family: font_family.$fuente-family_cambios;
+    font-family: 'DM Sans', sans-serif;
     font-size: 0.8rem;
     text-align: center;
   }
@@ -1623,8 +1690,9 @@
   .container_politica_cambios {
     margin-top: 4rem;
   }
+
   .politica_cambios {
-    font-family: font_family.$fuente-family_cambios;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     text-align: center;
   }
@@ -1635,8 +1703,9 @@
   .container_politica_cambios {
     margin-top: 4rem;
   }
+
   .politica_cambios {
-    font-family: font_family.$fuente-family_cambios;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.2rem;
     text-align: center;
   }
@@ -1647,19 +1716,23 @@
 .resolucion {
   width: 99%;
 }
+
 @media (max-width: 767px) {
   .desktop {
     display: none;
   }
+
   .tablet {
     display: none;
   }
 }
+
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 990px) {
   .desktop {
     display: none;
   }
+
   .movil {
     display: none;
   }
@@ -1669,8 +1742,12 @@
   .tablet {
     display: none;
   }
+
   .movil {
     display: none;
   }
 }
+
 /** Breakpoints Resoluciones **/
+
+/*# sourceMappingURL=styles.css.map */

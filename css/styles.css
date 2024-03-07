@@ -23,6 +23,31 @@ img {
   height: auto;
 }
 
+/* RESET STYLES */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /************************          Estilos - Pagina Inicio                     ********************/
 /*Config Resoluciones mobile */
 /***********Grid Areas***************/
@@ -69,7 +94,7 @@ img {
     display: block;
     width: 100%;
     height: 0.6rem;
-    background-color: rgb(242, 116, 229);
+    background-color: rgb(255, 0, 230);
     border-radius: 0.3rem;
     transition: transform 500ms ease;
   }
@@ -97,7 +122,7 @@ img {
     z-index: 997;
     display: flex;
     justify-content: center;
-    background-color: rgb(253, 192, 253);
+    background-color: rgb(251, 139, 255);
     align-items: center;
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
@@ -110,43 +135,52 @@ img {
   .btn__menu:checked ~ .navbar__menu {
     transform: translate(0, 0);
   }
-  .container__navbar-menu {
+  .navbar__menu .navbar__item {
+    padding: 2rem;
+    font-size: 1.5rem;
+    list-style-type: none;
+  }
+  .btn__submenu {
+    display: none;
+  }
+  .submenu__label {
+    color: #ffffff;
+  }
+  .submenu__list {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: thin solid black;
+    display: none;
+    list-style-type: none;
+    text-align: start;
+    background-color: rgb(251, 13, 4);
   }
   .navbar__link {
     text-align: center;
     font-size: 1.5rem;
     padding: 1.5rem;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
   }
-  .submenu {
-    display: flex;
-    border: thin solid red;
-    flex-direction: column;
-    align-items: center;
-    border: thin solid rgb(3, 3, 3);
-    width: 8rem;
-    position: absolute;
-    right: 2rem;
-    bottom: 17rem;
-    height: 20rem;
-    border: thick solid red;
-    background-color: #d05;
-    display: none;
+  .submenu__list a {
+    text-decoration: none;
+    color: #ffffff;
   }
-  .submenu a {
-    display: flex;
-  }
-  .navbar__link:hover + .submenu,
-  .submenu:hover {
+  .btn__submenu:checked + .submenu__label + .submenu__list {
     display: block;
   }
+  .navbar__menu .navbar__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100vw;
+  }
+  .submenu__list a {
+    text-decoration: none;
+  }
+  /***************************************/
   /* Fin Config Menu */
   .logo__title > h1 {
     text-align: center;
@@ -1294,7 +1328,8 @@ img {
   .formulario [type=submit]:active {
     transform: scale(0.9);
   }
-} /************************    Fin  Estilos - Pagina Contacto                     ********************/
+}
+/************************    Fin  Estilos - Pagina Contacto                     ********************/
 /************************      Estilos - Pagina Sobre Nosotros                     ********************/
 /*Config Resolucion Movil*/
 @media (max-width: 767px) {
@@ -1505,5 +1540,6 @@ img {
   }
 }
 /** Breakpoints Resoluciones **/
+
 
 /*# sourceMappingURL=styles.css.map */
