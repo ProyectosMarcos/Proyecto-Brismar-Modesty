@@ -302,9 +302,12 @@ img {
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
-    background-color: #f08bff;
-    color: #fff;
+    background-color: #dd8f9a;
+    color: #fdfbfb;
     text-align: center;
+  }
+  .footer a {
+    color: #fdfbfb;
   }
   .navbar__footer a:hover {
     background-color: #ffa5a0;
@@ -532,8 +535,11 @@ img {
     justify-content: center;
     text-align: center;
     font-size: 1.6rem;
-    background-color: #f08bff;
-    color: #fff;
+    background-color: #dd8f9a;
+    color: #fdfbfb;
+  }
+  .footer a {
+    color: #fdfbfb;
   }
   .navegacion {
     display: flex;
@@ -755,8 +761,11 @@ img {
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    background-color: #f08bff;
-    color: #fff;
+    background-color: #dd8f9a;
+    color: #fdfbfb;
+  }
+  .footer a {
+    color: #fdfbfb;
   }
   .navegacion {
     display: flex;
