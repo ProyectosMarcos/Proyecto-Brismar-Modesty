@@ -234,7 +234,7 @@ img {
   }
 
   .container__images {
-    width: 17rem;
+    width: 15rem;
     margin: auto;
   }
 
@@ -246,7 +246,11 @@ img {
   .imagen__mujer {
     display: flex;
     justify-content: center;
+    align-items: center;
     filter: drop-shadow(1rem 1rem 1rem #001000);
+  }
+  .imagen__mujer img {
+    object-fit: contain;
   }
 
   /*Fin Grid-images*/
