@@ -237,8 +237,10 @@ img {
     color: rgba(88, 83, 83, 0.9843137255);
     box-shadow: 1rem 1rem 3rem;
   }
-  .imagen__mujer img {
-    width: 100%;
+  .imagen__mujer {
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(1rem 1rem 1rem #001000);
   }
   /*Fin Grid-images*/
   /**Detalles**/
