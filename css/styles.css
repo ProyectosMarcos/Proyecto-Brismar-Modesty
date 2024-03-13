@@ -122,7 +122,7 @@ img {
     z-index: 997;
     display: flex;
     justify-content: center;
-    background-color: rgb(242, 137, 246);
+    background-color: rgb(255, 0, 217);
     align-items: center;
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
@@ -145,13 +145,13 @@ img {
     font-size: 1.5rem;
     padding: 1.5rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #fdfbfb;
   }
   .btn__submenu {
     display: none;
   }
   .submenu__label {
-    color: #ffffff;
+    color: #fdfbfb;
     cursor: pointer;
   }
   .submenu__list {
@@ -164,7 +164,7 @@ img {
   }
   .submenu__list a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fdfbfb;
   }
   .submenu__link {
     border-bottom: thin solid;
@@ -240,11 +240,10 @@ img {
   .imagen__mujer {
     display: flex;
     justify-content: center;
-    align-items: center;
     filter: drop-shadow(1rem 1rem 1rem #001000);
   }
   .imagen__mujer img {
-    object-fit: contain;
+    width: 500px;
   }
   /*Fin Grid-images*/
   /**Detalles**/
@@ -308,7 +307,7 @@ img {
     align-items: center;
     justify-content: center;
     font-size: 1.3rem;
-    background-color: #7b6a69;
+    background-color: #dd8f9a;
     color: #fdfbfb;
     text-align: center;
   }
@@ -387,7 +386,7 @@ img {
     font-size: 1.6rem;
     width: 97vw;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #fdfbfb;
     list-style-type: none;
   }
   .menu__desplazable {
@@ -406,7 +405,7 @@ img {
   }
   .submenu {
     display: none;
-    background-color: #fff;
+    background-color: #fdfbfb;
     width: 8rem;
     top: 2.6rem;
     flex-direction: column;
@@ -444,9 +443,8 @@ img {
   }
   /*Fin- Frase*/
   .imagen__mujer {
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
+    display: flex;
+    justify-content: center;
     filter: drop-shadow(1rem 1rem 1rem #001000);
   }
   .descripcion {
@@ -475,9 +473,6 @@ img {
   .grid-images img {
     color: rgba(88, 83, 83, 0.9843137255);
     box-shadow: 1rem 1rem 3rem;
-  }
-  .imagen__mujer img {
-    width: 100%;
   }
   /*Fin Grid-images*/
   /**Detalles**/
@@ -541,7 +536,7 @@ img {
     justify-content: center;
     text-align: center;
     font-size: 1.6rem;
-    background-color: #7b6a69;
+    background-color: #dd8f9a;
     color: #fdfbfb;
   }
   .footer a {
@@ -767,7 +762,7 @@ img {
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    background-color: #7b6a69;
+    background-color: #dd8f9a;
     color: #fdfbfb;
   }
   .footer a {
