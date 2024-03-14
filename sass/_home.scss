@@ -2,7 +2,7 @@
 @use 'font_family';
 
 /************************          Estilos - Pagina Inicio                     ********************/
-/*Config Resoluciones mobile */ /***********Grid Areas***************/
+/*Config Resoluciones mobile */
 
 @media (max-width: 47.9375em) {
   .container-areas {
@@ -12,7 +12,7 @@
     grid-template-areas: 'header' 'navbar' 'main' 'footer';
   }
 
-  /*** Fin Config Header - Navbar ***/
+  /*** Config Header - Navbar ***/
   /****************************************************************************/
   .header {
     background-color: aqua;
@@ -864,8 +864,7 @@
   }
 }
 
-/***  Config Footer ***/
+/*** Fin Config Footer ***/
 /****************************************************************************/
 
-/***********                       Grid Areas                   ***************/
 /************************     Fin Estilos - Pagina Inicio                     ********************/
