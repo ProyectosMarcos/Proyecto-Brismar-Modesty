@@ -1,0 +1,65 @@
+@use 'colores';
+@use 'font_family';
+
+/************************      Estilos - Pagina Sobre Nosotros                     ********************/
+/*Config Resolucion Movil*/
+@media (max-width: 767px) {
+  .contenido img {
+    border-radius: 50%;
+  }
+
+  .contenido {
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .contenido p {
+    font-size: 1.4rem;
+  }
+}
+
+/*Config Resolucion Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+  .contenido img {
+    border-radius: 50%;
+  }
+
+  .contenido {
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .contenido p {
+    font-size: 1.4rem;
+  }
+}
+
+/*Config Resolucion Desktop*/
+@media (min-width: 991px) {
+  .contenido img {
+    border-radius: 50%;
+  }
+
+  .contenido {
+    display: flex;
+    align-items: center;
+    width: 49rem;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .contenido p {
+    font-size: 1.4rem;
+  }
+}
+
+/************************    Fin  Estilos - Pagina Sobre Nosotros                     ********************/

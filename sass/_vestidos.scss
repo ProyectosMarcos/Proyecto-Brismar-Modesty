@@ -1,0 +1,97 @@
+@use 'colores';
+@use 'font_family';
+
+/************************      Estilos - Pagina Vestidos                    ********************/
+/*Config Resolucion Movil*/
+@media (max-width: 767px) {
+  .container__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem;
+  }
+
+  .container__article {
+    width: 13rem;
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+  }
+
+  .container__price {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .container__article a {
+    text-decoration: none;
+  }
+}
+
+/*Config Resolucion Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+  .container__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1.5rem;
+  }
+
+  .container__article {
+    width: 18rem;
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .container__price {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .container__article a {
+    text-decoration: none;
+  }
+}
+
+/*Config Resolucion Desktop*/
+@media (min-width: 991px) {
+  .container__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .container__article {
+    width: 19rem;
+    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .container__price {
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .container__article a {
+    text-decoration: none;
+  }
+}
+
+/************************    Fin  Estilos - Pagina Vestidos                    ********************/
