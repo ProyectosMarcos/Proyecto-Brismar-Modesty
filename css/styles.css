@@ -230,6 +230,7 @@ img {
   .detalles__caja-dos,
   .detalles__caja-tres {
     text-align: center;
+    font-size: 1.12rem;
   }
   /**Fin Detalles**/
   /* Flip Card */
