@@ -37,7 +37,7 @@
 
 @media (max-width: 501px) {
   .frase {
-    width: 15rem;
+    width: 24rem;
     margin-top: 2.3rem;
     margin-right: auto;
     margin-left: auto;
@@ -48,13 +48,14 @@
   }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 423px) {
   .frase {
     width: 15rem;
     margin-top: 2.3rem;
     margin-right: auto;
     margin-left: auto;
   }
+
   .container__article {
     width: 11rem;
     margin: 0 auto;
@@ -63,18 +64,8 @@
   /* Flip Card */
 
   .flip-card-1 {
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
     width: 340px;
     height: 250px;
-    position: relative;
-    cursor: pointer;
-    transition: transform 1s ease-in-out;
-    perspective: 10rem;
-    transform-style: flat;
-    transform-style: preserve-3d;
   }
 
   /*FIN - Flip Card */

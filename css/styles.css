@@ -631,26 +631,6 @@ img {
   /*Fin Config Resoluciones mobile*/
   /************************************************************************************************/
 }
-/* Configuraciones * */
-@media (min-width: 754px) {
-  /*Section__images*/
-  .section__images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0.5rem;
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-  .container__images {
-    width: 15rem;
-    margin: auto;
-  }
-  .container__images img {
-    color: rgba(88, 83, 83, 0.9843137255);
-    box-shadow: 1rem 1rem 3rem;
-  }
-}
 @media (max-width: 501px) {
   /*Section__images*/
   .section__images {
@@ -677,40 +657,8 @@ img {
   }
   /* Flip Card */
   .flip-card-1 {
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
     width: 400px;
     height: 250px;
-    position: relative;
-    cursor: pointer;
-    transition: transform 1s ease-in-out;
-    perspective: 10rem;
-    transform-style: flat;
-    transform-style: preserve-3d;
-  }
-  .flip-card-1:hover {
-    transform: rotateY(180deg);
-  }
-  .flip-card-1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0 50%;
-  }
-  .flip-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: visible;
-    backface-visibility: hidden;
-  }
-  .flip-front {
-    transform: rotateY(0deg);
-  }
-  .flip-back {
-    transform: rotateY(180deg);
   }
   /*Fin Grid-images*/
 }
@@ -825,8 +773,8 @@ img {
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
-  /*Grid-images*/
-  .grid-images {
+  /*section__images*/
+  .section__images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -837,11 +785,11 @@ img {
     width: 22rem;
     margin: auto;
   }
-  .grid-images img {
+  .section__images img {
     color: rgba(88, 83, 83, 0.9843137255);
     box-shadow: 1rem 1rem 3rem;
   }
-  /*Fin Grid-images*/
+  /*Fin section__images*/
   /**Detalles**/
   .detalles__article {
     display: flex;
@@ -1049,8 +997,8 @@ img {
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
-  /*Grid-images*/
-  .grid-images {
+  /*section__images*/
+  .section__images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1061,14 +1009,14 @@ img {
     width: 22rem;
     margin: auto;
   }
-  .grid-images img {
+  .section__images img {
     color: rgba(88, 83, 83, 0.9843137255);
     box-shadow: 1rem 1rem 3rem;
   }
   .imagen__mujer img {
     width: 100%;
   }
-  /*Fin Grid-images*/
+  /*Fin section__images */
   /**Detalles**/
   .detalles__article {
     display: flex;
@@ -1444,7 +1392,7 @@ img {
 /* Configuraciones * */
 @media (max-width: 501px) {
   .frase {
-    width: 15rem;
+    width: 24rem;
     margin-top: 2.3rem;
     margin-right: auto;
     margin-left: auto;
@@ -1454,7 +1402,7 @@ img {
     margin: 0 auto;
   }
 }
-@media (max-width: 402px) {
+@media (max-width: 423px) {
   .frase {
     width: 15rem;
     margin-top: 2.3rem;
@@ -1467,18 +1415,8 @@ img {
   }
   /* Flip Card */
   .flip-card-1 {
-    margin-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
     width: 340px;
     height: 250px;
-    position: relative;
-    cursor: pointer;
-    transition: transform 1s ease-in-out;
-    perspective: 10rem;
-    transform-style: flat;
-    transform-style: preserve-3d;
   }
   /*FIN - Flip Card */
 }
