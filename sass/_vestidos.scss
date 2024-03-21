@@ -33,44 +33,6 @@
   }
 }
 
-/* Configuraciones * */
-
-@media (max-width: 501px) {
-  .frase {
-    width: 24rem;
-    margin-top: 2.3rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container__article {
-    width: 11rem;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 423px) {
-  .frase {
-    width: 15rem;
-    margin-top: 2.3rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .container__article {
-    width: 11rem;
-    margin: 0 auto;
-  }
-
-  /* Flip Card */
-
-  .flip-card-1 {
-    width: 340px;
-    height: 250px;
-  }
-
-  /*FIN - Flip Card */
-}
-
 /*Config Resolucion Tablet*/
 @media (min-width: 768px) and (max-width: 990px) {
   .container__section {

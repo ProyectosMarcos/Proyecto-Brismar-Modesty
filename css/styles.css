@@ -342,14 +342,42 @@ img {
     filter: drop-shadow(1rem 1rem 1rem #001000);
   }
   .imagen__mujer img {
-    width: 350px;
+    width: 400px;
   }
   /* Flip Card */
   .flip-card-1 {
     width: 400px;
     height: 250px;
   }
-  /*Fin Grid-images*/
+  .frase {
+    width: 24rem;
+    margin-top: 2.3rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container__article {
+    width: 11rem;
+    margin: 0 auto;
+  }
+}
+/* Configuraciones * */
+@media (max-width: 423px) {
+  .frase {
+    width: 17rem;
+    margin-top: 2.3rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container__article {
+    width: 11rem;
+    margin: 0 auto;
+  }
+  /* Flip Card */
+  .flip-card-1 {
+    width: 340px;
+    height: 250px;
+  }
+  /* FIN - Configuraciones */
 }
 /*Config Resolucion Tablet*/
 @media (min-width: 768px) and (max-width: 990px) {
@@ -1077,37 +1105,6 @@ img {
   .container__article a {
     text-decoration: none;
   }
-}
-/* Configuraciones * */
-@media (max-width: 501px) {
-  .frase {
-    width: 24rem;
-    margin-top: 2.3rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container__article {
-    width: 11rem;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 423px) {
-  .frase {
-    width: 15rem;
-    margin-top: 2.3rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container__article {
-    width: 11rem;
-    margin: 0 auto;
-  }
-  /* Flip Card */
-  .flip-card-1 {
-    width: 340px;
-    height: 250px;
-  }
-  /*FIN - Flip Card */
 }
 /*Config Resolucion Tablet*/
 @media (min-width: 768px) and (max-width: 990px) {

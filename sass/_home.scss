@@ -372,7 +372,7 @@
     filter: drop-shadow(1rem 1rem 1rem #001000);
   }
   .imagen__mujer img {
-    width: 350px;
+    width: 400px;
   }
 
   /* Flip Card */
@@ -381,7 +381,41 @@
     height: 250px;
   }
 
-  /*Fin Grid-images*/
+  .frase {
+    width: 24rem;
+    margin-top: 2.3rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container__article {
+    width: 11rem;
+    margin: 0 auto;
+  }
+}
+
+/* Configuraciones * */
+
+@media (max-width: 423px) {
+  .frase {
+    width: 17rem;
+    margin-top: 2.3rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container__article {
+    width: 11rem;
+    margin: 0 auto;
+  }
+
+  /* Flip Card */
+
+  .flip-card-1 {
+    width: 340px;
+    height: 250px;
+  }
+
+  /* FIN - Configuraciones */
 }
 
 /*Config Resolucion Tablet*/
