@@ -85,7 +85,7 @@
     z-index: 997;
     display: flex;
     justify-content: center;
-    background-color: rgb(243, 129, 226);
+    background-color: colores.$background_color-navbar;
     align-items: center;
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
@@ -126,7 +126,7 @@
     height: 10rem;
     display: none;
     list-style-type: none;
-    background-color: #aa5a9e;
+    background-color: colores.$background_color-submenu;
     padding: 1.7rem;
   }
 

@@ -55,7 +55,7 @@ img {
     width: 3rem;
     height: 0.6rem;
     z-index: 998;
-    background-color: rgb(255, 0, 217);
+    background-color: #fa52e1;
     right: 1rem;
     top: 7.3rem;
     border-radius: 0.3rem;
@@ -68,7 +68,7 @@ img {
     display: block;
     width: 100%;
     height: 0.6rem;
-    background-color: rgb(255, 0, 217);
+    background-color: #fa52e1;
     border-radius: 0.3rem;
     transition: transform 500ms ease;
   }
@@ -96,7 +96,7 @@ img {
     z-index: 997;
     display: flex;
     justify-content: center;
-    background-color: rgb(243, 129, 226);
+    background-color: #ee88b5;
     align-items: center;
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
@@ -133,7 +133,7 @@ img {
     height: 10rem;
     display: none;
     list-style-type: none;
-    background-color: #aa5a9e;
+    background-color: #e85b99;
     padding: 1.7rem;
   }
   .submenu__list a {
