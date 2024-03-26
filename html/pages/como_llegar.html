@@ -42,7 +42,8 @@
                                 <li class="submenu__item"><a href="./faldas.html" class="submenu__link">Faldas</a></li>
                                 <li class="submenu__item"><a href="./remeras.html" class="submenu__link">Remeras</a>
                                 </li>
-                                <li class="submenu__item"><a href="./buzos.html" class="submenu__link">Buzos</a></li>
+                                <li class="submenu__item"><a href="./buzos.html" class="submenu__link">Buzos &
+                                        Sweaters</a></li>
                             </ul>
                         </li>
                         <li class="navbar__item">
@@ -51,52 +52,86 @@
                         <li class="navbar__item">
                             <a href="./sobre_nosotros.html" class="navbar__link">Sobre Nosotros</a>
                         </li>
+
+                        <div class="container__buttons">
+                            <section class="crear__cuenta">
+                                <dialog class="dialog" id="dialog">
+                                    <form class="formulario_crear-cuenta" action="" method="post">
+                                        <h2>Crear cuenta</h2>
+                                        <hr>
+                                        <br>
+                                        <div class="container__info-uno">
+                                            <label for="name">Nombre</label>
+                                            <input type="name">
+                                            <label for="">Apellido</label>
+                                            <input type="text">
+                                        </div>
+                                        <br>
+                                        <div class="container__info-dos">
+                                            <label for="">Email</label>
+                                            <input type="email">
+                                            <label for="">Teléfono(opcional)</label>
+                                            <input type="number">
+                                        </div>
+                                        <br>
+                                        <div class="container__info-tres">
+                                            <label for="">Contraseña</label>
+                                            <input type="text">
+                                            <label for="">Repetir contraseña</label>
+                                            <input type="text">
+                                        </div>
+                                        <br>
+                                        <button type="submit">Crear cuenta</button>
+                                    </form>
+                                    <button class="button__close" id="button__close">Cerrar</button>
+                                </dialog>
+                                <button class="button___crear-cuenta" id="open__crear-cuenta">Crear cuenta</button>
+                            </section>
+                            <section class="iniciar__cuenta">
+                                <dialog class="dialog" id="dialog_dos">
+                                    <form class="formulario_iniciar-cuenta" action="" method="post">
+                                        <h2>Iniciar sesión</h2>
+                                        <hr>
+                                        <br>
+                                        <div class="container__info-uno">
+                                            <label for="">Email</label>
+                                            <input type="email">
+                                            <label for="">Contraseña</label>
+                                            <input type="text">
+                                        </div>
+                                        <br>
+
+                                        <button type="submit">Ingresar</button>
+                                    </form>
+                                    <button class="button__close" id="button__close-2">Cerrar</button>
+                                </dialog>
+                                <button class="button___iniciar-cuenta" id="open__iniciar-cuenta">Iniciar
+                                    sesión</button>
+                            </section>
+                        </div>
+                        <li class="navbar__item">
+                            <picture class="cart">
+                                <a href="" class="navbar__cart">
+                                    <img src="/icons/cart-icon2.svg" alt="">
+                                </a>
+                            </picture>
+                        </li>
+
                     </ul>
+
+
+
+
                 </nav>
 
                 <main class="main container">
 
-                    <section class="frase">
-                        <article class="frase-caracteristica">
-                            <h3>Cultivando modestia🧡</h3>
-                            <p><b>1 Timoteo 2:9</b></p>
-                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
-                        </article>
+                    <section id="seccion4" class="section" data-scroll-spy>
+                        <h2>Responsive con JavaScript</h2>
+                        <div id="gmaps"></div>
                     </section>
-                    <section class="container__section">
-                        <article class="container__article">
-                            <picture>
-                                <a href="/html/remeras/remera_bordadas_mariposa.html">
-                                    <img class="caja__img" src="/Catalogo - Imagenes/Buzo_bordado_1_gris.jpg" alt="">
-                                    <div class="container__price">
-                                        <h3>Buzo bordado🌸</h3>
-                                        <p>$6,200.00</p>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                    </section>
-                    <section class="container__detalles">
-                        <article class="detalles__article">
-                            <div class="detalles__caja-uno">
-                                <box-icon type='solid' name='truck'></box-icon>
-                                <h4>Envíos a todo el país</h4>
-                                <p>Por Correo Argentino</p>
-                            </div>
-                            <div class="detalles__caja-dos">
-                                <box-icon name='credit-card'></box-icon>
-                                <h4>Compra asegurada</h4>
-                                <p>Con todas las tarjetas.</p>
-                            </div>
-                            <div class="detalles__caja-tres">
-                                <box-icon type='solid' name='lock-alt'></box-icon>
-                                <h4>Sitio seguro</h4>
-                                <p>Protegemos tus datos.</p>
-                            </div>
-                        </article>
-                    </section>
-                    <br><br><br><br><br><br><br><br><br><br>
 
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <section class="navegacion">
                         <article class="navegacion__list-1">
                             <h3>Navegacion</h3>
@@ -111,9 +146,9 @@
                         </article>
                         <article class="medios__pago">
                             <h3>Medios de pago</h3>
-                            <a href=""><img class="visa_icon" src="/iconos/visa.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/iconos/mastercard.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/iconos/mercadopago.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/visa.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/mastercard.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/mercadopago.png" alt=""></a>
                         </article>
                         <article class="contacto">
                             <div class="contacto_info">
@@ -121,14 +156,14 @@
                             </div>
                             <div class="img">
                                 <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
-                                        class="visa_icon" src="/iconos/whatsapp.png" alt=""></a>
+                                        class="visa_icon" src="/icons/whatsapp.png" alt=""></a>
                                 <!-- <p>+5491127189256</p> -->
                             </div>
                         </article>
                         <article class="redes__sociales">
                             <h3>Redes Sociales</h3>
                             <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="visa_icon"
-                                    src="/iconos/instagram.png" alt=""></a>
+                                    src="/icons/instagram.png" alt=""></a>
                             <p></p>
                             <p></p>
                             <p></p>
@@ -138,7 +173,7 @@
                 </main>
                 <footer class="footer">
                     <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/iconos/github.svg"
+                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/icons/github.svg"
                                 alt="">ProyectosMarcos</a></small>
                 </footer>
             </div>
@@ -165,7 +200,8 @@
                                 <li class="submenu__item"><a href="./faldas.html" class="submenu__link">Faldas</a></li>
                                 <li class="submenu__item"><a href="./remeras.html" class="submenu__link">Remeras</a>
                                 </li>
-                                <li class="submenu__item"><a href="./buzos.html" class="submenu__link">Buzos</a></li>
+                                <li class="submenu__item"><a href="./buzos.html" class="submenu__link">Buzos &
+                                        Sweaters</a></li>
                             </ul>
                         </li>
                         <li class="navbar__item">
@@ -174,52 +210,86 @@
                         <li class="navbar__item">
                             <a href="./sobre_nosotros.html" class="navbar__link">Sobre Nosotros</a>
                         </li>
+
+                        <div class="container__buttons">
+                            <section class="crear__cuenta">
+                                <dialog class="dialog" id="dialog">
+                                    <form class="formulario_crear-cuenta" action="" method="post">
+                                        <h2>Crear cuenta</h2>
+                                        <hr>
+                                        <br>
+                                        <div class="container__info-uno">
+                                            <label for="name">Nombre</label>
+                                            <input type="name">
+                                            <label for="">Apellido</label>
+                                            <input type="text">
+                                        </div>
+                                        <br>
+                                        <div class="container__info-dos">
+                                            <label for="">Email</label>
+                                            <input type="email">
+                                            <label for="">Teléfono(opcional)</label>
+                                            <input type="number">
+                                        </div>
+                                        <br>
+                                        <div class="container__info-tres">
+                                            <label for="">Contraseña</label>
+                                            <input type="text">
+                                            <label for="">Repetir contraseña</label>
+                                            <input type="text">
+                                        </div>
+                                        <br>
+                                        <button type="submit">Crear cuenta</button>
+                                    </form>
+                                    <button class="button__close" id="button__close">Cerrar</button>
+                                </dialog>
+                                <button class="button___crear-cuenta" id="open__crear-cuenta">Crear cuenta</button>
+                            </section>
+                            <section class="iniciar__cuenta">
+                                <dialog class="dialog" id="dialog_dos">
+                                    <form class="formulario_iniciar-cuenta" action="" method="post">
+                                        <h2>Iniciar sesión</h2>
+                                        <hr>
+                                        <br>
+                                        <div class="container__info-uno">
+                                            <label for="">Email</label>
+                                            <input type="email">
+                                            <label for="">Contraseña</label>
+                                            <input type="text">
+                                        </div>
+                                        <br>
+
+                                        <button type="submit">Ingresar</button>
+                                    </form>
+                                    <button class="button__close" id="button__close-2">Cerrar</button>
+                                </dialog>
+                                <button class="button___iniciar-cuenta" id="open__iniciar-cuenta">Iniciar
+                                    sesión</button>
+                            </section>
+                        </div>
+                        <li class="navbar__item">
+                            <picture class="cart">
+                                <a href="" class="navbar__cart">
+                                    <img src="/icons/cart-icon2.svg" alt="">
+                                </a>
+                            </picture>
+                        </li>
+
                     </ul>
+
+
+
+
                 </nav>
 
                 <main class="main container">
 
-                    <section class="frase">
-                        <article class="frase-caracteristica">
-                            <h3>Cultivando modestia🧡</h3>
-                            <p><b>1 Timoteo 2:9</b></p>
-                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
-                        </article>
-                    </section>
-                    <section class="container__section">
-                        <article class="container__article">
-                            <picture>
-                                <a href="/html/remeras/remera_bordadas_mariposa.html">
-                                    <img class="caja__img" src="/Catalogo - Imagenes/Buzo_bordado_1_gris.jpg" alt="">
-                                    <div class="container__price">
-                                        <h3>Buzo bordado🌸</h3>
-                                        <p>$6,200.00</p>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                    </section>
-                    <section class="container__detalles">
-                        <article class="detalles__article">
-                            <div class="detalles__caja-uno">
-                                <box-icon type='solid' name='truck'></box-icon>
-                                <h4>Envíos a todo el país</h4>
-                                <p>Por Correo Argentino</p>
-                            </div>
-                            <div class="detalles__caja-dos">
-                                <box-icon name='credit-card'></box-icon>
-                                <h4>Compra asegurada</h4>
-                                <p>Con todas las tarjetas.</p>
-                            </div>
-                            <div class="detalles__caja-tres">
-                                <box-icon type='solid' name='lock-alt'></box-icon>
-                                <h4>Sitio seguro</h4>
-                                <p>Protegemos tus datos.</p>
-                            </div>
-                        </article>
+                    <section id="seccion4" class="section" data-scroll-spy>
+                        <h2>Responsive con JavaScript</h2>
+                        <div id="gmaps"></div>
                     </section>
 
-                    <br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <section class="navegacion">
                         <article class="navegacion__list-1">
                             <h3>Navegacion</h3>
@@ -234,9 +304,9 @@
                         </article>
                         <article class="medios__pago">
                             <h3>Medios de pago</h3>
-                            <a href=""><img class="visa_icon" src="/iconos/visa.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/iconos/mastercard.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/iconos/mercadopago.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/visa.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/mastercard.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/mercadopago.png" alt=""></a>
                         </article>
                         <article class="contacto">
                             <div class="contacto_info">
@@ -244,14 +314,14 @@
                             </div>
                             <div class="img">
                                 <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
-                                        class="visa_icon" src="/iconos/whatsapp.png" alt=""></a>
+                                        class="visa_icon" src="/icons/whatsapp.png" alt=""></a>
                                 <!-- <p>+5491127189256</p> -->
                             </div>
                         </article>
                         <article class="redes__sociales">
                             <h3>Redes Sociales</h3>
                             <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="visa_icon"
-                                    src="/iconos/instagram.png" alt=""></a>
+                                    src="/icons/instagram.png" alt=""></a>
                             <p></p>
                             <p></p>
                             <p></p>
@@ -261,7 +331,7 @@
                 </main>
                 <footer class="footer">
                     <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/iconos/github.svg"
+                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/icons/github.svg"
                                 alt="">ProyectosMarcos</a></small>
                 </footer>
             </div>
@@ -305,46 +375,11 @@
                 </nav>
                 <main class="main container">
 
-                    <section class="frase">
-                        <article class="frase-caracteristica">
-                            <h3>Cultivando modestia🧡</h3>
-                            <p><b>1 Timoteo 2:9</b></p>
-                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
-                        </article>
+                    <section id="seccion4" class="section" data-scroll-spy>
+                        <h2>Responsive con JavaScript</h2>
+                        <div id="gmaps"></div>
                     </section>
-                    <section class="container__section">
-                        <article class="container__article">
-                            <picture>
-                                <a href="/html/remeras/remera_bordadas_mariposa.html">
-                                    <img class="caja__img" src="/Catalogo - Imagenes/Buzo_bordado_1_gris.jpg" alt="">
-                                    <div class="container__price">
-                                        <h3>Buzo bordado🌸</h3>
-                                        <p>$6,200.00</p>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                    </section>
-                    <section class="container__detalles">
-                        <article class="detalles__article">
-                            <div class="detalles__caja-uno">
-                                <box-icon type='solid' name='truck'></box-icon>
-                                <h4>Envíos a todo el país</h4>
-                                <p>Por Correo Argentino</p>
-                            </div>
-                            <div class="detalles__caja-dos">
-                                <box-icon name='credit-card'></box-icon>
-                                <h4>Compra asegurada</h4>
-                                <p>Con todas las tarjetas.</p>
-                            </div>
-                            <div class="detalles__caja-tres">
-                                <box-icon type='solid' name='lock-alt'></box-icon>
-                                <h4>Sitio seguro</h4>
-                                <p>Protegemos tus datos.</p>
-                            </div>
-                        </article>
-                    </section>
-                    <br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <section class="navegacion">
                         <article class="navegacion__list-1">
                             <h3>Navegacion</h3>
@@ -359,9 +394,9 @@
                         </article>
                         <article class="medios__pago">
                             <h3>Medios de pago</h3>
-                            <a href=""><img class="visa_icon" src="/iconos/visa.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/iconos/mastercard.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/iconos/mercadopago.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/visa.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/mastercard.png" alt=""></a>
+                            <a href=""><img class="visa_icon" src="/icons/mercadopago.png" alt=""></a>
                         </article>
                         <article class="contacto">
                             <div class="contacto_info">
@@ -369,14 +404,14 @@
                             </div>
                             <div class="img">
                                 <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
-                                        class="visa_icon" src="/iconos/whatsapp.png" alt=""></a>
+                                        class="visa_icon" src="/icons/whatsapp.png" alt=""></a>
                                 <!-- <p>+5491127189256</p> -->
                             </div>
                         </article>
                         <article class="redes__sociales">
                             <h3>Redes Sociales</h3>
                             <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="visa_icon"
-                                    src="/iconos/instagram.png" alt=""></a>
+                                    src="/icons/instagram.png" alt=""></a>
                             <p></p>
                             <p></p>
                             <p></p>
@@ -386,14 +421,14 @@
                 </main>
                 <footer class="footer">
                     <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/iconos/github.svg"
+                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/icons/github.svg"
                                 alt="">ProyectosMarcos</a></small>
                 </footer>
             </div>
 
 
 
-
+            <script src="/javascript/modal.js"></script>
             <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 

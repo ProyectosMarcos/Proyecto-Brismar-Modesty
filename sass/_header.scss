@@ -1,0 +1,306 @@
+/*Config Resolucion Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+  .container-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 77px 59px 1fr 70px;
+    grid-template-areas: 'header header' 'navbar navbar' 'main main' 'footer footer';
+  }
+
+  /*** Config Header ***/
+  .header {
+    grid-area: header;
+    display: flex;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Dancing Script', cursive;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+  }
+
+  /******* ***********/
+  .btn__menu {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3.6rem;
+    font-size: 1.6rem;
+    width: 97vw;
+    text-align: center;
+    background-color: colores.$color_secondary;
+    list-style-type: none;
+  }
+
+  .menu__desplazable {
+    position: fixed;
+  }
+
+  .navbar__link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .logo__title {
+    font-weight: bold;
+  }
+
+  .navbar__link:hover {
+    background-color: colores.$color_navbar-hover;
+    transition: background-color 100ms ease-in;
+  }
+
+  .submenu {
+    display: none;
+    background-color: colores.$color_secondary;
+    width: 12rem;
+    top: 2.6rem;
+    flex-direction: column;
+    position: absolute;
+    list-style-type: none;
+  }
+  .submenu__link {
+    text-decoration: none;
+    color: #000;
+  }
+  .navbar__link:hover + .submenu,
+  .submenu:hover {
+    display: flex;
+  }
+  .submenu :hover {
+    background-color: colores.$color_navbar-hover;
+    transition: background-color 100ms ease-in;
+  }
+
+  // Config  Buttons Iniciar sesíon - Crear cuenta //
+  .container__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .button___crear-cuenta {
+  }
+  .button___crear-cuenta,
+  .button___iniciar-cuenta {
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button___crear-cuenta:hover,
+  .button___iniciar-cuenta:hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
+  }
+
+  .container__info-uno,
+  .container__info-dos,
+  .container__info-tres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contacto__info-uno [type='input'] {
+    width: 4rem;
+  }
+  .contacto__info-dos [type='input'] {
+    width: 4rem;
+  }
+  .contacto__info-tres [type='input'] {
+    width: 4rem;
+  }
+
+  .dialog {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+  }
+
+  dialog::backdrop {
+    background-color: #4c494941;
+    opacity: 0.25rem;
+  }
+  // Fin Config Buttons Iniciar sesíon - Crear cuenta //
+
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cart:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%)
+      hue-rotate(266deg) brightness(111%) contrast(104%);
+    transition: background-color 100ms ease-in;
+  }
+  .cart img {
+  }
+
+  /*** Fin Config Header ***/
+  /****************************************************************************/
+}
+
+/*Config Resolucion Desktop*/
+@media (min-width: 61.9375em) {
+  .container-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 77px 59px 1fr 70px;
+    grid-template-areas: 'header header' 'navbar navbar' 'main main' 'footer footer';
+  }
+
+  /*** Config Header ***/
+  .header {
+    grid-area: header;
+    display: flex;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Dancing Script', cursive;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+  }
+
+  /******* ***********/
+  .btn__menu {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3.6rem;
+    font-size: 1.4rem;
+    width: 99vw;
+    text-align: center;
+    background-color: #ffffff;
+    list-style-type: none;
+  }
+
+  .menu__desplazable {
+    position: fixed;
+  }
+
+  .navbar__link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .logo__title {
+    font-weight: bold;
+  }
+
+  .navbar__link:hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
+  }
+
+  .submenu {
+    display: none;
+    background-color: #fff;
+    width: 12rem;
+    top: 2.6rem;
+    flex-direction: column;
+    position: absolute;
+    list-style-type: none;
+  }
+  .submenu__link {
+    text-decoration: none;
+    color: #000;
+  }
+  .navbar__link:hover + .submenu,
+  .submenu:hover {
+    display: flex;
+  }
+  .submenu :hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
+  }
+  // Config  Buttons Iniciar sesíon - Crear cuenta //
+  .container__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .button___crear-cuenta {
+  }
+  .button___crear-cuenta,
+  .button___iniciar-cuenta {
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button___crear-cuenta:hover,
+  .button___iniciar-cuenta:hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
+  }
+
+  .container__info-uno,
+  .container__info-dos,
+  .container__info-tres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contacto__info-uno [type='input'] {
+    width: 4rem;
+  }
+  .contacto__info-dos [type='input'] {
+    width: 4rem;
+  }
+  .contacto__info-tres [type='input'] {
+    width: 4rem;
+  }
+
+  .dialog {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+  }
+
+  dialog::backdrop {
+    background-color: #4c494941;
+    opacity: 0.25rem;
+  }
+  // Fin Config Buttons Iniciar sesíon - Crear cuenta //
+
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cart:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%)
+      hue-rotate(266deg) brightness(111%) contrast(104%);
+    transition: background-color 100ms ease-in;
+  }
+  .cart img {
+  }
+  /*** Fin Config Header ***/
+}

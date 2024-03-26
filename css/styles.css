@@ -37,7 +37,7 @@ img {
   .header {
     background-color: aqua;
     grid-area: header;
-    background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+    background-image: url(/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
   /*******         ************/
   /* Config Menu */
@@ -133,7 +133,7 @@ img {
     height: 10rem;
     display: none;
     list-style-type: none;
-    background-color: rgb(251, 13, 4);
+    background-color: #aa5a9e;
     padding: 1.7rem;
   }
   .submenu__list a {
@@ -190,7 +190,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
@@ -223,7 +223,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
-    background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   .detalles__caja-uno,
   .detalles__caja-dos,
@@ -297,7 +297,7 @@ img {
     justify-content: space-between;
     font-size: 1.1rem;
     text-align: center;
-    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
   .navegacion h3 {
     font-size: 1.3rem;
@@ -396,7 +396,7 @@ img {
     font-family: "Dancing Script", cursive;
     justify-content: center;
     align-items: center;
-    background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+    background-image: url(/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
   /******* ***********/
   .btn__menu {
@@ -415,8 +415,8 @@ img {
     justify-content: space-evenly;
     align-items: center;
     height: 3.6rem;
-    font-size: 1.6rem;
-    width: 97vw;
+    font-size: 1.2rem;
+    width: 99vw;
     text-align: center;
     background-color: #ffffff;
     list-style-type: none;
@@ -438,7 +438,7 @@ img {
   .submenu {
     display: none;
     background-color: #ffffff;
-    width: 8rem;
+    width: 12rem;
     top: 2.6rem;
     flex-direction: column;
     position: absolute;
@@ -455,6 +455,57 @@ img {
   .submenu :hover {
     background-color: rgba(255, 169, 255, 0.9333333333);
     transition: background-color 100ms ease-in;
+  }
+  .container__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .button___crear-cuenta,
+  .button___iniciar-cuenta {
+    font-size: 1.2rem;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button___crear-cuenta:hover,
+  .button___iniciar-cuenta:hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
+  }
+  .container__info-uno,
+  .container__info-dos,
+  .container__info-tres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contacto__info-uno [type=input] {
+    width: 4rem;
+  }
+  .contacto__info-dos [type=input] {
+    width: 4rem;
+  }
+  .contacto__info-tres [type=input] {
+    width: 4rem;
+  }
+  .dialog {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+  }
+  dialog::backdrop {
+    background-color: rgba(76, 73, 73, 0.2549019608);
+    opacity: 0.25rem;
+  }
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cart:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(266deg) brightness(111%) contrast(104%);
+    transition: filter 100ms ease-in;
   }
   /*** Fin Config Header ***/
   /****************************************************************************/
@@ -486,7 +537,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
@@ -512,7 +563,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
-    background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   .detalles__caja-uno,
   .detalles__caja-dos,
@@ -580,7 +631,7 @@ img {
     justify-content: space-evenly;
     font-size: 1.3rem;
     text-align: center;
-    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
   .navbar__footer a:hover {
     background-color: #ffa5a0;
@@ -619,7 +670,7 @@ img {
     font-family: "Dancing Script", cursive;
     justify-content: center;
     align-items: center;
-    background-image: url(/iconos/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+    background-image: url(/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
   /******* ***********/
   .btn__menu {
@@ -638,8 +689,8 @@ img {
     justify-content: space-evenly;
     align-items: center;
     height: 3.6rem;
-    font-size: 1.6rem;
-    width: 97vw;
+    font-size: 1.4rem;
+    width: 99vw;
     text-align: center;
     background-color: #ffffff;
     list-style-type: none;
@@ -661,7 +712,7 @@ img {
   .submenu {
     display: none;
     background-color: #fff;
-    width: 8rem;
+    width: 12rem;
     top: 2.6rem;
     flex-direction: column;
     position: absolute;
@@ -678,6 +729,57 @@ img {
   .submenu :hover {
     background-color: rgba(255, 169, 255, 0.9333333333);
     transition: background-color 100ms ease-in;
+  }
+  .container__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .button___crear-cuenta,
+  .button___iniciar-cuenta {
+    font-size: 1.4rem;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button___crear-cuenta:hover,
+  .button___iniciar-cuenta:hover {
+    background-color: rgba(255, 169, 255, 0.9333333333);
+    transition: background-color 100ms ease-in;
+  }
+  .container__info-uno,
+  .container__info-dos,
+  .container__info-tres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contacto__info-uno [type=input] {
+    width: 4rem;
+  }
+  .contacto__info-dos [type=input] {
+    width: 4rem;
+  }
+  .contacto__info-tres [type=input] {
+    width: 4rem;
+  }
+  .dialog {
+    width: 700px;
+    height: 300px;
+    margin: auto;
+  }
+  dialog::backdrop {
+    background-color: rgba(76, 73, 73, 0.2549019608);
+    opacity: 0.25rem;
+  }
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cart:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(266deg) brightness(111%) contrast(104%);
+    transition: filter 100ms ease-in;
   }
   /*** Fin Config Header ***/
   /****************************************************************************/
@@ -710,7 +812,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
@@ -739,7 +841,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
-    background-image: url(/iconos/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   .detalles__caja-uno,
   .detalles__caja-dos,
@@ -806,7 +908,7 @@ img {
     justify-content: space-evenly;
     font-size: 1.3rem;
     text-align: center;
-    background-image: url(/iconos/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
   .navbar__footer a:hover {
     background-color: #ffa5a0;
@@ -1104,6 +1206,7 @@ img {
   }
   .container__article a {
     text-decoration: none;
+    color: black;
   }
 }
 /*Config Resolucion Tablet*/
@@ -1130,6 +1233,7 @@ img {
   }
   .container__article a {
     text-decoration: none;
+    color: black;
   }
 }
 /*Config Resolucion Desktop*/
@@ -1157,6 +1261,7 @@ img {
   }
   .container__article a {
     text-decoration: none;
+    color: black;
   }
 }
 /************************    Fin  Estilos - Pagina Vestidos                    ********************/
