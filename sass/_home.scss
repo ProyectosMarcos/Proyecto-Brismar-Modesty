@@ -507,12 +507,24 @@
   }
 
   // Config  Buttons Iniciar sesíon - Crear cuenta //
+
+  .dialog {
+    width: 700px;
+    height: 412px;
+    margin: auto;
+    background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+
+  dialog::backdrop {
+    background-color: #19181891;
+    opacity: 0.25rem;
+  }
+
   .container__buttons {
     display: flex;
     gap: 1rem;
   }
-  .button___crear-cuenta {
-  }
+
   .button___crear-cuenta,
   .button___iniciar-cuenta {
     font-size: 1.2rem;
@@ -523,7 +535,7 @@
   }
   .button___crear-cuenta:hover,
   .button___iniciar-cuenta:hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: colores.$color_navbar-hover;
     transition: background-color 100ms ease-in;
   }
 
@@ -531,29 +543,84 @@
   .container__info-dos,
   .container__info-tres {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
+    margin-top: 1rem;
+    height: 4rem;
   }
-  .contacto__info-uno [type='input'] {
-    width: 4rem;
+  // Buttons Form //
+  .button__close {
+    width: 8rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    background-color: #c5e8f8;
+    cursor: pointer;
   }
-  .contacto__info-dos [type='input'] {
-    width: 4rem;
+  .button__close:hover {
+    background-color: #8dceec;
+    transition: background-color 0.1s ease;
   }
-  .contacto__info-tres [type='input'] {
-    width: 4rem;
+  .button__close:active {
+    transform: scale(0.9);
+  }
+  .info {
+    height: 2.5rem;
   }
 
-  .dialog {
-    width: 700px;
-    height: 300px;
-    margin: auto;
+  input[type='text'],
+  [type='email'],
+  [type='number'],
+  [type='password'] {
+    height: 2rem;
+    margin-top: 0.2rem;
   }
 
-  dialog::backdrop {
-    background-color: #4c494941;
-    opacity: 0.25rem;
+  .formulario_crear-cuenta,
+  .formulario_iniciar-cuenta [type='label'] {
+    font-size: 1.3rem;
+  }
+
+  .formulario_crear-cuenta [type='submit'] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 2rem;
+    background-color: #f68895;
+  }
+
+  .formulario_crear-cuenta [type='submit']:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+
+  .formulario_crear-cuenta [type='submit'] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .formulario_crear-cuenta [type='submit']:active {
+    transform: scale(0.9);
+  }
+
+  .formulario_iniciar-cuenta [type='submit'] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 7rem;
+    background-color: #f68895;
+  }
+
+  .formulario_iniciar-cuenta [type='submit']:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+
+  .formulario_iniciar-cuenta [type='submit']:active {
+    transform: scale(0.9);
+  }
+  .info_cuatro {
+    margin-top: 5rem;
   }
   // Fin Config Buttons Iniciar sesíon - Crear cuenta //
 
@@ -565,8 +632,6 @@
     filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%)
       hue-rotate(266deg) brightness(111%) contrast(104%);
     transition: filter 100ms ease-in;
-  }
-  .cart img {
   }
 
   /*** Fin Config Header ***/
@@ -829,15 +894,27 @@
     transition: background-color 100ms ease-in;
   }
   // Config  Buttons Iniciar sesíon - Crear cuenta //
+
+  .dialog {
+    width: 700px;
+    height: 412px;
+    margin: auto;
+    background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+
+  dialog::backdrop {
+    background-color: #19181891;
+    opacity: 0.25rem;
+  }
+
   .container__buttons {
     display: flex;
     gap: 1rem;
   }
-  .button___crear-cuenta {
-  }
+
   .button___crear-cuenta,
   .button___iniciar-cuenta {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
     border: none;
@@ -853,29 +930,84 @@
   .container__info-dos,
   .container__info-tres {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
+    margin-top: 1rem;
+    height: 4rem;
   }
-  .contacto__info-uno [type='input'] {
-    width: 4rem;
+  // Buttons Form //
+  .button__close {
+    width: 8rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    background-color: #c5e8f8;
+    cursor: pointer;
   }
-  .contacto__info-dos [type='input'] {
-    width: 4rem;
+  .button__close:hover {
+    background-color: #8dceec;
+    transition: background-color 0.1s ease;
   }
-  .contacto__info-tres [type='input'] {
-    width: 4rem;
+  .button__close:active {
+    transform: scale(0.9);
+  }
+  .info {
+    height: 2.5rem;
   }
 
-  .dialog {
-    width: 700px;
-    height: 300px;
-    margin: auto;
+  input[type='text'],
+  [type='email'],
+  [type='number'],
+  [type='password'] {
+    height: 2rem;
+    margin-top: 0.2rem;
   }
 
-  dialog::backdrop {
-    background-color: #4c494941;
-    opacity: 0.25rem;
+  .formulario_crear-cuenta,
+  .formulario_iniciar-cuenta [type='label'] {
+    font-size: 1.3rem;
+  }
+
+  .formulario_crear-cuenta [type='submit'] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 2rem;
+    background-color: #f68895;
+  }
+
+  .formulario_crear-cuenta [type='submit']:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+
+  .formulario_crear-cuenta [type='submit'] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+  .formulario_crear-cuenta [type='submit']:active {
+    transform: scale(0.9);
+  }
+
+  .formulario_iniciar-cuenta [type='submit'] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 7rem;
+    background-color: #f68895;
+  }
+
+  .formulario_iniciar-cuenta [type='submit']:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+
+  .formulario_iniciar-cuenta [type='submit']:active {
+    transform: scale(0.9);
+  }
+  .info_cuatro {
+    margin-top: 5rem;
   }
   // Fin Config Buttons Iniciar sesíon - Crear cuenta //
 
@@ -888,8 +1020,7 @@
       hue-rotate(300deg) brightness(111%) contrast(104%);
     transition: filter 100ms ease-in;
   }
-  .cart img {
-  }
+
   /*** Fin Config Header ***/
   /****************************************************************************/
 

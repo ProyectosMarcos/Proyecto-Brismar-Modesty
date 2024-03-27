@@ -96,7 +96,7 @@ img {
     z-index: 997;
     display: flex;
     justify-content: center;
-    background-color: #ee88b5;
+    background-color: #ff9fdc;
     align-items: center;
     transform: translate(-100%, 0);
     transition: transform 500ms ease-in-out;
@@ -456,6 +456,16 @@ img {
     background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
+  .dialog {
+    width: 700px;
+    height: 412px;
+    margin: auto;
+    background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  dialog::backdrop {
+    background-color: rgba(25, 24, 24, 0.568627451);
+    opacity: 0.25rem;
+  }
   .container__buttons {
     display: flex;
     gap: 1rem;
@@ -470,34 +480,81 @@ img {
   }
   .button___crear-cuenta:hover,
   .button___iniciar-cuenta:hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
   .container__info-uno,
   .container__info-dos,
   .container__info-tres {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
+    margin-top: 1rem;
+    height: 4rem;
   }
-  .contacto__info-uno [type=input] {
-    width: 4rem;
+  .button__close {
+    width: 8rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    background-color: #c5e8f8;
+    cursor: pointer;
   }
-  .contacto__info-dos [type=input] {
-    width: 4rem;
+  .button__close:hover {
+    background-color: #8dceec;
+    transition: background-color 0.1s ease;
   }
-  .contacto__info-tres [type=input] {
-    width: 4rem;
+  .button__close:active {
+    transform: scale(0.9);
   }
-  .dialog {
-    width: 700px;
-    height: 300px;
-    margin: auto;
+  .info {
+    height: 2.5rem;
   }
-  dialog::backdrop {
-    background-color: rgba(76, 73, 73, 0.2549019608);
-    opacity: 0.25rem;
+  input[type=text],
+  [type=email],
+  [type=number],
+  [type=password] {
+    height: 2rem;
+    margin-top: 0.2rem;
+  }
+  .formulario_crear-cuenta,
+  .formulario_iniciar-cuenta [type=label] {
+    font-size: 1.3rem;
+  }
+  .formulario_crear-cuenta [type=submit] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 2rem;
+    background-color: #f68895;
+  }
+  .formulario_crear-cuenta [type=submit]:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+  .formulario_crear-cuenta [type=submit] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .formulario_crear-cuenta [type=submit]:active {
+    transform: scale(0.9);
+  }
+  .formulario_iniciar-cuenta [type=submit] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 7rem;
+    background-color: #f68895;
+  }
+  .formulario_iniciar-cuenta [type=submit]:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+  .formulario_iniciar-cuenta [type=submit]:active {
+    transform: scale(0.9);
+  }
+  .info_cuatro {
+    margin-top: 5rem;
   }
   .cart {
     width: 2rem;
@@ -730,13 +787,23 @@ img {
     background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
+  .dialog {
+    width: 700px;
+    height: 412px;
+    margin: auto;
+    background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  dialog::backdrop {
+    background-color: rgba(25, 24, 24, 0.568627451);
+    opacity: 0.25rem;
+  }
   .container__buttons {
     display: flex;
     gap: 1rem;
   }
   .button___crear-cuenta,
   .button___iniciar-cuenta {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: "Times New Roman", Times, serif;
     background-color: white;
     border: none;
@@ -751,27 +818,74 @@ img {
   .container__info-dos,
   .container__info-tres {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
+    margin-top: 1rem;
+    height: 4rem;
   }
-  .contacto__info-uno [type=input] {
-    width: 4rem;
+  .button__close {
+    width: 8rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    background-color: #c5e8f8;
+    cursor: pointer;
   }
-  .contacto__info-dos [type=input] {
-    width: 4rem;
+  .button__close:hover {
+    background-color: #8dceec;
+    transition: background-color 0.1s ease;
   }
-  .contacto__info-tres [type=input] {
-    width: 4rem;
+  .button__close:active {
+    transform: scale(0.9);
   }
-  .dialog {
-    width: 700px;
-    height: 300px;
-    margin: auto;
+  .info {
+    height: 2.5rem;
   }
-  dialog::backdrop {
-    background-color: rgba(76, 73, 73, 0.2549019608);
-    opacity: 0.25rem;
+  input[type=text],
+  [type=email],
+  [type=number],
+  [type=password] {
+    height: 2rem;
+    margin-top: 0.2rem;
+  }
+  .formulario_crear-cuenta,
+  .formulario_iniciar-cuenta [type=label] {
+    font-size: 1.3rem;
+  }
+  .formulario_crear-cuenta [type=submit] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 2rem;
+    background-color: #f68895;
+  }
+  .formulario_crear-cuenta [type=submit]:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+  .formulario_crear-cuenta [type=submit] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .formulario_crear-cuenta [type=submit]:active {
+    transform: scale(0.9);
+  }
+  .formulario_iniciar-cuenta [type=submit] {
+    width: 8rem;
+    font-size: 1.1rem;
+    padding: 0.4rem;
+    margin-top: 7rem;
+    background-color: #f68895;
+  }
+  .formulario_iniciar-cuenta [type=submit]:hover {
+    background-color: #f17684;
+    transition: background-color 0.1s ease;
+  }
+  .formulario_iniciar-cuenta [type=submit]:active {
+    transform: scale(0.9);
+  }
+  .info_cuatro {
+    margin-top: 5rem;
   }
   .cart {
     width: 2rem;

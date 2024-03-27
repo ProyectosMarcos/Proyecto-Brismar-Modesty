@@ -61,26 +61,39 @@
                                         <h2>Crear cuenta</h2>
                                         <hr>
                                         <div class="container__info-uno">
-                                            <label for="nombre">Nombre</label>
-                                            <input type="text" id="nombre" name="nombre" required>
-
-                                            <label for="apellido">Apellido</label>
-                                            <input type="text" id="apellido" name="apellido" required>
+                                            <div class="info">
+                                                <label for="nombre">Nombre:</label>
+                                                <input type="text" id="nombre" name="nombre"
+                                                    title="Nombre sólo acepta letras y espacios en blanco"
+                                                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                            </div>
+                                            <div class="info">
+                                                <label for="apellido">Apellido:</label>
+                                                <input type="text" id="apellido" name="apellido" required>
+                                            </div>
                                         </div>
                                         <div class="container__info-dos">
-                                            <label for="email">Email</label>
-                                            <input type="email" id="email" name="email" required>
-
-                                            <label for="number">Teléfono (opcional)</label>
-                                            <input type="tel" id="number" name="number">
+                                            <div class="info_dos">
+                                                <label for="email">Email:</label>
+                                                <input type="email" id="email" name="email" title="Email incorrecto"
+                                                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                                                    required>
+                                            </div>
+                                            <div class="info_dos">
+                                                <label for="number">Teléfono (opcional):</label>
+                                                <input type="number" id="number" name="number">
+                                            </div>
                                         </div>
                                         <div class="container__info-tres">
-                                            <label for="contrasenia">Contraseña</label>
-                                            <input type="password" id="contrasenia" name="contrasenia" required>
-
-                                            <label for="repeat_contrasenia">Repetir contraseña</label>
-                                            <input type="password" id="repeat_contrasenia" name="repeat_contrasenia"
-                                                required>
+                                            <div class="info_tres">
+                                                <label for="contrasenia">Contraseña:</label>
+                                                <input type="password" id="contrasenia" name="contrasenia" required>
+                                            </div>
+                                            <div class="info_tres">
+                                                <label for="repeat_contrasenia">Repetir contraseña:</label>
+                                                <input type="password" id="repeat_contrasenia" name="repeat_contrasenia"
+                                                    required>
+                                            </div>
                                         </div>
                                         <button type="submit">Crear cuenta</button>
                                     </form>
@@ -95,11 +108,14 @@
                                         <h2>Iniciar sesión</h2>
                                         <hr>
                                         <div class="container__info-uno">
-                                            <label for="email_dos">Email</label>
-                                            <input type="email" id="email_dos" name="email" required>
-
-                                            <label for="contrasenia_dos">Contraseña</label>
-                                            <input type="password" id="contrasenia_dos" name="contrasenia" required>
+                                            <div class="info_cuatro">
+                                                <label for="email_dos">Email:</label>
+                                                <input type="email" id="email_dos" name="email" required>
+                                            </div>
+                                            <div class="info_cuatro">
+                                                <label for="contrasenia_dos">Contraseña:</label>
+                                                <input type="password" id="contrasenia_dos" name="contrasenia" required>
+                                            </div>
                                         </div>
                                         <button type="submit">Ingresar</button>
                                     </form>
@@ -251,25 +267,38 @@
                                         <h2>Crear cuenta</h2>
                                         <hr>
                                         <div class="container__info-uno">
-                                            <label for="nombre_3">Nombre</label>
-                                            <input type="text" id="nombre_3" name="nombre" required>
-
-                                            <label for="apellido_3">Apellido</label>
-                                            <input type="text" id="apellido_3" name="apellido" required>
+                                            <div class="info">
+                                                <label for="nombre_3">Nombre:</label>
+                                                <input type="text" id="nombre_3" name="nombre"
+                                                    title="Nombre sólo acepta letras y espacios en blanco"
+                                                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                            </div>
+                                            <div class="info">
+                                                <label for="apellido_3">Apellido:</label>
+                                                <input type="text" id="apellido_3" name="apellido" required>
+                                            </div>
                                         </div>
                                         <div class="container__info-dos">
-                                            <label for="email_3">Email</label>
-                                            <input type="email" id="email_3" name="email" required>
-
-                                            <label for="number_3">Teléfono (opcional)</label>
-                                            <input type="tel" id="number_3" name="number">
+                                            <div class="info_dos">
+                                                <label for="email_3">Email:</label>
+                                                <input type="email" id="email_3" name="email" title="Email incorrecto"
+                                                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                                                    required>
+                                            </div>
+                                            <div class="info_dos">
+                                                <label for="number_3">Teléfono (opcional):</label>
+                                                <input type="number" id="number_3" name="number">
+                                            </div>
                                         </div>
                                         <div class="container__info-tres">
-                                            <label for="contrasenia_3">Contraseña</label>
-                                            <input type="password" id="contrasenia_3" name="contrasenia" required>
-
-                                            <label for="repeat_3">Repetir contraseña</label>
-                                            <input type="password" id="repeat_3" name="repeat_contrasenia" required>
+                                            <div class="info_tres">
+                                                <label for="contrasenia_3">Contraseña:</label>
+                                                <input type="password" id="contrasenia_3" name="contrasenia" required>
+                                            </div>
+                                            <div class="info_tres">
+                                                <label for="repeat_3">Repetir contraseña:</label>
+                                                <input type="password" id="repeat_3" name="repeat_contrasenia" required>
+                                            </div>
                                         </div>
                                         <button type="submit">Crear cuenta</button>
                                     </form>
@@ -284,11 +313,16 @@
                                         <h2>Iniciar sesión</h2>
                                         <hr>
                                         <div class="container__info-uno">
-                                            <label for="email_4">Email</label>
-                                            <input type="email" id="email_4" name="email" required>
-
-                                            <label for="contrasenia_4">Contraseña</label>
-                                            <input type="password" id="contrasenia_4" name="contrasenia" required>
+                                            <div class="info_cuatro">
+                                                <label for="email_4">Email:</label>
+                                                <input type="email" id="email_4" name="email" title="Email incorrecto"
+                                                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                                                    required>
+                                            </div>
+                                            <div class="info_cuatro">
+                                                <label for="contrasenia_4">Contraseña:</label>
+                                                <input type="password" id="contrasenia_4" name="contrasenia" required>
+                                            </div>
                                         </div>
                                         <button type="submit">Ingresar</button>
                                     </form>
