@@ -432,7 +432,7 @@ img {
     font-weight: bold;
   }
   .navbar__link:hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
   .submenu {
@@ -453,7 +453,7 @@ img {
     display: flex;
   }
   .submenu :hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
   .container__buttons {
@@ -706,7 +706,7 @@ img {
     font-weight: bold;
   }
   .navbar__link:hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
   .submenu {
@@ -727,7 +727,7 @@ img {
     display: flex;
   }
   .submenu :hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
   .container__buttons {
@@ -744,7 +744,7 @@ img {
   }
   .button___crear-cuenta:hover,
   .button___iniciar-cuenta:hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
   }
   .container__info-uno,
@@ -778,7 +778,7 @@ img {
     height: 2rem;
   }
   .cart:hover {
-    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(266deg) brightness(111%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(300deg) brightness(111%) contrast(104%);
     transition: filter 100ms ease-in;
   }
   /*** Fin Config Header ***/

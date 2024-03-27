@@ -803,7 +803,7 @@
   }
 
   .navbar__link:hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: colores.$color_navbar-hover;
     transition: background-color 100ms ease-in;
   }
 
@@ -825,7 +825,7 @@
     display: flex;
   }
   .submenu :hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: colores.$color_navbar-hover;
     transition: background-color 100ms ease-in;
   }
   // Config  Buttons Iniciar sesíon - Crear cuenta //
@@ -845,7 +845,7 @@
   }
   .button___crear-cuenta:hover,
   .button___iniciar-cuenta:hover {
-    background-color: rgba(255, 169, 255, 0.9333333333);
+    background-color: colores.$color_navbar-hover;
     transition: background-color 100ms ease-in;
   }
 
@@ -885,7 +885,7 @@
   }
   .cart:hover {
     filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%)
-      hue-rotate(266deg) brightness(111%) contrast(104%);
+      hue-rotate(300deg) brightness(111%) contrast(104%);
     transition: filter 100ms ease-in;
   }
   .cart img {
