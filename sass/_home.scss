@@ -587,16 +587,13 @@
     padding: 0.4rem;
     margin-top: 2rem;
     background-color: #f68895;
+    transition: 0.2s;
+    cursor: pointer;
   }
 
   .formulario_crear-cuenta [type='submit']:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
-  }
-
-  .formulario_crear-cuenta [type='submit'] {
-    transition: 0.2s;
-    cursor: pointer;
   }
 
   .formulario_crear-cuenta [type='submit']:active {
@@ -609,6 +606,7 @@
     padding: 0.4rem;
     margin-top: 7rem;
     background-color: #f68895;
+    cursor: pointer;
   }
 
   .formulario_iniciar-cuenta [type='submit']:hover {
@@ -914,7 +912,7 @@
 
   .button___crear-cuenta,
   .button___iniciar-cuenta {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
     border: none;
@@ -974,16 +972,13 @@
     padding: 0.4rem;
     margin-top: 2rem;
     background-color: #f68895;
+    transition: 0.2s;
+    cursor: pointer;
   }
 
   .formulario_crear-cuenta [type='submit']:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
-  }
-
-  .formulario_crear-cuenta [type='submit'] {
-    transition: 0.2s;
-    cursor: pointer;
   }
 
   .formulario_crear-cuenta [type='submit']:active {
@@ -996,6 +991,7 @@
     padding: 0.4rem;
     margin-top: 7rem;
     background-color: #f68895;
+    cursor: pointer;
   }
 
   .formulario_iniciar-cuenta [type='submit']:hover {
