@@ -1,4 +1,4 @@
-Proyecto-Brismar-Modesty en (Proceso Responsive - creando nuevos archivos)
+
 <h3 align="center">Proyecto-Brismar-Modesty en (Proceso Responsive - creando nuevos archivos)</h3> 
 <p align="center">
 Version Movil
