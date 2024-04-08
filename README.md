@@ -1,5 +1,6 @@
 
-<h3 align="center">Proyecto-Brismar-Modesty en (Proceso Responsive - creando nuevos archivos)</h3> 
+<h3 align="center">Proyecto-Brismar-Modesty en (Proceso Responsive - creando nuevos archivos, actualizaciones)</h3> 
+<h3 align="center">Herramienta de diseño: Figma</h3> 
 
 <h3 align="center">Version Movil</h3> 
   
