@@ -9,6 +9,7 @@
                   
 <h3 align="center">Version Tablet</h3> 
 
+[![Brismar-Modesty-page-0002.jpg](https://i.postimg.cc/zGWbBVcT/Brismar-Modesty-page-0002.jpg)](https://postimg.cc/yD1YpYBN)
 
  
 
