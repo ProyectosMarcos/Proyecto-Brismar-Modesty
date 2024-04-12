@@ -15,11 +15,10 @@
 
   .container__article {
     width: 13rem;
-    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
-    -webkit-filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+  
   }
 
   .container__price {
@@ -47,7 +46,7 @@
 
   .container__article {
     width: 18rem;
-    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    height: 30rem;
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
@@ -79,7 +78,7 @@
 
   .container__article {
     width: 19rem;
-    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    height: 34rem;
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;

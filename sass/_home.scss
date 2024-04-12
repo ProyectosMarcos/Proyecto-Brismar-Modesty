@@ -509,8 +509,8 @@
   // Config  Buttons Iniciar sesíon - Crear cuenta //
 
   .dialog {
-    width: 700px;
-    height: 412px;
+    width: 800px;
+      height: 440px;
     margin: auto;
     background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
@@ -539,87 +539,113 @@
     transition: background-color 100ms ease-in;
   }
 
-  .container__info-uno,
-  .container__info-dos,
-  .container__info-tres {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
-    height: 4rem;
-  }
-  // Buttons Form //
-  .button__close {
-    width: 8rem;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    padding: 0.4rem;
-    background-color: #c5e8f8;
-    cursor: pointer;
-  }
-  .button__close:hover {
-    background-color: #8dceec;
-    transition: background-color 0.1s ease;
-  }
-  .button__close:active {
-    transform: scale(0.9);
-  }
-  .info {
-    height: 2.5rem;
-  }
-
-  input[type='text'],
-  [type='email'],
-  [type='number'],
-  [type='password'] {
-    height: 2rem;
-    margin-top: 0.2rem;
-  }
-
-  .formulario_crear-cuenta,
-  .formulario_iniciar-cuenta [type='label'] {
-    font-size: 1.3rem;
-  }
-
-  .formulario_crear-cuenta [type='submit'] {
-    width: 8rem;
-    font-size: 1.1rem;
-    padding: 0.4rem;
-    margin-top: 2rem;
-    background-color: #f68895;
-    transition: 0.2s;
-    cursor: pointer;
-  }
-
-  .formulario_crear-cuenta [type='submit']:hover {
-    background-color: #f17684;
-    transition: background-color 0.1s ease;
-  }
-
-  .formulario_crear-cuenta [type='submit']:active {
-    transform: scale(0.9);
-  }
-
-  .formulario_iniciar-cuenta [type='submit'] {
-    width: 8rem;
-    font-size: 1.1rem;
-    padding: 0.4rem;
-    margin-top: 7rem;
-    background-color: #f68895;
-    cursor: pointer;
-  }
-
-  .formulario_iniciar-cuenta [type='submit']:hover {
-    background-color: #f17684;
-    transition: background-color 0.1s ease;
-  }
-
-  .formulario_iniciar-cuenta [type='submit']:active {
-    transform: scale(0.9);
-  }
-  .info_cuatro {
-    margin-top: 5rem;
-  }
+    .container__info-uno,
+    .container__info-dos,
+    .container__info-tres {
+      display: flex;
+      margin: auto;
+      width: 38.5rem;
+      margin-top: 1.5rem;
+      gap: 2rem;
+      height: 4rem;
+    }
+  
+  
+    // Buttons Form //
+    .button__close {
+      width: 8rem;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      padding: 0.4rem;
+      background-color: #c5e8f8;
+      cursor: pointer;
+    }
+  
+    .button__close:hover {
+      background-color: #8dceec;
+      transition: background-color 0.1s ease;
+      -webkit-transition: background-color 0.1s ease;
+      -moz-transition: background-color 0.1s ease;
+      -ms-transition: background-color 0.1s ease;
+      -o-transition: background-color 0.1s ease;
+    }
+  
+    .button__close:active {
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9);
+    }
+  
+  
+    input[type='text'],
+    [type='email'],
+    [type='number'],
+    [type='password'] {
+      height: 2rem;
+      margin-top: 0.2rem;
+      width: 18rem;
+  
+    }
+  
+    .formulario_crear-cuenta,
+    .formulario_iniciar-cuenta [type='label'] {
+      font-size: 1.3rem;
+    }
+  
+    .formulario_crear-cuenta [type='submit'] {
+      width: 8rem;
+      font-size: 1.1rem;
+      padding: 0.4rem;
+      margin-top: 2rem;
+      background-color: #f68895;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+  
+    .formulario_crear-cuenta [type='submit']:hover {
+      background-color: #f17684;
+      transition: background-color 0.1s ease;
+      -webkit-transition: background-color 0.1s ease;
+      -moz-transition: background-color 0.1s ease;
+      -ms-transition: background-color 0.1s ease;
+      -o-transition: background-color 0.1s ease;
+    }
+  
+    .formulario_crear-cuenta [type='submit']:active {
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -o-transform: scale(0.9);
+    }
+  
+    .formulario_iniciar-cuenta [type='submit'] {
+      width: 8rem;
+      font-size: 1.1rem;
+      padding: 0.4rem;
+      margin-top: 7rem;
+      background-color: #f68895;
+      cursor: pointer;
+    }
+  
+    .formulario_iniciar-cuenta [type='submit']:hover {
+      background-color: #f17684;
+      transition: background-color 0.1s ease;
+      -webkit-transition: background-color 0.1s ease;
+      -moz-transition: background-color 0.1s ease;
+      -ms-transition: background-color 0.1s ease;
+      -o-transition: background-color 0.1s ease;
+    }
+  
+    .formulario_iniciar-cuenta [type='submit']:active {
+      transform: scale(0.9);
+    }
+  
+    .info_cuatro {
+      margin-top: 5rem;
+    }
   // Fin Config Buttons Iniciar sesíon - Crear cuenta //
 
   .cart {
@@ -894,8 +920,8 @@
   // Config  Buttons Iniciar sesíon - Crear cuenta //
 
   .dialog {
-    width: 700px;
-    height: 412px;
+    width: 800px;
+    height: 440px;
     margin: auto;
     background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
@@ -922,17 +948,24 @@
   .button___iniciar-cuenta:hover {
     background-color: colores.$color_navbar-hover;
     transition: background-color 100ms ease-in;
-  }
+    -webkit-transition: background-color 100ms ease-in;
+    -moz-transition: background-color 100ms ease-in;
+    -ms-transition: background-color 100ms ease-in;
+    -o-transition: background-color 100ms ease-in;
+}
 
   .container__info-uno,
   .container__info-dos,
-  .container__info-tres {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
-    height: 4rem;
+    .container__info-tres{
+     display: flex;
+     margin: auto;
+     width:38.5rem;
+     margin-top: 1.5rem;
+     gap: 2rem;
+     height: 4rem;
   }
+
+
   // Buttons Form //
   .button__close {
     width: 8rem;
@@ -945,13 +978,19 @@
   .button__close:hover {
     background-color: #8dceec;
     transition: background-color 0.1s ease;
-  }
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
+}
   .button__close:active {
     transform: scale(0.9);
-  }
-  .info {
-    height: 2.5rem;
-  }
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+ 
 
   input[type='text'],
   [type='email'],
@@ -959,6 +998,8 @@
   [type='password'] {
     height: 2rem;
     margin-top: 0.2rem;
+    width: 18rem;
+    
   }
 
   .formulario_crear-cuenta,
@@ -979,11 +1020,19 @@
   .formulario_crear-cuenta [type='submit']:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
-  }
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
+}
 
   .formulario_crear-cuenta [type='submit']:active {
     transform: scale(0.9);
-  }
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
 
   .formulario_iniciar-cuenta [type='submit'] {
     width: 8rem;
@@ -997,7 +1046,11 @@
   .formulario_iniciar-cuenta [type='submit']:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
-  }
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
+}
 
   .formulario_iniciar-cuenta [type='submit']:active {
     transform: scale(0.9);

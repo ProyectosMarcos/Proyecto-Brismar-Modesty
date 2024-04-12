@@ -457,8 +457,8 @@ img {
     transition: background-color 100ms ease-in;
   }
   .dialog {
-    width: 700px;
-    height: 412px;
+    width: 800px;
+    height: 440px;
     margin: auto;
     background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
@@ -487,9 +487,10 @@ img {
   .container__info-dos,
   .container__info-tres {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
+    margin: auto;
+    width: 38.5rem;
+    margin-top: 1.5rem;
+    gap: 2rem;
     height: 4rem;
   }
   .button__close {
@@ -503,12 +504,17 @@ img {
   .button__close:hover {
     background-color: #8dceec;
     transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
   }
   .button__close:active {
     transform: scale(0.9);
-  }
-  .info {
-    height: 2.5rem;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
   }
   input[type=text],
   [type=email],
@@ -516,6 +522,7 @@ img {
   [type=password] {
     height: 2rem;
     margin-top: 0.2rem;
+    width: 18rem;
   }
   .formulario_crear-cuenta,
   .formulario_iniciar-cuenta [type=label] {
@@ -533,9 +540,17 @@ img {
   .formulario_crear-cuenta [type=submit]:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
   }
   .formulario_crear-cuenta [type=submit]:active {
     transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
   }
   .formulario_iniciar-cuenta [type=submit] {
     width: 8rem;
@@ -548,6 +563,10 @@ img {
   .formulario_iniciar-cuenta [type=submit]:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
   }
   .formulario_iniciar-cuenta [type=submit]:active {
     transform: scale(0.9);
@@ -787,8 +806,8 @@ img {
     transition: background-color 100ms ease-in;
   }
   .dialog {
-    width: 700px;
-    height: 412px;
+    width: 800px;
+    height: 440px;
     margin: auto;
     background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
@@ -812,14 +831,19 @@ img {
   .button___iniciar-cuenta:hover {
     background-color: rgb(255, 183, 250);
     transition: background-color 100ms ease-in;
+    -webkit-transition: background-color 100ms ease-in;
+    -moz-transition: background-color 100ms ease-in;
+    -ms-transition: background-color 100ms ease-in;
+    -o-transition: background-color 100ms ease-in;
   }
   .container__info-uno,
   .container__info-dos,
   .container__info-tres {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
+    margin: auto;
+    width: 38.5rem;
+    margin-top: 1.5rem;
+    gap: 2rem;
     height: 4rem;
   }
   .button__close {
@@ -833,12 +857,17 @@ img {
   .button__close:hover {
     background-color: #8dceec;
     transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
   }
   .button__close:active {
     transform: scale(0.9);
-  }
-  .info {
-    height: 2.5rem;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
   }
   input[type=text],
   [type=email],
@@ -846,6 +875,7 @@ img {
   [type=password] {
     height: 2rem;
     margin-top: 0.2rem;
+    width: 18rem;
   }
   .formulario_crear-cuenta,
   .formulario_iniciar-cuenta [type=label] {
@@ -863,9 +893,17 @@ img {
   .formulario_crear-cuenta [type=submit]:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
   }
   .formulario_crear-cuenta [type=submit]:active {
     transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
   }
   .formulario_iniciar-cuenta [type=submit] {
     width: 8rem;
@@ -878,6 +916,10 @@ img {
   .formulario_iniciar-cuenta [type=submit]:hover {
     background-color: #f17684;
     transition: background-color 0.1s ease;
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    -ms-transition: background-color 0.1s ease;
+    -o-transition: background-color 0.1s ease;
   }
   .formulario_iniciar-cuenta [type=submit]:active {
     transform: scale(0.9);
@@ -1305,11 +1347,9 @@ img {
   }
   .container__article {
     width: 13rem;
-    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
-    -webkit-filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
   }
   .container__price {
     text-align: center;
@@ -1333,7 +1373,7 @@ img {
   }
   .container__article {
     width: 18rem;
-    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    height: 30rem;
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
@@ -1361,7 +1401,7 @@ img {
   }
   .container__article {
     width: 19rem;
-    filter: drop-shadow(1rem 1rem 0.5rem rgb(222, 188, 238));
+    height: 34rem;
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
