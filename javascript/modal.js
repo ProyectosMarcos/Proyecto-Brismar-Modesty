@@ -1,6 +1,6 @@
 const modal = document.getElementById('dialog');
 
-const btnOpencrearCuenta = document
+const btnOpen = document
   .getElementById('open__crear-cuenta')
   .addEventListener('click', () => modal.showModal());
 
@@ -12,11 +12,11 @@ const btnClose = document
 
 const modalDos = document.getElementById('dialog_dos');
 
-const btnOpenIniciarCuenta = document
+const btnOpenDos = document
   .getElementById('open__iniciar-cuenta-2')
   .addEventListener('click', () => modalDos.showModal());
 
-const btnClose2 = document
+const btnCloseDos = document
   .getElementById('button__close-2')
   .addEventListener('click', () => modalDos.close());
 
@@ -24,21 +24,21 @@ const btnClose2 = document
 
 const modalTres = document.getElementById('dialog-tres');
 
-const btnOpenIniciarCuenta_tres = document
+const btnOpenTres = document
   .getElementById('open__crear-cuenta-3')
   .addEventListener('click', () => modalTres.showModal());
 
-const btnClose3 = document
+const btnCloseTres = document
   .getElementById('button__close-3')
   .addEventListener('click', () => modalTres.close());
 
 /***************/
 const modalCuatro = document.getElementById('dialog_cuatro');
 
-const btnOpenIniciarCuenta_cuatro = document
+const btnOpenCuatro = document
   .getElementById('open__iniciar-cuenta-4')
   .addEventListener('click', () => modalCuatro.showModal());
 
-const btnClose4 = document
+const btnCloseCuatro = document
   .getElementById('button__close-4')
   .addEventListener('click', () => modalCuatro.close());
