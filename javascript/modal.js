@@ -32,7 +32,7 @@ const btnCloseTres = document
   .getElementById('button__close-3')
   .addEventListener('click', () => modalTres.close());
 
-/***************/
+/****************/
 const modalCuatro = document.getElementById('dialog_cuatro');
 
 const btnOpenCuatro = document
