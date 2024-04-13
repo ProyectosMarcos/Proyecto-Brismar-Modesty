@@ -37,7 +37,7 @@ img {
   .header {
     background-color: aqua;
     grid-area: header;
-    background-image: url(/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+    background-image: url(../assets/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
   /*******         ************/
   /* Config Menu */
@@ -190,7 +190,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
@@ -223,7 +223,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
-    background-image: url(/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   .detalles__caja-uno,
   .detalles__caja-dos,
@@ -297,7 +297,7 @@ img {
     justify-content: space-between;
     font-size: 1.1rem;
     text-align: center;
-    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
   .navegacion h3 {
     font-size: 1.3rem;
@@ -396,7 +396,7 @@ img {
     font-family: "Dancing Script", cursive;
     justify-content: center;
     align-items: center;
-    background-image: url(/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+    background-image: url(../assets/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
   /******* ***********/
   .btn__menu {
@@ -460,7 +460,7 @@ img {
     width: 800px;
     height: 440px;
     margin: auto;
-    background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   dialog::backdrop {
     background-color: rgba(25, 24, 24, 0.568627451);
@@ -612,7 +612,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
@@ -638,7 +638,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
-    background-image: url(/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   .detalles__caja-uno,
   .detalles__caja-dos,
@@ -706,7 +706,7 @@ img {
     justify-content: space-evenly;
     font-size: 1.3rem;
     text-align: center;
-    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
   .navbar__footer a:hover {
     background-color: #ffa5a0;
@@ -745,7 +745,7 @@ img {
     font-family: "Dancing Script", cursive;
     justify-content: center;
     align-items: center;
-    background-image: url(/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+    background-image: url(../assets/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
   }
   /******* ***********/
   .btn__menu {
@@ -809,7 +809,7 @@ img {
     width: 800px;
     height: 440px;
     margin: auto;
-    background-image: url(../icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   dialog::backdrop {
     background-color: rgba(25, 24, 24, 0.568627451);
@@ -966,7 +966,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
     font-family: "Dancing Script", cursive;
     font-size: 1.57rem;
   }
@@ -995,7 +995,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2rem;
-    background-image: url(/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+    background-image: url(../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
   }
   .detalles__caja-uno,
   .detalles__caja-dos,
@@ -1062,7 +1062,7 @@ img {
     justify-content: space-evenly;
     font-size: 1.3rem;
     text-align: center;
-    background-image: url(/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+    background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
   }
   .navbar__footer a:hover {
     background-color: #ffa5a0;
