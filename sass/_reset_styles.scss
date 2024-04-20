@@ -3,7 +3,6 @@
 html {
   font-size: 16px;
   box-sizing: border-box;
-  height: 100%;
 }
 *,
 *::before,
@@ -13,7 +12,7 @@ html {
   padding: 0;
 }
 body {
-  min-height: 100%;
+  min-height: 100svh;
   min-width: 100%;
 }
 img {
