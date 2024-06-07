@@ -1,0 +1,37 @@
+/* RESET STYLES */
+:root {
+  // Paleta de colores //
+  --color_principal: #f6d4d2;
+  --color_secondary: #ffffff;
+
+  --color_btn_burguer: #fa52e1;
+  --background_color-navbar: #ff9fdc;
+  --background_color-submenu: #e85b99;
+
+  --color_footer: #dd8f9a;
+  --color_navbar-hover: rgb(255, 183, 250);
+
+  --color_navegacion_footer: #ffa5a0;
+  --color_boton_submit: #f77382;
+}
+html {
+  font-size: 16px;
+}
+body {
+  min-height: 100svh;
+  min-width: 100%;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.icon {
+  width: 2rem;
+}

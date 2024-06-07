@@ -2,13 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#F110F1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F110F1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
     </style>
@@ -18,894 +18,259 @@
     <title>Brismar Modesty</title>
 </head>
 
-<body>
-    <div class="resolucion">
-        <div class="desktop">
-            <div class="container-areas">
-                <header class="header">
-                    <article class="logo__title">
-                        <h1>Brismar Modesty</h1>
-                    </article>
-                </header>
+<body class="layout">
+    <header class="header">
+        <h1>Brismar Modesty</h1>
+        <picture class="search">
+            <a href=""><img src="./assets/icons/search.svg" alt=""></a>
+        </picture>
+    </header>
+
+    <input type="checkbox" name="btn__menu" id="menu-hamburguesa" class="btn__menu" />
+    <label for="menu-hamburguesa" class="btn__burguer"></label>
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__items">
+                <a href="#" class="navbar__links">Inicio</a>
+            </li>
+            <li class="navbar__items">
+                <input type="checkbox" class="toggle-submenu" id="toggle-submenu">
+                <label for="toggle-submenu" class="navbar__links cursor__pointer">Productos</label>
+                <ul class="submenu">
+                    <label for="toggle-submenu" class="submenu__links display-none">Volver al menu</label>
+                    <li class="submenu__items"><a href="./html/pages/vestidos.html" class="submenu__links">Vestidos</a>
+                    </li>
+                    <li class="submenu__items"><a href="./html/pages/faldas.html" class="submenu__links">Faldas</a></li>
+                    <li class="submenu__items"><a href="./html/pages/remeras.html" class="submenu__links">Remeras</a>
+                    </li>
+                    <li class="submenu__items"><a href="./html/pages/buzos.html" class="submenu__links">Buzos &
+                            Sweaters</a></li>
+                </ul>
+            </li>
+            <li class="navbar__items">
+                <a href="#" class="navbar__links">Contacto</a>
+            </li>
+            <li class="navbar__items">
+                <a href="#" class="navbar__links">Sobre Nosotros</a>
+            </li>
+            <li class="navbar__items">
+                <a href="#" class="navbar__links">Iniciar sesión</a>
+            </li>
+            <li class="navbar__items">
+                <picture>
+                    <a href="#" class="">
+                        <img class="cart" src="./assets/icons/cart-icon2.svg" alt="carrito">
+                    </a>
+                </picture>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="detalles__inicio">
+            <article class="container__img">
+                <figure>
+                    <picture><img src="./assets/images/mujer_cristiana.jpg" alt=""></picture>
+                </figure>
+            </article>
+            <section class="frase">
+                <article class="frase-caracteristica">
+                    <h3>Cultivando modestia🧡</h3>
+                    <p><b>1 Timoteo 2:9</b></p>
+                    <p>
+                        "Asimismo, que las mujeres se vistan con ropa decorosa, con pudor
+                        y modestia..."
+                    </p>
+                </article>
+            </section>
+            <article class="descripcion">
+                <h2>Vestidos</h2>
+            </article>
+        </section>
+        <section class="products__imgs">
+            <article>
+                <figure>
+                    <picture>
+                        <a href="">
+                            <img src="./assets/images/Vestido_1.jpg" alt="Vestido_1">
+                    </picture>
+                    </a>
+                    <figcaption>Vestidos floreados microtul
+                        <div class="price">$26,000</div>
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <picture>
+                        <a href="">
+                            <img src="./assets/images/Vestido_2.jpg" alt="Vestido_2">
+                    </picture>
+                    </a>
+                    <figcaption>Vestidos floreados microtul
+                        <div class="price">$26,000</div>
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <picture>
+                        <a href="">
+                            <img src="./assets/images/Vestido_3.jpg" alt="Vestido_3">
+                    </picture>
+                    </a>
+                    <figcaption>Vestidos floreados microtul
+                        <div class="price">$26,000</div>
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <picture>
+                        <a href="">
+                            <img src="/assets/images/Vestido_4.jpg" alt="Vestido_4">
+                    </picture>
+                    </a>
+                    <figcaption>Vestidos floreados microtul
+                        <div class="price">$26,000</div>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+        <section class="container__detalles">
+            <article class="detalles__article">
+                <div class="detalles__caja-uno">
+                    <box-icon type='solid' name='truck'></box-icon>
+                    <h4>Envíos a todo el país</h4>
+                    <p>Por Correo Argentino</p>
+                </div>
+                <div class="detalles__caja-dos">
+                    <box-icon name='credit-card'></box-icon>
+                    <h4>Compra asegurada</h4>
+                    <p>Con todas las tarjetas.</p>
+                </div>
+                <div class="detalles__caja-tres">
+                    <box-icon type='solid' name='lock-alt'></box-icon>
+                    <h4>Sitio seguro</h4>
+                    <p>Protegemos tus datos.</p>
+                </div>
+            </article>
+
+            <article class="descripcion">
+                <h2>Buzos y Sweaters</h2>
+            </article>
+            <section class="container">
+                <article class="flip-card-1">
+                    <div class="flip-face flip-front">
+                        <img src="./assets/images/Buzo_bordado_1_gris.jpg" alt="Buzo_bordado_gris">
+                    </div>
+                    <div class="flip-face flip-back">
+                        <img src="./assets/images/Buzo_bordado_2_blanco.jpg" alt="Buzo_bordado_blanco">
+                    </div>
+                </article>
+            </section>
+            <article class="descripcion">
+                <h2>Remeras</h2>
+            </article>
+            <section class="products__imgs">
+                <article>
+                    <figure>
+                        <picture>
+                            <a href="">
+                                <img src="./assets/images/Remeras floreadas 🌸10.jpg" alt="Remera_floreada">
+                        </picture>
+                        </a>
+                        <figcaption>Remeras floreadas 🌸
+                            <div class="price">$7,000</div>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <a href="">
+                                <img src="./assets/images/Remera Flor 🌸1.jpg" alt="Remera Flor 🌸1">
+                        </picture>
+                        </a>
+                        <figcaption>Remera Flor 🌸
+                            <div class="price">$7,000</div>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <a href="">
+                                <img src="./assets/images/Remera manga princesa👑5.jpg" alt="Remera manga princesa">
+                        </picture>
+                        </a>
+                        <figcaption>Remera manga princesa👑
+                            <div class="price">$7,000</div>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <picture>
+                            <a href="">
+                                <img src="/assets/images/Remera manga princesa👑2.jpg" alt="Remera manga princesa">
+                        </picture>
+                        </a>
+                        <figcaption>Remera manga princesa👑
+                            <div class="price">$26,000</div>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
 
 
-                <nav class="navbar">
-                    <ul class="container__navbar-menu menu__desplazable">
-                        <li class="navbar__item">
-                            <a href="/index.html"" class=" navbar__link">Inicio</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">Productos<box-icon type='solid'
-                                    name='chevron-down'></box-icon></a>
-                            <ul class="submenu">
-                                <li class="submenu__item"><a href="./vestidos.html" class="submenu__link">Vestidos</a>
-                                </li>
-                                <li class="submenu__item"><a href="./faldas.html" class="submenu__link">Faldas</a></li>
-                                <li class="submenu__item"><a href="./remeras.html" class="submenu__link">Remeras</a>
-                                </li>
-                                <li class="submenu__item"><a href="./buzos.html" class="submenu__link">Buzos &
-                                        Sweaters</a></li>
-                            </ul>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="./contacto.html" class="navbar__link">Contacto</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="./sobre_nosotros.html" class="navbar__link">Sobre Nosotros</a>
-                        </li>
 
-                        <div class="container__buttons">
-
-                            <section class="crear__cuenta">
-                                <dialog class="dialog" id="dialog">
-                                    <form class="formulario_crear-cuenta" action="" method="post">
-                                        <h2>Crear cuenta</h2>
-                                        <hr>
-                                        <div class="container__info-uno">
-                                            <div class="info">
-                                                <label for="nombre">Nombre:</label>
-                                                <input type="text" id="nombre" name="nombre"
-                                                    title="Nombre sólo acepta letras y espacios en blanco"
-                                                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                                            </div>
-                                            <div class="info">
-                                                <label for="apellido">Apellido:</label>
-                                                <input type="text" id="apellido" name="apellido" required>
-                                            </div>
-                                        </div>
-                                        <div class="container__info-dos">
-                                            <div class="info_dos">
-                                                <label for="email">Email:</label>
-                                                <input type="email" id="email" name="email" title="Email incorrecto"
-                                                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                                                    required>
-                                            </div>
-                                            <div class="info_dos">
-                                                <label for="number">Teléfono (opcional):</label>
-                                                <input type="number" id="number" name="number">
-                                            </div>
-                                        </div>
-                                        <div class="container__info-tres">
-                                            <div class="info_tres">
-                                                <label for="contrasenia">Contraseña:</label>
-                                                <input type="password" id="contrasenia" name="contrasenia" required>
-                                            </div>
-                                            <div class="info_tres">
-                                                <label for="repeat_contrasenia">Repetir contraseña:</label>
-                                                <input type="password" id="repeat_contrasenia" name="repeat_contrasenia"
-                                                    required>
-                                            </div>
-                                        </div>
-                                        <button type="submit">Crear cuenta</button>
-                                    </form>
-                                    <button class="button__close" id="button__close">Cerrar</button>
-                                </dialog>
-                                <button class="button___crear-cuenta" id="open__crear-cuenta">Crear cuenta</button>
-                            </section>
-
-                            <section class="iniciar__cuenta">
-                                <dialog class="dialog" id="dialog_dos">
-                                    <form class="formulario_iniciar-cuenta" action="" method="post">
-                                        <h2>Iniciar sesión</h2>
-                                        <hr>
-                                        <div class="container__info-uno">
-                                            <div class="info_cuatro">
-                                                <label for="email_dos">Email:</label>
-                                                <input type="email" id="email_dos" name="email" required>
-                                            </div>
-                                            <div class="info_cuatro">
-                                                <label for="contrasenia_dos">Contraseña:</label>
-                                                <input type="password" id="contrasenia_dos" name="contrasenia" required>
-                                            </div>
-                                        </div>
-                                        <button type="submit">Ingresar</button>
-                                    </form>
-                                    <button class="button__close" id="button__close-2">Cerrar</button>
-                                </dialog>
-                                <button class="button___iniciar-cuenta" id="open__iniciar-cuenta-2">Iniciar
-                                    sesión</button>
-                            </section>
-
-                        </div>
-                        <li class="navbar__item">
-                            <picture class="cart">
-                                <a href="" class="navbar__cart">
-                                    <img src="/assets/icons/cart-icon2.svg" alt="carrito">
-                                </a>
-                            </picture>
-                        </li>
-
-                    </ul>
-
-
-
-
-                </nav>
-
-                <main class="main container">
-
-                    <section class="frase">
-                        <article class="frase-caracteristica">
-                            <h3>Cultivando modestia🧡</h3>
-                            <p><b>1 Timoteo 2:9</b></p>
-                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
-                        </article>
-                    </section>
-                    <section class="container__section">
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera bordada mariposa🦋1.jpeg" alt="Remera bordada mariposa🦋1">
-                                    <div class="container__price">
-                                        <p>Remera bordada mariposa🦋</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_manga_princesas.html">
-                                    <img class="caja__img" src="/assets/images/Remera manga princesa👑2.jpeg" alt="Remera manga princesa👑2">
-                                    <div class="container__price">
-                                        <p>Remera manga princesa👑</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_flor.html">
-                                    <img class="caja__img" src="/assets/images/Remera Flor 🌸1.jpeg" alt="Remera Flor">
-                            </picture>
-                            <div class="container__price">
-                                <p>Remera Flor🌸</p>
-                                <h3>$5,700.00</h3>
-                            </div>
-                            </a>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remeras floreadas 🌸10.jpeg" alt="Remeras floreadas">
-                                    <div class="container__price">
-                                        <p>Remeras floreadas🌸</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera bordada🌷5.jpeg" alt="Remera bordada">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera bordada🌷</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_corazones.html">
-                                    <img class="caja__img" src="/assets/images/Remeras corazones🩷💜❤️3.jpeg" alt="Remeras corazones">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remeras corazones🩷💜❤️</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_ramos.html">
-                                    <img class="caja__img" src="/assets/images/Remera_ramos💐.jpg" alt="Remera_ramo">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera ramos💐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remeras con bolsillo y  flores bordadas💐1.jpg"
-                                        alt="Remeras con bolsillo y  flores bordadas">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remeras con bolsillo & flores bordadas💐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_margarita.html">
-                                    <img class="caja__img" src="/assets/images/Remera margarita🌼1.jpeg" alt="Remera margarita🌼1">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera margarita🌼</p>
-                                    <h3>$5,700.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera_estrella⭐.jpg" alt="Remera_estrella⭐">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera estrella⭐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_flowers.html">
-                                    <img class="caja__img" src="/assets/images/Remera flowers🌻_2.jpg" alt="Remera flowers">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera flowers🌻</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                    </section>
-                    <section class="container__detalles">
-                        <article class="detalles__article">
-                            <div class="detalles__caja-uno">
-                                <box-icon type='solid' name='truck'></box-icon>
-                                <h4>Envíos a todo el país</h4>
-                                <p>Por Correo Argentino</p>
-                            </div>
-                            <div class="detalles__caja-dos">
-                                <box-icon name='credit-card'></box-icon>
-                                <h4>Compra asegurada</h4>
-                                <p>Con todas las tarjetas.</p>
-                            </div>
-                            <div class="detalles__caja-tres">
-                                <box-icon type='solid' name='lock-alt'></box-icon>
-                                <h4>Sitio seguro</h4>
-                                <p>Protegemos tus datos.</p>
-                            </div>
-                        </article>
-                    </section>
-                    <br><br><br><br><br><br><br><br><br><br>
-
-                    <section class="navegacion">
-                        <article class="navegacion__list-1">
-                            <h3>Navegacion</h3>
-                            <ul class="navbar__footer">
-                                <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
-                                <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
-                                        de cambio</a></li>
-                                <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
-                                        llegar?</a>
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="medios__pago">
-                            <h3>Medios de pago</h3>
-                            <a href=""><img class="visa_icon" src="/assets/icons/visa.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/assets/icons/mastercard.png" alt=""></a>
-                            <a href=""><img class="visa_icon" src="/assets/icons/mercadopago.png" alt=""></a>
-                        </article>
-                        <article class="contacto">
-                            <div class="contacto_info">
-                                <h3>Contacto</h3>
-                            </div>
-                            <div class="img">
-                                <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
-                                        class="visa_icon" src="/assets/icons/whatsapp.png" alt="whatsapp"></a>
-                                <!-- s -->
-                            </div>
-                        </article>
-                        <article class="redes__sociales">
-                            <h3>Redes Sociales</h3>
-                            <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="visa_icon"
-                                    src="/assets/icons/instagram.png" alt="instagram"></a>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                        </article>
-                    </section>
-
-                </main>
-                <footer class="footer">
-                    <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/assets/icons/github.svg"
-                                alt="github">ProyectosMarcos</a></small>
-                </footer>
-            </div>
-        </div>
-        <div class="tablet"><!--------Fin Desktop - Comienza Tablet------------------->
-            <div class="container-areas">
-                <header class="header">
-                    <article class="logo__title">
-                        <h1>Brismar Modesty</h1>
-                    </article>
-                </header>
-
-
-                <nav class="navbar">
-                    <ul class="container__navbar-menu menu__desplazable">
-                        <li class="navbar__item">
-                            <a href="/index.html"" class=" navbar__link">Inicio</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="navbar__link">Productos<box-icon type='solid'
-                                    name='chevron-down'></box-icon></a>
-                            <ul class="submenu">
-                                <li class="submenu__item"><a href="./vestidos.html" class="submenu__link">Vestidos</a>
-                                </li>
-                                <li class="submenu__item"><a href="./faldas.html" class="submenu__link">Faldas</a></li>
-                                <li class="submenu__item"><a href="./remeras.html" class="submenu__link">Remeras</a>
-                                </li>
-                                <li class="submenu__item"><a href="./buzos.html" class="submenu__link">Buzos &
-                                        Sweaters</a></li>
-                            </ul>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="./contacto.html" class="navbar__link">Contacto</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="./sobre_nosotros.html" class="navbar__link">Sobre Nosotros</a>
-                        </li>
-
-                        <div class="container__buttons">
-
-                            <section class="crear__cuenta">
-                                <dialog class="dialog" id="dialog-tres">
-                                    <form class="formulario_crear-cuenta" action="" method="post">
-                                        <h2>Crear cuenta</h2>
-                                        <hr>
-                                        <div class="container__info-uno">
-                                            <div class="info">
-                                                <label for="nombre_3">Nombre:</label>
-                                                <input type="text" id="nombre_3" name="nombre"
-                                                    title="Nombre sólo acepta letras y espacios en blanco"
-                                                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                                            </div>
-                                            <div class="info">
-                                                <label for="apellido_3">Apellido:</label>
-                                                <input type="text" id="apellido_3" name="apellido" required>
-                                            </div>
-                                        </div>
-                                        <div class="container__info-dos">
-                                            <div class="info_dos">
-                                                <label for="email_3">Email:</label>
-                                                <input type="email" id="email_3" name="email" title="Email incorrecto"
-                                                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                                                    required>
-                                            </div>
-                                            <div class="info_dos">
-                                                <label for="number_3">Teléfono (opcional):</label>
-                                                <input type="number" id="number_3" name="number">
-                                            </div>
-                                        </div>
-                                        <div class="container__info-tres">
-                                            <div class="info_tres">
-                                                <label for="contrasenia_3">Contraseña:</label>
-                                                <input type="password" id="contrasenia_3" name="contrasenia" required>
-                                            </div>
-                                            <div class="info_tres">
-                                                <label for="repeat_3">Repetir contraseña:</label>
-                                                <input type="password" id="repeat_3" name="repeat_contrasenia" required>
-                                            </div>
-                                        </div>
-                                        <button type="submit">Crear cuenta</button>
-                                    </form>
-                                    <button class="button__close" id="button__close-3">Cerrar</button>
-                                </dialog>
-                                <button class="button___crear-cuenta" id="open__crear-cuenta-3">Crear cuenta</button>
-                            </section>
-
-                            <section class="iniciar__cuenta">
-                                <dialog class="dialog" id="dialog_cuatro">
-                                    <form class="formulario_iniciar-cuenta" action="" method="post">
-                                        <h2>Iniciar sesión</h2>
-                                        <hr>
-                                        <div class="container__info-uno">
-                                            <div class="info_cuatro">
-                                                <label for="email_4">Email:</label>
-                                                <input type="email" id="email_4" name="email" title="Email incorrecto"
-                                                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                                                    required>
-                                            </div>
-                                            <div class="info_cuatro">
-                                                <label for="contrasenia_4">Contraseña:</label>
-                                                <input type="password" id="contrasenia_4" name="contrasenia" required>
-                                            </div>
-                                        </div>
-                                        <button type="submit">Ingresar</button>
-                                    </form>
-                                    <button class="button__close" id="button__close-4">Cerrar</button>
-                                </dialog>
-                                <button class="button___iniciar-cuenta" id="open__iniciar-cuenta-4">Iniciar
-                                    sesión</button>
-                            </section>
-
-
-                        </div>
-                        <li class="navbar__item">
-                            <picture class="cart">
-                                <a href="" class="navbar__cart">
-                                    <img src="/assets/icons/cart-icon2.svg" alt="carrito">
-                                </a>
-                            </picture>
-                        </li>
-
-                    </ul>
-                </nav>
-
-                <main class="main container">
-
-                    <section class="frase">
-                        <article class="frase-caracteristica">
-                            <h3>Cultivando modestia🧡</h3>
-                            <p><b>1 Timoteo 2:9</b></p>
-                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
-                        </article>
-                    </section>
-
-                    <section class="container__section">
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera bordada mariposa🦋1.jpeg" alt="Remera bordada mariposa🦋1">
-                                    <div class="container__price">
-                                        <p>Remera bordada mariposa🦋</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_manga_princesas.html">
-                                    <img class="caja__img" src="/assets/images/Remera manga princesa👑2.jpeg" alt="Remera manga princesa👑2">
-                                    <div class="container__price">
-                                        <p>Remera manga princesa👑</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_flor.html">
-                                    <img class="caja__img" src="/assets/images/Remera Flor 🌸1.jpeg" alt="Remera Flor 🌸1">
-                            </picture>
-                            <div class="container__price">
-                                <p>Remera Flor🌸</p>
-                                <h3>$5,700.00</h3>
-                            </div>
-                            </a>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remeras floreadas 🌸10.jpeg" alt="Remeras floreadas 🌸10">
-                                    <div class="container__price">
-                                        <p>Remeras floreadas🌸</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera bordada🌷5.jpeg" alt="Remera bordada🌷5">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera bordada🌷</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_corazones.html">
-                                    <img class="caja__img" src="/assets/images/Remeras corazones🩷💜❤️3.jpeg" alt="Remeras corazones🩷💜❤️3">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remeras corazones🩷💜❤️</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_ramos.html">
-                                    <img class="caja__img" src="/assets/images/Remera_ramos💐.jpg" alt="Remera_ramos💐">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera ramos💐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remeras con bolsillo y  flores bordadas💐1.jpg"
-                                        alt="Remeras con bolsillo y  flores bordadas💐1">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remeras con bolsillo & flores bordadas💐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_margarita.html">
-                                    <img class="caja__img" src="/assets/images/Remera margarita🌼1.jpeg" alt="Remera margarita🌼1">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera margarita🌼</p>
-                                    <h3>$5,700.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera_estrella⭐.jpg" alt="Remera_estrella⭐">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera estrella⭐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_flowers.html">
-                                    <img class="caja__img" src="/assets/images/Remera flowers🌻_2.jpg" alt="Remera flowers🌻_2">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera flowers🌻</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                    </section>
-                    <section class="container__detalles">
-                        <article class="detalles__article">
-                            <div class="detalles__caja-uno">
-                                <box-icon type='solid' name='truck'></box-icon>
-                                <h4>Envíos a todo el país</h4>
-                                <p>Por Correo Argentino</p>
-                            </div>
-                            <div class="detalles__caja-dos">
-                                <box-icon name='credit-card'></box-icon>
-                                <h4>Compra asegurada</h4>
-                                <p>Con todas las tarjetas.</p>
-                            </div>
-                            <div class="detalles__caja-tres">
-                                <box-icon type='solid' name='lock-alt'></box-icon>
-                                <h4>Sitio seguro</h4>
-                                <p>Protegemos tus datos.</p>
-                            </div>
-                        </article>
-                    </section>
-                    <br><br><br><br><br><br><br><br><br><br>
-
-
-                    <section class="navegacion">
-                        <article class="navegacion__list-1">
-                            <h3>Navegacion</h3>
-                            <ul class="navbar__footer">
-                                <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
-                                <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
-                                        de cambio</a></li>
-                                <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
-                                        llegar?</a>
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="medios__pago">
-                            <h3>Medios de pago</h3>
-                            <a href=""><img class="visa_icon" src="/assets/icons/visa.png" alt="visa"></a>
-                            <a href=""><img class="visa_icon" src="/assets/icons/mastercard.png" alt="mastercard"></a>
-                            <a href=""><img class="visa_icon" src="/assets/icons/mercadopago.png" alt="mercadopago"></a>
-                        </article>
-                        <article class="contacto">
-                            <div class="contacto_info">
-                                <h3>Contacto</h3>
-                            </div>
-                            <div class="img">
-                                <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
-                                        class="visa_icon" src="/assets/icons/whatsapp.png" alt="whatsapp"></a>
-                                <!-- <p>+5491127189256</p> -->
-                            </div>
-                        </article>
-                        <article class="redes__sociales">
-                            <h3>Redes Sociales</h3>
-                            <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="visa_icon"
-                                    src="/assets/icons/instagram.png" alt="instagram"></a>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                        </article>
-                    </section>
-
-                </main>
-                <footer class="footer">
-                    <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/assets/icons/github.svg"
-                                alt="">ProyectosMarcos</a></small>
-                </footer>
-            </div>
-
-        </div>
-        <div class="movil"><!--------Fin Tablet- Comienza Movil------------------->
-            <div class="container-areas">
-                <header class="header">
-                    <article class="logo__title">
-                        <h1>Brismar Modesty</h1>
-                    </article>
-                </header>
-                <input type="checkbox" class="btn__menu">
-                <label class="btn__burguer"></label>
-                <nav class="navbar navbar__menu">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="/index.html" class="navbar__link">Inicio</a>
-                        </li>
-                        <li class="navbar__item">
-                            <input id="btnSubmenuProductos" type="checkbox" class="btn__submenu">
-                            <label for="btnSubmenuProductos" class="submenu__label">Productos<box-icon type='solid'
-                                    name='chevron-down'></box-icon></a></label>
-                            <ul class="submenu__list">
-                                <li class="submenu__item"><a href="./vestidos.html" class="submenu__link">Vestidos</a>
-                                </li>
-                                <li class="submenu__item"><a href="./faldas.html" class="submenu__link">Faldas</a></li>
-                                <li class="submenu__item"><a href="./remeras.html" class="submenu__link">Remeras</a>
-                                </li>
-                                <li class="submenu__item"><a href="./buzos.html" class="submenu__link">Buzos &
-                                        Sweaters</a></li>
-                            </ul>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="./contacto.html" class="navbar__link">Contacto</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="./sobre_nosotros.html" class="navbar__link">Sobre
-                                Nosotros</a>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <section class="navegacion">
+                <article class="navegacion__list-1">
+                    <h3>Navegacion</h3>
+                    <ul class="navbar__footer">
+                        <li class="navbar__footer-item"><a href="./html/pages/contacto.html">Contacto</a></li>
+                        <li class="navbar__footer-item"><a href="./html/pages/politicas_de_cambio.html">Politica
+                                de cambio</a></li>
+                        <li class="navbar__footer-item"><a href="./html/pages/como_llegar.html">¿Como
+                                llegar?</a>
                         </li>
                     </ul>
-                </nav>
-                <main class="main container">
-
-                    <section class="frase">
-                        <article class="frase-caracteristica">
-                            <h3>Cultivando modestia🧡</h3>
-                            <p><b>1 Timoteo 2:9</b></p>
-                            <p>"Asimismo, que las mujeres se vistan con ropa decorosa, con pudor y modestia..."</p>
-                        </article>
-                    </section>
-                    <section class="container__section">
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera bordada mariposa🦋1.jpeg" alt="Remera bordada mariposa🦋1">
-                                    <div class="container__price">
-                                        <p>Remera bordada mariposa🦋</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_manga_princesas.html">
-                                    <img class="caja__img" src="/assets/images/Remera manga princesa👑2.jpeg" alt="Remera manga princesa👑2">
-                                    <div class="container__price">
-                                        <p>Remera manga princesa👑</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_flor.html">
-                                    <img class="caja__img" src="/assets/images/Remera Flor 🌸1.jpeg" alt="Remera Flor 🌸1">
-                            </picture>
-                            <div class="container__price">
-                                <p>Remera Flor🌸</p>
-                                <h3>$5,700.00</h3>
-                            </div>
-                            </a>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remeras floreadas 🌸10.jpeg" alt="Remeras floreadas 🌸10">
-                                    <div class="container__price">
-                                        <p>Remeras floreadas🌸</p>
-                                        <h3>$6,200.00</h3>
-                                    </div>
-                                </a>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera bordada🌷5.jpeg" alt="Remera bordada🌷5">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera bordada🌷</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_corazones.html">
-                                    <img class="caja__img" src="/assets/images/Remeras corazones🩷💜❤️3.jpeg" alt="Remeras corazones🩷">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remeras corazones🩷💜❤️</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera_ramos💐.jpg" alt="Remera_ramos">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera ramos💐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remeras con bolsillo y  flores bordadas💐1.jpg"
-                                        alt="Remeras con bolsillo y  flores bordadas💐1">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remeras con bolsillo & flores bordadas💐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_margarita.html">
-                                    <img class="caja__img" src="/assets/images/Remera margarita🌼1.jpeg" alt="Remera margarita🌼1">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera margarita🌼</p>
-                                    <h3>$5,700.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_floreadas.html">
-                                    <img class="caja__img" src="/assets/images/Remera_estrella⭐.jpg" alt="Remera_estrella⭐">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera estrella⭐</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                        <article class="container__article">
-                            <picture>
-                                <a href="../remeras/remeras_flowers.html">
-                                    <img class="caja__img" src="/assets/images/Remera flowers🌻_2.jpg" alt="Remera flowers🌻_2">
-                                </a>
-                                <div class="container__price">
-                                    <p>Remera flowers🌻</p>
-                                    <h3>$6,200.00</h3>
-                                </div>
-                            </picture>
-                        </article>
-                    </section>
-                    <section class="container__detalles">
-                        <article class="detalles__article">
-                            <div class="detalles__caja-uno">
-                                <box-icon type='solid' name='truck'></box-icon>
-                                <h4>Envíos a todo el país</h4>
-                                <p>Por Correo Argentino</p>
-                            </div>
-                            <div class="detalles__caja-dos">
-                                <box-icon name='credit-card'></box-icon>
-                                <h4>Compra asegurada</h4>
-                                <p>Con todas las tarjetas.</p>
-                            </div>
-                            <div class="detalles__caja-tres">
-                                <box-icon type='solid' name='lock-alt'></box-icon>
-                                <h4>Sitio seguro</h4>
-                                <p>Protegemos tus datos.</p>
-                            </div>
-                        </article>
-                    </section>
-                    <br><br><br><br><br><br><br><br><br><br>
-
-                    <section class="navegacion">
-                        <article class="navegacion__list-1">
-                            <h3>Navegacion</h3>
-                            <ul class="navbar__footer">
-                                <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
-                                <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
-                                        de cambio</a></li>
-                                <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
-                                        llegar?</a>
-                                </li>
-                            </ul>
-                        </article>
-                        <article class="medios__pago">
-                            <h3>Medios de pago</h3>
-                            <a href=""><img class="visa_icon" src="/assets/icons/visa.png" alt="visa"></a>
-                            <a href=""><img class="visa_icon" src="/assets/icons/mastercard.png" alt="mastercard"></a>
-                            <a href=""><img class="visa_icon" src="/assets/icons/mercadopago.png" alt="mercadopago"></a>
-                        </article>
-                        <article class="contacto">
-                            <div class="contacto_info">
-                                <h3>Contacto</h3>
-                            </div>
-                            <div class="img">
-                                <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img
-                                        class="visa_icon" src="/assets/icons/whatsapp.png" alt="whatsapp"></a>
-                                <!-- <p>+5491127189256</p> -->
-                            </div>
-                        </article>
-                        <article class="redes__sociales">
-                            <h3>Redes Sociales</h3>
-                            <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="visa_icon"
-                                    src="/assets/icons/instagram.png" alt="instagram"></a>
-                            <p></p>
-                            <p></p>
-                            <p></p>
-                        </article>
-                    </section>
-
-                </main>
-                <footer class="footer">
-                    <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-                        <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="/assets/icons/github.svg"
-                                alt="github">ProyectosMarcos</a></small>
-                </footer>
-            </div>
-
-
-
-            <script src="/assets/javascript/modal.js"></script>
-            <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+                </article>
+                <article class="medios__pago">
+                    <h3>Medios de pago</h3>
+                    <a href=""><img class="icon" src="./assets/icons/visa.png" alt="visa"></a>
+                    <a href=""><img class="icon" src="./assets/icons/mastercard.png" alt="mastercard"></a>
+                    <a href=""><img class="icon" src="./assets/icons/mercadopago.png" alt="mercadopago"></a>
+                </article>
+                <article class="contacto">
+                    <div class="contacto_info">
+                        <h3>Contacto</h3>
+                    </div>
+                    <div class="img">
+                        <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img class="icon"
+                                src="./assets/icons/whatsapp.png" alt="whatsapp"></a>
+                        <!-- <p>+5491127189256</p> -->
+                    </div>
+                </article>
+                <article class="redes__sociales">
+                    <h3>Redes Sociales</h3>
+                    <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="icon"
+                            src="./assets/icons/instagram.png" alt="instagram"></a>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </article>
+            </section>
+    </main>
+    <footer class="footer">
+        <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
+            <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="./assets/icons/github.svg"
+                    alt="github" />ProyectosMarcos</a></small>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./scripts/index.js" type="module"></script>
 </body>
 
 </html>

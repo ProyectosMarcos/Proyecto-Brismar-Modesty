@@ -1,9 +1,8 @@
-@use 'reset_styles';
-@use 'colores';
-@use 'font_family';
-@use 'home';
-@use 'contacto';
-@use 'sobre_nosotros';
-@use 'vestidos';
-@use 'politica_cambio';
-@use 'breakpoints';
+@use './partials/reset_styles';
+@use './partials/layout';
+@use './partials/header';
+@use './partials/navbar';
+@use './partials/main';
+@use './partials/slider';
+@use './partials/footer';
+@use './partials/font_family';

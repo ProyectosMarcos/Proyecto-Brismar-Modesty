@@ -1,0 +1,45 @@
+.navegacion {
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.2em;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+  text-align: center;
+  background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+}
+@media (width < 551px) {
+  .navegacion {
+    flex-direction: column;
+  }
+}
+.navegacion h3 {
+  font-size: 1.3rem;
+}
+.navegacion ul {
+  list-style: none;
+}
+.navegacion a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+.navbar__footer a:hover {
+  background-color: #ffa5a0;
+}
+.contacto__info {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background-color: var(--color_footer);
+  color: #000;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #000;
+}

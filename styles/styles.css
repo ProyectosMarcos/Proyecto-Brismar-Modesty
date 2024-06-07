@@ -1,0 +1,870 @@
+/* RESET STYLES */
+:root {
+  --color_principal: #f6d4d2;
+  --color_secondary: #ffffff;
+  --color_btn_burguer: #fa52e1;
+  --background_color-navbar: #ff9fdc;
+  --background_color-submenu: #e85b99;
+  --color_footer: #dd8f9a;
+  --color_navbar-hover: rgb(255, 183, 250);
+  --color_navegacion_footer: #ffa5a0;
+  --color_boton_submit: #f77382;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100svh;
+  min-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon {
+  width: 2rem;
+}
+
+/*** Resolucion Movil   ***/
+@media (width <= 767px) {
+  .layout {
+    display: grid;
+    grid-template: "header" 60px "navbar" 50px "main" 1fr "footer" 40px/1fr;
+  }
+  .header {
+    grid-area: header;
+  }
+  .navbar {
+    grid-area: navbar;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+/** Tablet **/
+@media (width >= 768px) and (width <= 990px) {
+  .layout {
+    display: grid;
+    grid-template: "header" 77px "navbar" 59px "main" 1fr "footer" 70px/1fr;
+  }
+  .header {
+    grid-area: header;
+    text-align: center;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+@media (width >= 991px) {
+  .layout {
+    display: grid;
+    grid-template: "header header header" 77px "navbar navbar navbar" 59px "main   main   main" 1fr "footer footer footer" 70px/1fr 1fr 1fr;
+  }
+  .header {
+    grid-area: header;
+  }
+  .navbar {
+    grid-area: navbar;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url(../../assets/icons/Free\ Vector\ _\ Flower\ background\ desktop\ wallpaper\,\ cute\ vector.jpeg);
+}
+
+.header h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.search {
+  width: 3rem;
+  height: 2.5rem;
+}
+
+/*** Resolucion Movil   ***/
+@media (width <= 767px) {
+  /****** navbar-movil ******/
+  .btn__menu {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1rem;
+    top: 4rem;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .btn__burguer {
+    position: fixed;
+    width: 3rem;
+    height: 0.6rem;
+    right: 1rem;
+    top: 6.3rem;
+    z-index: 998;
+    background-color: var(--color_btn_burguer);
+    border-radius: 0.3rem;
+    transform: rotate(0deg) translate(0, -1.2rem);
+    transition: transform 500ms ease;
+  }
+  .btn__burguer::before,
+  .btn__burguer::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.6rem;
+    background-color: var(--color_btn_burguer);
+    border-radius: 0.3rem;
+    transition: transform 500ms ease;
+  }
+  .btn__burguer::before {
+    transform: rotate(0deg) translate(0, -0.9rem);
+  }
+  .btn__burguer::after {
+    transform: rotate(0deg) translate(0, 0.3rem);
+  }
+  .btn__menu:checked + .btn__burguer::before {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  .btn__menu:checked + .btn__burguer::after {
+    transform: rotate(-45deg) translate(0.4rem, -0.5rem);
+  }
+  .btn__menu:checked + .btn__burguer {
+    background-color: transparent;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%, 0);
+    transition: transform 500ms ease, background-color 500ms ease;
+    background-color: var(--background_color-navbar);
+  }
+  .btn__menu:checked ~ .navbar {
+    transform: translate(0, 0);
+  }
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0.5em;
+    font-size: 1.4rem;
+    list-style-type: none;
+  }
+  .navbar__links {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+  }
+  .navbar__links:hover {
+    background-color: var(--color_navbar-hover);
+    transition: 500ms ease;
+  }
+  .cart:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(300deg) brightness(111%) contrast(104%);
+    transition: filter 100ms ease-in;
+  }
+  .submenu {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    transition: all 0.3s ease;
+    background-color: var(--background_color-navbar);
+    font-size: 1.4rem;
+    list-style-type: none;
+  }
+  .submenu__links {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+  .submenu__links:hover {
+    background-color: var(--color_navbar-hover);
+    transition: 500ms ease;
+  }
+  .toggle-submenu:checked + label + .submenu {
+    display: flex;
+  }
+  .toggle-submenu {
+    display: none;
+  }
+}
+/*** Resolucion  Tablet **/
+@media (width >= 768px) and (width <= 990px) {
+  .btn__menu {
+    display: none;
+  }
+  .btn__burguer {
+    display: none;
+  }
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+    font-size: 1.4rem;
+    margin-right: 1em;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+  .navbar__links {
+    text-decoration: none;
+    color: #000;
+  }
+  .navbar__links:hover {
+    background-color: var(--color_navbar-hover);
+    transition: 500ms ease;
+  }
+  .submenu {
+    background-color: #fff;
+    position: absolute;
+    list-style-type: none;
+    visibility: hidden;
+    top: 5.3em;
+    text-align: center;
+  }
+  .submenu__links {
+    text-decoration: none;
+    color: #000;
+  }
+  .submenu__items:hover {
+    background-color: var(--color_navbar-hover);
+    transition: 500ms ease;
+  }
+  .navbar__links:hover + .submenu,
+  .submenu:hover {
+    visibility: visible;
+  }
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5em;
+  }
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cart:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(300deg) brightness(111%) contrast(104%);
+    transition: filter 100ms ease-in;
+  }
+  .toggle-submenu {
+    display: none;
+  }
+  .display-none {
+    display: none;
+  }
+  .cursor__pointer {
+    cursor: pointer;
+  }
+}
+/*** Resolucion Desktop **/
+@media (width >= 991px) {
+  .btn__menu {
+    display: none;
+  }
+  .btn__burguer {
+    display: none;
+  }
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+    font-size: 1.4rem;
+    margin-right: 1em;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+  .navbar__links {
+    text-decoration: none;
+    color: #000;
+  }
+  .navbar__links:hover {
+    background-color: var(--color_navbar-hover);
+    transition: 500ms ease;
+  }
+  .submenu {
+    background-color: #fff;
+    position: absolute;
+    list-style-type: none;
+    visibility: hidden;
+    top: 5.3em;
+    text-align: center;
+  }
+  .submenu__links {
+    text-decoration: none;
+    color: #000;
+  }
+  .submenu__items:hover {
+    background-color: var(--color_navbar-hover);
+    transition: 500ms ease;
+  }
+  .navbar__links:hover + .submenu,
+  .submenu:hover {
+    visibility: visible;
+  }
+  .cursor__pointer {
+    cursor: pointer;
+  }
+  .cart {
+    width: 2rem;
+    height: 2rem;
+  }
+  .cart:hover {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(300deg) brightness(111%) contrast(104%);
+    transition: filter 100ms ease-in;
+  }
+  .toggle-submenu {
+    display: none;
+  }
+  .display-none {
+    display: none;
+  }
+}
+/******* Main de pagina Inicio **********/
+.main {
+  background-color: var(--color_principal);
+}
+
+.detalles__inicio {
+  margin: auto;
+}
+
+.container__img {
+  margin: 1em auto;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.frase {
+  margin-top: 2.3rem;
+  margin-bottom: 4.1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000;
+  font-family: "Lora", serif;
+}
+
+.descripcion {
+  background-image: url(../../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+  border: thin solid cadetblue;
+  margin-top: 2em;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.57rem;
+}
+
+figcaption {
+  background-color: #fff;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+}
+
+@media (width <= 767px) {
+  .products__imgs {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.4em;
+  }
+  /*************/
+  .detalles__article {
+    display: flex;
+    justify-content: space-around;
+    border: thin solid cadetblue;
+    text-align: center;
+    background-image: url(../../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  /* Flip Card */
+  .container {
+    width: 339px;
+    height: 350px;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .flip-card-1 {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: flat;
+    transform-style: preserve-3d;
+  }
+  .flip-card-1:hover {
+    transform: rotateY(180deg);
+  }
+  .flip-card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+  .flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    backface-visibility: hidden;
+  }
+  .flip-front {
+    transform: rotateY(0deg);
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+  /*FIN - Flip Card */
+}
+@media (min-width: 438px) and (max-width: 767px) {
+  /* Flip Card */
+  .container {
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    margin-top: 3em;
+  }
+}
+/***** Resolucion Tablet  *******/
+@media (width >= 768px) and (width <= 990px) {
+  .products__imgs {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 4em;
+  }
+  /*************/
+  .detalles__article {
+    display: flex;
+    justify-content: space-around;
+    border: thin solid cadetblue;
+    text-align: center;
+    background-image: url(../../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  /* Flip Card */
+  .container {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .flip-card-1 {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: flat;
+    transform-style: preserve-3d;
+  }
+  .flip-card-1:hover {
+    transform: rotateY(180deg);
+  }
+  .flip-card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+  .flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    backface-visibility: hidden;
+  }
+  .flip-front {
+    transform: rotateY(0deg);
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+  /*FIN - Flip Card */
+}
+/* @media (min-width: 438px) and (max-width: 767px) {
+  /* Flip Card */
+/*   .container {
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    margin-top: 3em;
+  }
+}  */
+/***** Resolucion Desktop  *******/
+@media (width >= 991px) {
+  .products__imgs {
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 1.4em;
+    margin: auto;
+  }
+  /*************/
+  .detalles__article {
+    display: flex;
+    justify-content: space-around;
+    border: thin solid cadetblue;
+    text-align: center;
+    background-image: url(../../assets/icons/Light\ Pink\ Hand-drawn\ Tulip\ Aesthetic\ Desktop\ Computer\ Wallpaper\ Background\ Backgrounds\ _\ PSD\ Free\ Download\ -\ Pikbest.jpeg);
+  }
+  /* Flip Card */
+  .container {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .flip-card-1 {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: flat;
+    transform-style: preserve-3d;
+  }
+  .flip-card-1:hover {
+    transform: rotateY(180deg);
+  }
+  .flip-card-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+  .flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: visible;
+    backface-visibility: hidden;
+  }
+  .flip-front {
+    transform: rotateY(0deg);
+  }
+  .flip-back {
+    transform: rotateY(180deg);
+  }
+  /*FIN - Flip Card */
+}
+/******* Fin Main de pagina Inicio **********/
+/******* Main de pagina Como llegar **********/
+/*** Resolucion Movil   ***/
+@media (width <= 767px) {
+  #gmaps a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .section__como_llegar {
+    border: thin solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5em;
+  }
+}
+/*** Resolucion Tablet   ***/
+@media (width >= 768px) and (width <= 1023px) {
+  #gmaps a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .section__como_llegar {
+    border: thin solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5em;
+  }
+}
+/*** Resolucion Desktop   ***/
+@media (width >= 1024px) {
+  #gmaps iframe {
+    max-width: auto;
+  }
+  .section__como_llegar {
+    border: thin solid black;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5em;
+    width: 80%;
+    padding: 1em;
+  }
+}
+/******* Fin Main de pagina Como llegar **********/
+/******* Main de pagina Politica de cambio **********/
+.container_politica_cambios {
+  margin-top: 4rem;
+}
+
+.politica_cambios {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (min-width: 61.9375em) {
+  .contacto > h2 {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  .contacto__container {
+    margin-top: 1rem;
+  }
+  .contacto__container p {
+    font-size: 1.2rem;
+  }
+  .wsp,
+  .gmail,
+  .posicion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  /* Config Formulario */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .formulario input {
+    margin-top: 1rem;
+    width: 25rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1rem;
+    border-style: dashed;
+    padding: 1rem;
+    border-color: pink;
+    font-size: 1.2rem;
+  }
+  .formulario textarea {
+    width: 25rem;
+    padding: 1rem;
+    margin: 0 auto;
+    border-style: dashed;
+    border-radius: 0.5rem;
+    border-color: pink;
+  }
+  .formulario [type=submit] {
+    width: 6rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: #f77382;
+  }
+  .formulario [type=submit]:hover {
+    background-color: #f75669;
+    transition: background-color 0.1s ease;
+  }
+  .formulario [type=submit] {
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .formulario [type=submit]:active {
+    transform: scale(0.9);
+  }
+}
+/************************    Fin  Estilos - Pagina Contacto   ************************ /
+
+
+/************************     Estilos - Pagina Buzos y Sweaters   ************************ */
+.buzos {
+  width: 50%;
+}
+
+.slider {
+  position: relative;
+  border: thin solid black;
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.slider__slides {
+  position: relative;
+  height: 400px;
+}
+
+.slider__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+.active {
+  visibility: visible;
+}
+
+.slider__slide img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.slider__btns {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slider a {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background-color: #dcb1b1;
+  color: #000;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.slider a:hover {
+  background-color: var(--color_principal);
+  color: #f96868;
+}
+
+.navegacion {
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.2em;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+  text-align: center;
+  background-image: url(../assets/icons/Aesthetic\ Pink\ Flowers\ Laptop\ _\ Desktop\ Wallpaper.jpeg);
+}
+
+@media (width < 551px) {
+  .navegacion {
+    flex-direction: column;
+  }
+}
+.navegacion h3 {
+  font-size: 1.3rem;
+}
+
+.navegacion ul {
+  list-style: none;
+}
+
+.navegacion a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar__footer a:hover {
+  background-color: #ffa5a0;
+}
+
+.contacto__info {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background-color: var(--color_footer);
+  color: #000;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*# sourceMappingURL=styles.css.map */

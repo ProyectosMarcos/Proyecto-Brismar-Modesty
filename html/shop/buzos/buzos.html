@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="../../../styles/styles.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
     </style>
@@ -22,7 +22,7 @@
     <header class="header">
         <h1>Brismar Modesty</h1>
         <picture class="search">
-            <a href=""><img src="../../assets/icons/search.svg" alt="search"></a>
+            <a href=""><img src="../../../assets/icons/search.svg" alt="search"></a>
         </picture>
     </header>
 
@@ -31,35 +31,35 @@
     <nav class="navbar">
         <ul class="navbar__menu">
             <li class="navbar__items">
-                <a href="../../index.html" class="navbar__links">Inicio</a>
+                <a href="../../../index.html" class="navbar__links">Inicio</a>
             </li>
             <li class="navbar__items">
                 <input type="checkbox" class="toggle-submenu" id="toggle-submenu">
                 <label for="toggle-submenu" class="navbar__links cursor__pointer">Productos</label>
                 <ul class="submenu">
                     <label for="toggle-submenu" class="submenu__links display-none">Volver al menu</label>
-                    <li class="submenu__items"><a href="./vestidos.html" class="submenu__links">Vestidos</a>
+                    <li class="submenu__items"><a href="../../pages/vestidos.html" class="submenu__links">Vestidos</a>
                     </li>
-                    <li class="submenu__items"><a href="./faldas.html" class="submenu__links">Faldas</a></li>
-                    <li class="submenu__items"><a href="./remeras.html" class="submenu__links">Remeras</a>
+                    <li class="submenu__items"><a href="../../pages/faldas.html" class="submenu__links">Faldas</a></li>
+                    <li class="submenu__items"><a href="../../pages/remeras.html" class="submenu__links">Remeras</a>
                     </li>
-                    <li class="submenu__items"><a href="./buzos.html" class="submenu__links">Buzos &
+                    <li class="submenu__items"><a href="../../pages/buzos.html" class="submenu__links">Buzos &
                             Sweaters</a></li>
                 </ul>
             </li>
             <li class="navbar__items">
-                <a href="./contacto.html" class="navbar__links">Contacto</a>
+                <a href="#" class="navbar__links">Contacto</a>
             </li>
             <li class="navbar__items">
-                <a href="./sobre_nosotros.html" class="navbar__links">Sobre Nosotros</a>
+                <a href="#" class="navbar__links">Sobre Nosotros</a>
             </li>
             <li class="navbar__items">
-                <a href="../admin/login.html" class="navbar__links">Iniciar sesión</a>
+                <a href="#" class="navbar__links">Iniciar sesión</a>
             </li>
             <li class="navbar__items">
                 <picture>
-                    <a href="./cart.html" class="">
-                        <img class="cart" src="../../assets/icons/cart-icon2.svg" alt="carrito">
+                    <a href="#" class="">
+                        <img class="cart" src="../../../assets/icons/cart-icon2.svg" alt="carrito">
                     </a>
                 </picture>
             </li>
@@ -68,6 +68,11 @@
 
     <main class="main">
         <section class="detalles__inicio">
+            <article class="container__img">
+                <figure>
+                    <picture><img src="./assets/images/mujer_cristiana.jpg" alt=""></picture>
+                </figure>
+            </article>
             <section class="frase">
                 <article class="frase-caracteristica">
                     <h3>Cultivando modestia🧡</h3>
@@ -82,20 +87,33 @@
                 <h2>Buzos y Sweaters</h2>
             </article>
         </section>
-        <section class="products__imgs buzos">
-            <article>
-                <figure>
-                    <picture>
-                        <a href="../shop/buzos/buzos.html">
-                            <img src="../../assets/images/Buzo_bordado_1_gris.jpg" alt="Buzo_bordado_1_gris">
-                    </picture>
-                    </a>
-                    <figcaption>Buzo bordado gris
-                        <div class="price">$26,000</div>
-                    </figcaption>
-                </figure>
-            </article>
+        <section class="slider">
+            <div class="slider__slides">
+                <article class="slider__slide active">
+                    <img src="../../../assets/images/Buzo_bordado_1_gris.jpg" alt="Buzo_bordado_1_gris">
+                </article>
+                <article class="slider__slide">
+                    <img src="../../../assets/images/Buzo_bordado_2_blanco.jpg" alt="Buzo_bordado_2_blanco">
+                </article>
+                <article class="slider__slide">
+                    <img src="../../../assets/images/Buzo_bordado_3_verde.jpg" alt="Buzo_bordado_3_verde">
+                </article>
+                <article class="slider__slide">
+                    <img src="../../../assets/images/Buzo_bordado_4_rojo.jpg" alt="Buzo_bordado_4_rojo">
+                </article>
+                <article class="slider__slide">
+                    <img src="../../../assets/images/Buzo_bordado_5_rosa.jpg" alt="Buzo_bordado_5_rosa">
+                </article>
+                <article class="slider__slide">
+                    <img src="../../../assets/images/Buzo_bordado_6_negro.jpg" alt="Buzo_bordado_6_negro">
+                </article>
+            </div>
+            <div class="slider__btns">
+                <a class="prev" href="#">&laquo;</a>
+                <a class="next" href="#">&raquo;</a>
+            </div>
         </section>
+
         <section class="container__detalles">
             <article class="detalles__article">
                 <div class="detalles__caja-uno">
@@ -114,6 +132,9 @@
                     <p>Protegemos tus datos.</p>
                 </div>
             </article>
+
+
+
         </section>
 
 
@@ -123,19 +144,19 @@
             <article class="navegacion__list-1">
                 <h3>Navegacion</h3>
                 <ul class="navbar__footer">
-                    <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
-                    <li class="navbar__footer-item"><a href=".politicas_de_cambio.html">Politica
+                    <li class="navbar__footer-item"><a href="../../pages/contacto.html">Contacto</a></li>
+                    <li class="navbar__footer-item"><a href="../../pages/politicas_de_cambio.html">Politica
                             de cambio</a></li>
-                    <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
+                    <li class="navbar__footer-item"><a href="../../pages/como_llegar.html">¿Como
                             llegar?</a>
                     </li>
                 </ul>
             </article>
             <article class="medios__pago">
                 <h3>Medios de pago</h3>
-                <a href=""><img class="icon" src="../../assets/icons/visa.png" alt="visa"></a>
-                <a href=""><img class="icon" src="../../assets/icons/mastercard.png" alt="mastercard"></a>
-                <a href=""><img class="icon" src="../../assets/icons/mercadopago.png" alt="mercadopago"></a>
+                <a href=""><img class="icon" src="../../../assets/icons/visa.png" alt="visa"></a>
+                <a href=""><img class="icon" src="../../../assets/icons/mastercard.png" alt="mastercard"></a>
+                <a href=""><img class="icon" src="../../../assets/icons/mercadopago.png" alt="mercadopago"></a>
             </article>
             <article class="contacto">
                 <div class="contacto_info">
@@ -143,14 +164,14 @@
                 </div>
                 <div class="img">
                     <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img class="icon"
-                            src="../../assets/icons/whatsapp.png" alt="whatsapp"></a>
+                            src="../../../assets/icons/whatsapp.png" alt="whatsapp"></a>
                     <!-- <p>+5491127189256</p> -->
                 </div>
             </article>
             <article class="redes__sociales">
                 <h3>Redes Sociales</h3>
                 <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="icon"
-                        src="../../assets/icons/instagram.png" alt="instagram"></a>
+                        src="../../../assets/icons/instagram.png" alt="instagram"></a>
                 <p></p>
                 <p></p>
                 <p></p>
@@ -159,11 +180,11 @@
     </main>
     <footer class="footer">
         <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-            <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="../../assets/icons/github.svg"
+            <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="../../../assets/icons/github.svg"
                     alt="github" />ProyectosMarcos</a></small>
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="./scripts/index.js" type="module"></script>
+    <script src="../../../scripts/index_shop/index_shop.js" type="module"></script>
 </body>
 
 </html>
