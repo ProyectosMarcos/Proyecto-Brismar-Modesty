@@ -1,158 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#F110F1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../styles/styles.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
     </style>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
     </style>
     <title>Brismar Modesty</title>
-</head>
+  </head>
 
-<body class="layout">
+  <body class="layout">
     <header class="header">
-        <h1>Brismar Modesty</h1>
-        <picture class="search">
-            <a href=""><img src="./assets/icons/search.svg" alt=""></a>
-        </picture>
+      <h1>Brismar Modesty</h1>
+      <picture class="search">
+        <a href=""><img src="../../assets/icons/search.svg" alt="search" /></a>
+      </picture>
     </header>
-    <input type="checkbox" name="btn__menu" id="menu-hamburguesa" class="btn__menu" />
+    <input
+      type="checkbox"
+      name="btn__menu"
+      id="menu-hamburguesa"
+      class="btn__menu"
+    />
     <label for="menu-hamburguesa" class="btn__burguer"></label>
     <nav class="navbar">
-        <ul class="navbar__menu">
-            <li class="navbar__items">
-                <a href="../../index.html" class="navbar__links">Inicio</a>
+      <ul class="navbar__menu">
+        <li class="navbar__items">
+          <a href="../../index.html" class="navbar__links">Inicio</a>
+        </li>
+        <li class="navbar__items">
+          <input type="checkbox" class="toggle-submenu" id="toggle-submenu" />
+          <label for="toggle-submenu" class="navbar__links cursor__pointer"
+            >Productos</label
+          >
+          <ul class="submenu">
+            <label for="toggle-submenu" class="submenu__links display-none"
+              >Volver al menu</label
+            >
+            <li class="submenu__items">
+              <a href="./vestidos.html" class="submenu__links">Vestidos</a>
             </li>
-            <li class="navbar__items">
-                <input type="checkbox" class="toggle-submenu" id="toggle-submenu">
-                <label for="toggle-submenu" class="navbar__links cursor__pointer">Productos</label>
-                <ul class="submenu">
-                    <label for="toggle-submenu" class="submenu__links display-none">Volver al menu</label>
-                    <li class="submenu__items"><a href="./vestidos.html" class="submenu__links">Vestidos</a>
-                    </li>
-                    <li class="submenu__items"><a href="./faldas.html" class="submenu__links">Faldas</a></li>
-                    <li class="submenu__items"><a href="./remeras.html" class="submenu__links">Remeras</a>
-                    </li>
-                    <li class="submenu__items"><a href="./buzos.html" class="submenu__links">Buzos &
-                            Sweaters</a></li>
-                </ul>
+            <li class="submenu__items">
+              <a href="./faldas.html" class="submenu__links">Faldas</a>
             </li>
-            <li class="navbar__items">
-                <a href="#" class="navbar__links">Contacto</a>
+            <li class="submenu__items">
+              <a href="./remeras.html" class="submenu__links">Remeras</a>
             </li>
-            <li class="navbar__items">
-                <a href="#" class="navbar__links">Sobre Nosotros</a>
+            <li class="submenu__items">
+              <a href="./buzos.html" class="submenu__links">Buzos & Sweaters</a>
             </li>
-            <li class="navbar__items">
-                <a href="#" class="navbar__links">Iniciar sesión</a>
-            </li>
-            <li class="navbar__items">
-                <picture>
-                    <a href="#" class="">
-                        <img class="cart" src="../../assets/icons/cart-icon2.svg" alt="carrito">
-                    </a>
-                </picture>
-            </li>
-        </ul>
+          </ul>
+        </li>
+        <li class="navbar__items">
+          <a href="#" class="navbar__links">Contacto</a>
+        </li>
+        <li class="navbar__items">
+          <a href="#" class="navbar__links">Sobre Nosotros</a>
+        </li>
+        <li class="navbar__items">
+          <a href="#" class="navbar__links">Iniciar sesión</a>
+        </li>
+        <li class="navbar__items">
+          <picture>
+            <a href="#" class="">
+              <img
+                class="cart"
+                src="../../assets/icons/cart-icon2.svg"
+                alt="carrito"
+              />
+            </a>
+          </picture>
+        </li>
+      </ul>
     </nav>
 
     <main class="main">
-        <section class="contacto">
-            <h2>Contacto</h2>
-            <article class="contacto__container">
-                <div class="wsp">
-                    <figure class="icon">
-                        <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img class="icon"
-                                src="/assets/icons/whatsapp.png" alt="whatsapp"></a>
-                    </figure>
-                    <p>+5491127189256</p>
-                </div>
+      <section class="contacto">
+        <h2>Contacto</h2>
+        <article class="contacto__container">
+          <div class="wsp">
+            <figure class="icon">
+              <a
+                href="https://api.whatsapp.com/send?phone=5491127189256"
+                target="_blank"
+                ><img
+                  class="icon"
+                  src="/assets/icons/whatsapp.png"
+                  alt="whatsapp"
+              /></a>
+            </figure>
+            <p>+5491127189256</p>
+          </div>
 
-                <div class="gmail">
-                    <a href="mailto:brismarmodesty@gmail.com">
-                        <figure class="icon">
-                            <img src="/assets/icons/gmail.png" alt="gmail">
-                        </figure>
-                    </a>
-                    <p>brismarmodesty@gmail.com</p>
-                </div>
+          <div class="gmail">
+            <a href="mailto:brismarmodesty@gmail.com">
+              <figure class="icon">
+                <img src="/assets/icons/gmail.png" alt="gmail" />
+              </figure>
+            </a>
+            <p>brismarmodesty@gmail.com</p>
+          </div>
 
-                <div class="posicion">
-                    <figure class="icon">
-                        <img src="/assets/icons/marcador-de-posicion.png" alt="posicion">
-                    </figure>
-                    <p>Villa Urquiza - CABA</p>
-                </div>
-            </article>
-            <form class="formulario" action="https://formsubmit.co/brismarmodesty@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Nombre"
-                    title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                    required>
-                <input type="email" name="email" placeholder="Email" title="Email incorrecto"
-                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
-                <input type="number" placeholder="Telefono">
-                <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje"
-                    title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$"
-                    required></textarea>
-                <button type="submit" value="Enviar">Enviar</button>
-            </form>
-        </section>
-
-
-        <section class="navegacion">
-            <article class="navegacion__list-1">
-                <h3>Navegacion</h3>
-                <ul class="navbar__footer">
-                    <li class="navbar__footer-item"><a href="./contacto.html">Contacto</a></li>
-                    <li class="navbar__footer-item"><a href="./politicas_de_cambio.html">Politica
-                            de cambio</a></li>
-                    <li class="navbar__footer-item"><a href="./como_llegar.html">¿Como
-                            llegar?</a>
-                    </li>
-                </ul>
-            </article>
-            <article class="medios__pago">
-                <h3>Medios de pago</h3>
-                <a href=""><img class="icon" src="../../assets/icons/visa.png" alt="visa"></a>
-                <a href=""><img class="icon" src="../../assets/icons/mastercard.png" alt="mastercard"></a>
-                <a href=""><img class="icon" src="../../assets/icons/mercadopago.png" alt="mercadopago"></a>
-            </article>
-            <article class="contacto">
-                <div class="contacto_info">
-                    <h3>Contacto</h3>
-                </div>
-                <div class="img">
-                    <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img class="icon"
-                            src="../../assets/icons/whatsapp.png" alt="whatsapp"></a>
-                    <!-- <p>+5491127189256</p> -->
-                </div>
-            </article>
-            <article class="redes__sociales">
-                <h3>Redes Sociales</h3>
-                <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="icon"
-                        src="../../assets/icons/instagram.png" alt="instagram"></a>
-                <p></p>
-                <p></p>
-                <p></p>
-            </article>
-        </section>
+          <div class="posicion">
+            <figure class="icon">
+              <img
+                src="/assets/icons/marcador-de-posicion.png"
+                alt="posicion"
+              />
+            </figure>
+            <p>Villa Urquiza - CABA</p>
+          </div>
+        </article>
+        <form
+          class="formulario"
+          action="https://formsubmit.co/brismarmodesty@gmail.com"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            title="Nombre sólo acepta letras y espacios en blanco"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            title="Email incorrecto"
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            required
+          />
+          <input type="number" placeholder="Telefono" />
+          <textarea
+            name="comments"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+            title="Tu comentario no debe exceder los 255 caracteres"
+            data-pattern="^.{1,255}$"
+            required
+          ></textarea>
+          <button type="submit" value="Enviar">Enviar</button>
+        </form>
+      </section>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <section class="navegacion">
+        <article class="navegacion__list-1">
+          <h3>Navegacion</h3>
+          <ul class="navbar__footer">
+            <li class="navbar__footer-item">
+              <a href="./contacto.html">Contacto</a>
+            </li>
+            <li class="navbar__footer-item">
+              <a href="./politicas_de_cambio.html">Politica de cambio</a>
+            </li>
+            <li class="navbar__footer-item">
+              <a href="./como_llegar.html">¿Como llegar?</a>
+            </li>
+          </ul>
+        </article>
+        <article class="medios__pago">
+          <h3>Medios de pago</h3>
+          <a href=""
+            ><img class="icon" src="../../assets/icons/visa.png" alt="visa"
+          /></a>
+          <a href=""
+            ><img
+              class="icon"
+              src="../../assets/icons/mastercard.png"
+              alt="mastercard"
+          /></a>
+          <a href=""
+            ><img
+              class="icon"
+              src="../../assets/icons/mercadopago.png"
+              alt="mercadopago"
+          /></a>
+        </article>
+        <article class="contacto">
+          <div class="contacto_info">
+            <h3>Contacto</h3>
+          </div>
+          <div class="img">
+            <a
+              href="https://api.whatsapp.com/send?phone=5491127189256"
+              target="_blank"
+              ><img
+                class="icon"
+                src="../../assets/icons/whatsapp.png"
+                alt="whatsapp"
+            /></a>
+            <!-- <p>+5491127189256</p> -->
+          </div>
+        </article>
+        <article class="redes__sociales">
+          <h3>Redes Sociales</h3>
+          <a href="https://www.instagram.com/brismarmodesty/" target="_blank"
+            ><img
+              class="icon"
+              src="../../assets/icons/instagram.png"
+              alt="instagram"
+          /></a>
+          <p></p>
+          <p></p>
+          <p></p>
+        </article>
+      </section>
     </main>
     <footer class="footer">
-        <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-            <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="../../assets/icons/github.svg"
-                    alt="github" />ProyectosMarcos</a></small>
+      <small
+        >Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
+        <a href="https://github.com/ProyectosMarcos" target="_blank"
+          ><img
+            src="../../assets/icons/github.svg"
+            alt="github"
+          />ProyectosMarcos</a
+        ></small
+      >
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="../../scripts/index.js" type="module"></script>
-</body>
-
+    <script src="" type="module"></script>
+  </body>
 </html>
