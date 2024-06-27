@@ -16,55 +16,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
     </style>
     <title>Brismar Modesty</title>
+    <script src="../../scripts/components/include_html.js"></script>
 </head>
 
 <body class="layout">
-    <header class="header">
-        <h1>Brismar Modesty</h1>
-        <picture class="search">
-            <a href=""><img src="./assets/icons/search.svg" alt=""></a>
-        </picture>
-    </header>
-
-    <input type="checkbox" name="btn__menu" id="menu-hamburguesa" class="btn__menu" />
-    <label for="menu-hamburguesa" class="btn__burguer"></label>
-    <nav class="navbar">
-        <ul class="navbar__menu">
-            <li class="navbar__items">
-                <a href="#" class="navbar__links">Inicio</a>
-            </li>
-            <li class="navbar__items">
-                <input type="checkbox" class="toggle-submenu" id="toggle-submenu">
-                <label for="toggle-submenu" class="navbar__links cursor__pointer">Productos</label>
-                <ul class="submenu">
-                    <label for="toggle-submenu" class="submenu__links display-none">Volver al menu</label>
-                    <li class="submenu__items"><a href="./html/pages/vestidos.html" class="submenu__links">Vestidos</a>
-                    </li>
-                    <li class="submenu__items"><a href="./html/pages/faldas.html" class="submenu__links">Faldas</a></li>
-                    <li class="submenu__items"><a href="./html/pages/remeras.html" class="submenu__links">Remeras</a>
-                    </li>
-                    <li class="submenu__items"><a href="./html/pages/buzos.html" class="submenu__links">Buzos &
-                            Sweaters</a></li>
-                </ul>
-            </li>
-            <li class="navbar__items">
-                <a href="#" class="navbar__links">Contacto</a>
-            </li>
-            <li class="navbar__items">
-                <a href="#" class="navbar__links">Sobre Nosotros</a>
-            </li>
-            <li class="navbar__items">
-                <a href="#" class="navbar__links">Iniciar sesión</a>
-            </li>
-            <li class="navbar__items">
-                <picture>
-                    <a href="#" class="">
-                        <img class="cart" src="./assets/icons/cart-icon2.svg" alt="carrito">
-                    </a>
-                </picture>
-            </li>
-        </ul>
-    </nav>
+    <div data-include="../../assets/header.html"></div>
 
     <main class="main">
         <section class="detalles__inicio">
@@ -226,49 +182,9 @@
 
 
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <section class="navegacion">
-                <article class="navegacion__list-1">
-                    <h3>Navegacion</h3>
-                    <ul class="navbar__footer">
-                        <li class="navbar__footer-item"><a href="./html/pages/contacto.html">Contacto</a></li>
-                        <li class="navbar__footer-item"><a href="./html/pages/politicas_de_cambio.html">Politica
-                                de cambio</a></li>
-                        <li class="navbar__footer-item"><a href="./html/pages/como_llegar.html">¿Como
-                                llegar?</a>
-                        </li>
-                    </ul>
-                </article>
-                <article class="medios__pago">
-                    <h3>Medios de pago</h3>
-                    <a href=""><img class="icon" src="./assets/icons/visa.png" alt="visa"></a>
-                    <a href=""><img class="icon" src="./assets/icons/mastercard.png" alt="mastercard"></a>
-                    <a href=""><img class="icon" src="./assets/icons/mercadopago.png" alt="mercadopago"></a>
-                </article>
-                <article class="contacto">
-                    <div class="contacto_info">
-                        <h3>Contacto</h3>
-                    </div>
-                    <div class="img">
-                        <a href="https://api.whatsapp.com/send?phone=5491127189256" target="_blank"><img class="icon"
-                                src="./assets/icons/whatsapp.png" alt="whatsapp"></a>
-                        <!-- <p>+5491127189256</p> -->
-                    </div>
-                </article>
-                <article class="redes__sociales">
-                    <h3>Redes Sociales</h3>
-                    <a href="https://www.instagram.com/brismarmodesty/" target="_blank"><img class="icon"
-                            src="./assets/icons/instagram.png" alt="instagram"></a>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </article>
-            </section>
+            <div data-include="../../assets/footer_details.html"></div>
     </main>
-    <footer class="footer">
-        <small>Copyright &copy; 2023 Proyecto🌹Brismar Modesty🌹hecho por
-            <a href="https://github.com/ProyectosMarcos" target="_blank"><img src="./assets/icons/github.svg"
-                    alt="github" />ProyectosMarcos</a></small>
-    </footer>
+    <div data-include="../../assets/footer.html"></div>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="./scripts/index.js" type="module"></script>
 </body>
