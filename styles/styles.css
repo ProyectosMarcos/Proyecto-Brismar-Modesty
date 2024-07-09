@@ -725,6 +725,7 @@ figcaption {
     border-style: dashed;
     border-radius: 0.5rem;
     border-color: pink;
+    font-size: 1.2rem;
   }
   .formulario [type=submit] {
     width: 6rem;
@@ -791,6 +792,7 @@ figcaption {
     border-style: dashed;
     border-radius: 0.5rem;
     border-color: pink;
+    font-size: 1.2rem;
   }
   .formulario [type=submit] {
     width: 6rem;
@@ -857,6 +859,7 @@ figcaption {
     border-style: dashed;
     border-radius: 0.5rem;
     border-color: pink;
+    font-size: 1.2rem;
   }
   .formulario [type=submit] {
     width: 6rem;
