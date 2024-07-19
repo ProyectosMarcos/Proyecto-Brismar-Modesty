@@ -375,13 +375,6 @@ img {
   margin: auto;
 }
 
-.container__img {
-  margin: 1em auto;
-  display: flex;
-  justify-content: center;
-  padding: 0.5em;
-}
-
 .frase {
   margin-top: 2.3rem;
   margin-bottom: 4.1rem;
@@ -555,6 +548,12 @@ figcaption {
 }  */
 /***** Resolucion Desktop  *******/
 @media (width >= 991px) {
+  .container__img {
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+  }
   .products__imgs {
     padding: 1.5em;
     display: flex;
@@ -572,8 +571,8 @@ figcaption {
   }
   /* Flip Card */
   .container {
-    width: 500px;
-    height: 350px;
+    width: 850px;
+    height: 550px;
     margin: auto;
     margin-top: 3em;
   }
@@ -951,6 +950,138 @@ figcaption {
   color: #f96868;
 }
 
+/***** Resolucion Tablet  *******/
+@media (width >= 768px) and (width <= 990px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 550px;
+  }
+}
+/***** Resolucion Desktop  *******/
+@media (width >= 991px) and (width <= 1073px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 600px;
+  }
+}
+@media (width >= 1073px) and (width <= 1150px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 650px;
+  }
+}
+@media (width >= 1150px) and (width <= 1220px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 700px;
+  }
+}
+@media (width >= 1220px) and (width <= 1270px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 720px;
+  }
+}
+@media (width >= 1270px) and (width <= 1300px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 720px;
+  }
+}
+@media (width >= 1300px) and (width <= 1350px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 755px;
+  }
+}
+@media (width >= 1350px) and (width <= 1400px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 755px;
+  }
+}
+@media (width >= 1400px) and (width <= 1450px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 62%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 800px;
+  }
+}
+@media (width >= 1451px) {
+  .slider {
+    position: relative;
+    border: thin solid black;
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .slider__slides {
+    position: relative;
+    height: 800px;
+  }
+}
 .navegacion {
   display: flex;
   gap: 0.3rem;
